@@ -134,7 +134,7 @@ export default function NextSteps({ stage, onReview }: { stage: Stage; onReview?
   }
 
   const showReview = !!onReview && button !== '조목이와 초안 검토';
-  const track = trackSummary(p.kind, prof, p.procedureTrack);
+  const track = trackSummary(p.kind, prof, p.procedureTrack, p.mode);
 
   return <section className={`${styles.nextSteps} no-print`} aria-labelledby={headingId}>
     <div className={styles.hero}>

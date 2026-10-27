@@ -1,11 +1,12 @@
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
+import { RULE_KINDS } from '@/engine/types';
 import { retrieveKnowledgeReview } from '@/server/knowledge-review';
 import { runRole, LlmError } from '@/server/llm';
 import { errorResponse, userConnection } from '@/server/ai-request';
 import { validateKnowledgeAnswer } from '@/server/knowledge-answer';
 export const runtime = 'nodejs'; export const maxDuration = 300;
-const inputSchema = z.object({question:z.string().trim().min(2).max(2000),document:z.string().max(12000).default(''),mode:z.enum(['explain','review','plain_language','opinion_request']).default('explain'),kind:z.enum(['ordinance','rule','directive','established_rule','notice','guideline','bylaw','law']).default('ordinance'),modelId:z.string().max(100).optional(),strictModel:z.boolean().optional()});
+const inputSchema = z.object({question:z.string().trim().min(2).max(2000),document:z.string().max(12000).default(''),mode:z.enum(['explain','review','plain_language','opinion_request']).default('explain'),kind:z.enum([...RULE_KINDS,'law']).default('ordinance'),modelId:z.string().max(100).optional(),strictModel:z.boolean().optional()});
 const reply=(body:unknown,status=200)=>NextResponse.json(body,{status,headers:{'Cache-Control':'no-store'}});
 export async function POST(req:Request){
  try{

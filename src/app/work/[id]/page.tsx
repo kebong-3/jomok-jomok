@@ -26,7 +26,11 @@ import NextSteps from '@/components/work/NextSteps';
 import WorkReview from '@/components/work/WorkReview';
 import AmendmentPanel from '@/components/work/AmendmentPanel';
 import ProcedureTracker from '@/components/work/ProcedureTracker';
-import { trackSummary } from '@/lib/procedure-track';
+import { formatKoreanDate, keyDeadlines, trackSummary } from '@/lib/procedure-track';
+import JomokiCompanion from '@/components/companion/JomokiCompanion';
+import { workBrief, workReaction, type CompanionActionId, type CompanionBrief, type WorkSnapshot } from '@/lib/companion';
+import { authorityArticleReviews } from '@/lib/authority-review';
+import { opTitle } from '@/lib/opconv';
 import AuthorityPanel from '@/components/work/AuthorityPanel';
 import LinkedRegulationsPanel from '@/components/work/LinkedRegulationsPanel';
 import { amendmentKind, deriveProject, workMethodLabel } from '@/lib/amendment-method';
@@ -53,6 +57,8 @@ function Workroom() {
   const initialTask = useRef<AbortController | null>(null);
   const [initialProgress, setInitialProgress] = useState<AiProgressEvent>();
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const prevSnapshot = useRef<WorkSnapshot | undefined>(undefined);
+  const [reaction, setReaction] = useState<CompanionBrief | null>(null);
 
   useEffect(() => {
     let active = true;
@@ -110,6 +116,43 @@ function Workroom() {
   const enactRule = useMemo(() => (p && p.mode === 'enact' && p.enact?.outlineConfirmed ? toEnactRule(p) : null), [p]);
   const enactLint = useMemo(() => (enactRule ? lintRule(enactRule, { institution: prof.name, knownLaws, online }) : []), [enactRule, prof, knownLaws, online]);
 
+  // 조목이 동행 도우미가 말할 현재 상태(이미 계산된 값만 사용)
+  const snapshot = useMemo<WorkSnapshot | null>(() => {
+    if (!p) return null;
+    const enactMode = p.mode === 'enact';
+    const own = p.spec.ops.filter(o => !o.derivedFrom);
+    const firstOp = own.find(o => o.status === 'proposed');
+    const issues = enactMode ? enactLint : (d?.lint ?? []).filter(i => i.origin === 'introduced');
+    const rule = enactRule ?? d?.after;
+    const outline = p.enact?.outline ?? [];
+    const summary = trackSummary(p.kind, prof, p.procedureTrack, p.mode);
+    const today = new Date().toISOString().slice(0, 10);
+    const upcoming = keyDeadlines(p.kind, prof, p.procedureTrack?.dates).find(x => x.date >= today);
+    let authorityPending = 0;
+    try { authorityPending = rule ? authorityArticleReviews(p, rule).filter(r => r.status !== 'reviewed').length : 0; } catch { authorityPending = 0; }
+    return {
+      mode: p.mode, method: enactMode ? 'enact' : (p.amendmentKind ?? 'partial'), stage: tab, title: p.enact?.title ?? p.title, kindLabel: RULE_KIND_LABEL[p.kind],
+      running: p.log.some(l => l.status === 'running'), runningLabel: p.log.find(l => l.status === 'running')?.label, planError: p.planError,
+      viaExample: p.planVia === 'cassette' || p.enact?.via === 'cassette',
+      proposed: own.filter(o => o.status === 'proposed').length, accepted: own.filter(o => o.status === 'accepted').length,
+      firstProposal: firstOp ? { label: opTitle(firstOp.change), why: firstOp.why ? firstOp.why.split(/(?<=[.다요])\s/)[0] : undefined } : undefined,
+      autoFixes: (d?.fixes ?? []).filter(f => f.reason === 'moved').length,
+      must: issues.filter(i => i.tier === 'must').length, check: issues.filter(i => i.tier === 'check').length,
+      outlineReady: !!p.enact?.outlineConfirmed, enactArticles: outline.length,
+      enactMissing: outline.filter(a => !a.paragraphs.some(t => t.trim())).length, enactUnreviewed: outline.filter(a => a.provenance === 'ai').length,
+      authorityPending, reasonReady: !!p.prose?.reviewed, noticeDeadlineSet: !!p.documentSettings?.notice?.deadline,
+      trackDone: summary.done, trackTotal: summary.total, currentStep: summary.current?.step.name,
+      nextDeadline: upcoming ? { label: upcoming.label.split(' · ')[0].replace(/\(.*\)$/, ''), date: formatKoreanDate(upcoming.date) } : undefined,
+    };
+  }, [p, d, tab, enactRule, enactLint, prof]);
+  const brief = useMemo(() => (snapshot ? workBrief(snapshot) : null), [snapshot]);
+  useEffect(() => {
+    if (!snapshot) return;
+    const next = workReaction(prevSnapshot.current, snapshot);
+    prevSnapshot.current = snapshot;
+    if (next) setReaction(next);
+  }, [snapshot]);
+
   const toast = useCallback((msg: string, undo?: () => void) => {
     setToast({ msg, undo });
     if (toastTimer.current) clearTimeout(toastTimer.current);
@@ -150,7 +193,7 @@ function Workroom() {
   }
   if (!p) return <><Header /><div className="start"><p className="sub">불러오는 중…</p></div></>;
 
-  const track = trackSummary(p.kind, prof, p.procedureTrack);
+  const track = trackSummary(p.kind, prof, p.procedureTrack, p.mode);
   const ctx: WorkCtx = { p, update, before, d, enactRule, enactLint, prof, openEvidence: setEv, toast, setTab };
   const enact = p.mode === 'enact';
   const lintList = enact ? enactLint : (d?.lint ?? []).filter((i) => i.origin === 'introduced');
@@ -164,6 +207,20 @@ function Workroom() {
       reviewPanel.current?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
       reviewPanel.current?.focus({ preventScroll: true });
     });
+  };
+  const companionAction = (action: CompanionActionId) => {
+    const stageOf: Partial<Record<CompanionActionId, Tab>> = { 'go-articles': 'articles', 'go-lint': 'lint', 'go-docs': 'docs', 'go-procedure': 'procedure' };
+    const target = stageOf[action];
+    if (target) { setTab(target); requestAnimationFrame(() => document.getElementById('work-stage-content')?.scrollIntoView({ block: 'start', behavior: 'smooth' })); return; }
+    if (action === 'review') { if (tab === 'procedure') setTab('articles'); openReview(); return; }
+    if (action === 'retry-ai') { void retryAsNew(); return; }
+    if (action === 'go-settings') { router.push('/settings'); return; }
+    if (action === 'accept-all') {
+      const n = p.spec.ops.filter(o => o.status === 'proposed').length;
+      if (!n) return;
+      if (!confirm(`아직 수락하지 않은 제안 ${n}건을 모두 수락할까요? 근거를 확인하지 않은 수락은 입안 점검표에 그대로 기록됩니다.`)) return;
+      void update(q => ({ ...q, spec: { ...q.spec, ops: q.spec.ops.map(o => (o.status === 'proposed' ? { ...o, status: 'accepted', provenance: o.provenance === 'ai' ? 'ai_accepted' : o.provenance } : o)) } }));
+    }
   };
   const enactIncomplete = enact && (!p.enact?.outlineConfirmed || !p.enact.outline.length || p.enact.outline.some(a => !a.paragraphs.some(text => text.trim())));
   const enactWithoutStructure = enact && (!p.enact?.outlineConfirmed || !p.enact.outline.length);
@@ -254,6 +311,9 @@ function Workroom() {
         </div>
       )}
       <span className="sr" aria-live="polite">{running ? '작업 중' : ''}</span>
+      <div style={{ height: 120 }} aria-hidden="true" />
+      {brief && <JomokiCompanion brief={brief} reaction={reaction} onAction={companionAction} stage={tab} mode={p.mode} kind={p.kind} kindLabel={RULE_KIND_LABEL[p.kind]} storageKey={`jj:companion:${p.id}`}
+        getDocument={() => (enact ? (enactRule ? renderRule(enactRule) : '') : (d?.fullText ?? p.source.raw))} />}
     </Ctx.Provider>
   );
 }

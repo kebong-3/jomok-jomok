@@ -19,6 +19,8 @@ import { startPilot } from '@/lib/evaluation';
 import { extractHwpx, extractTxt, reviewSource, sourceReviewGate, type SourceIssue, type SourcePosition } from '@/lib/source-review';
 import type { Evidence } from '@/lib/project';
 import { AMENDMENT_LABELS, methodSuggestion, type AmendmentKind } from '@/lib/amendment-method';
+import JomokiCompanion from '@/components/companion/JomokiCompanion';
+import { startBrief, type CompanionActionId } from '@/lib/companion';
 
 const KINDS: RuleKind[] = [...RULE_KINDS];
 /** 규정 종류를 기관 유형별로 묶어 고르기 쉽게 한다. */
@@ -249,6 +251,22 @@ function StartInner() {
   }
 
   const statuteMismatch = isStatuteKind(kind) && profiles.find(item => item.id === profileId)?.type !== 'central';
+  const companion = startBrief({
+    mode, sample: !!sample, hasSource: !!raw.trim(), title: parsed?.title, articles: parsed?.articles.length ?? 0, annexes: parsed?.annexes.length ?? 0,
+    sourceIssues: sourceReview?.issues.length ?? 0, sourceConfirmed, intentLength: intent.trim().length, purposeLength: purpose.trim().length,
+    kindLabel: RULE_KIND_LABEL[kind], statuteMismatch, peers: peerEvidence.length,
+  });
+  const focusStep = (id: string) => {
+    const section = document.getElementById(id)?.closest('section');
+    section?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    const field = section?.querySelector<HTMLElement>('textarea, input:not([type=checkbox]):not([type=radio]):not([type=file])');
+    window.setTimeout(() => field?.focus({ preventScroll: true }), 350);
+  };
+  const companionAction = (action: CompanionActionId) => {
+    if (action === 'focus-source') focusStep('s1');
+    else if (action === 'focus-intent') focusStep('s2');
+    else if (action === 'start-work') void startWork();
+  };
   const n = (i: number) => <span className="step-n" aria-hidden>{i}</span>;
 
   return (
@@ -392,7 +410,9 @@ function StartInner() {
             <button className="btn primary big" onClick={startWork} disabled={busy}>{busy ? '준비 중…' : '조목이와 작업 시작 →'}</button>
           </div>
         </section>
+        <div style={{ height: 110 }} aria-hidden="true" />
       </main>
+      <JomokiCompanion brief={companion} onAction={companionAction} stage="start" mode={mode} kind={kind} kindLabel={RULE_KIND_LABEL[kind]} getDocument={() => (mode === 'amend' ? raw : purpose)} />
     </>
   );
 }

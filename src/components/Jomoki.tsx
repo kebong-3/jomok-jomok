@@ -15,16 +15,21 @@ const LABELS: Record<JomokiMood, string> = {
 };
 
 /** Code-native companion. Expressions convey guidance, never legal approval. */
-export default function Jomoki({ size = 88, mood = 'guide', motion = 'once', decorative = true, className = '' }: {
+export default function Jomoki({ size = 88, mood = 'guide', motion = 'once', decorative = true, className = '', talking = false, look }: {
   size?: number;
   mood?: JomokiMood;
   motion?: JomokiMotion;
   decorative?: boolean;
   className?: string;
+  /** 말하는 동안 입을 움직인다(말풍선 타이핑·음성 읽기와 동기화). */
+  talking?: boolean;
+  /** 눈동자가 바라보는 방향(-1~1). 동행 도우미가 마우스·입력 위치를 따라볼 때 사용한다. */
+  look?: { x: number; y: number };
 }) {
   const happyEyes = mood === 'laugh' || mood === 'celebrate';
   const waving = mood === 'wave' || mood === 'celebrate';
-  return <span className={`${styles.character} ${styles[mood]} ${className}`} data-motion={motion} style={{ '--jomoki-size': `${size}px`, '--jomoki-repeat': motion === 'loop' ? 'infinite' : '1' } as CSSProperties}>
+  const lookTransform = look ? `translate(${Math.max(-1, Math.min(1, look.x)) * 2.2}px, ${Math.max(-1, Math.min(1, look.y)) * 1.6}px)` : undefined;
+  return <span className={`${styles.character} ${styles[mood]} ${talking ? styles.talking : ''} ${className}`} data-motion={motion} style={{ '--jomoki-size': `${size}px`, '--jomoki-repeat': motion === 'loop' ? 'infinite' : '1' } as CSSProperties}>
     <svg viewBox="0 0 128 136" role={decorative ? undefined : 'img'} aria-hidden={decorative || undefined} aria-label={decorative ? undefined : LABELS[mood]} focusable="false">
       <ellipse className={styles.shadow} cx="66" cy="128" rx="35" ry="5" fill="#d8e8e2" opacity=".65" />
       <g className={styles.body}>
@@ -57,7 +62,10 @@ export default function Jomoki({ size = 88, mood = 'guide', motion = 'once', dec
         </g>
         {mood === 'thinking' && <g fill="none" stroke="#304e58" strokeWidth="1.7" strokeLinecap="round"><path d="M46 46c3-2 6-2 9-1m18 0 8 2" /></g>}
         {mood === 'care' && <g fill="none" stroke="#617078" strokeWidth="1.7" strokeLinecap="round"><path d="m47 46 7 2m20 0 7-2" /></g>}
+        <g className={styles.look} style={lookTransform ? { transform: lookTransform } : undefined}>
         {happyEyes ? <g fill="none" stroke="#304e58" strokeWidth="3" strokeLinecap="round"><path d="M45 56q6-9 12 0m14 0q6-9 12 0" /></g> : <g className={styles.eyes} fill="#304e58"><ellipse cx={mood === 'thinking' ? '53' : '51'} cy="56" rx="2.6" ry={mood === 'thinking' ? '2.7' : '3.6'} /><ellipse cx={mood === 'thinking' ? '79' : '77'} cy="56" rx="2.6" ry={mood === 'thinking' ? '2.7' : '3.6'} /></g>}
+        </g>
+        {talking && <g className={styles.speakingMouth}><ellipse cx="64" cy="70" rx="6.5" ry="4.6" fill="#6b5468" stroke="#304e58" strokeWidth="1.8" /><path d="M60 72.5q4 2.6 8 0" fill="#f1aabe" /></g>}
         <g className={styles.mouth}>
           {mood === 'thinking' ? <path d="M59 70c4-2 8-2 11-1" fill="none" stroke="#304e58" strokeWidth="2.3" strokeLinecap="round" /> : happyEyes ? <><path d="M55 66q9 4 18 0c-1 17-17 17-18 0Z" fill="#5e5262" stroke="#304e58" strokeWidth="1.8" strokeLinejoin="round" /><path d="M60 76q4-4 8 0-4 5-8 0" fill="#f1aabe" /></> : mood === 'wave' ? <path d="M57 67q7 2 14 0c-1 10-13 10-14 0Z" fill="#b97089" stroke="#304e58" strokeWidth="1.8" /> : mood === 'care' ? <path d="M59 69q5 4 10 0" fill="none" stroke="#304e58" strokeWidth="2.3" strokeLinecap="round" /> : <path d="M56 66c3 9 13 9 16 0" fill="none" stroke="#304e58" strokeWidth="2.5" strokeLinecap="round" />}
         </g>

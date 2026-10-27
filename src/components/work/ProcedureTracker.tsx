@@ -19,7 +19,7 @@ type DateKey = keyof typeof DATE_INPUTS;
 export default function ProcedureTracker() {
   const { p, update, prof, setTab, toast } = useWork();
   const state = p.procedureTrack ?? emptyProcedureTrack();
-  const summary = useMemo(() => trackSummary(p.kind, prof, p.procedureTrack), [p.kind, prof, p.procedureTrack]);
+  const summary = useMemo(() => trackSummary(p.kind, prof, p.procedureTrack, p.mode), [p.kind, prof, p.procedureTrack, p.mode]);
   const deadlines = useMemo(() => keyDeadlines(p.kind, prof, p.procedureTrack?.dates), [p.kind, prof, p.procedureTrack?.dates]);
   const percent = summary.total ? Math.round((summary.done / summary.total) * 100) : 0;
   const dateKeys: DateKey[] = summary.group === 'ordinance' ? ['noticeStart', 'resolved', 'transferred'] : summary.group === 'rule' ? ['noticeStart', 'promulgation'] : ['noticeStart'];

@@ -224,7 +224,7 @@ function supportDocuments(p: Project, rule: Rule, before?: Rule): DocModel[] {
 function buildScheduleDoc(p: Project): DocModel {
   const prof = projectProfile(p);
   const title = `${p.enact?.title ?? p.title} 제·개정 추진 일정표`;
-  const summary = trackSummary(p.kind, prof, p.procedureTrack);
+  const summary = trackSummary(p.kind, prof, p.procedureTrack, p.mode);
   const cell = (text: string, bold = false) => [[{ text, bold }]];
   return { id: 'schedule', name: '추진일정표', title, layout: 'support', blocks: [
     P(title, { size: 'title' }, 'center'),
@@ -232,7 +232,7 @@ function buildScheduleDoc(p: Project): DocModel {
     BLANK,
     { type: 'table', widths: [0.5, 2.4, 0.9, 1.7, 2.5], rows: [
       { head: true, cells: [cell('순', true), cell('절차', true), cell('상태', true), cell('예정·완료일', true), cell('근거·메모', true)] },
-      ...scheduleLines(p.kind, prof, p.procedureTrack).map(row => ({ cells: row.map(text => cell(text)) })),
+      ...scheduleLines(p.kind, prof, p.procedureTrack, p.mode).map(row => ({ cells: row.map(text => cell(text)) })),
     ] },
     BLANK,
     P('※ 기관 설정에 따른 업무 안내와 담당자 기록입니다. 법정 기한·예외와 실제 완료 여부는 담당자가 확인합니다.', { size: 'small' }),

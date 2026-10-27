@@ -118,9 +118,10 @@ export interface TrackRow { step: ProcedureStep; status: StepStatus; date?: stri
 export interface TrackSummary { rows: TrackRow[]; done: number; total: number; current?: TrackRow; group: ProcedureGroup }
 
 /** 단계별 상태와 "지금 할 단계"(완료·해당 없음이 아닌 첫 단계)를 계산한다. */
-export function trackSummary(kind: RuleKind, profile: Profile, state?: ProcedureTrackState): TrackSummary {
+export function trackSummary(kind: RuleKind, profile: Profile, state?: ProcedureTrackState, mode: 'amend' | 'enact' = 'amend'): TrackSummary {
   const group = procedureGroupOf(kind);
-  const steps = procedureSteps(profile, group);
+  // 제정 작업에는 기본 입안 단계 이름을 제정 문서로 바꾸어 보여 준다.
+  const steps = procedureSteps(profile, group).map(step => mode === 'enact' && step.id === 'draft' && step.name === '입안(개정안·대비표·이유서)' ? { ...step, name: '입안(제정안·조문체계·이유서)' } : step);
   const rows = steps.map((step, index) => {
     const saved = state?.steps[step.id];
     return { step, index, status: saved?.status ?? 'todo', date: saved?.date, note: saved?.note } satisfies TrackRow;
@@ -142,7 +143,7 @@ export function stepDocHints(step: ProcedureStep, mode: 'amend' | 'enact'): stri
 }
 
 /** 추진 일정표 문서용 평문 */
-export function scheduleLines(kind: RuleKind, profile: Profile, state?: ProcedureTrackState): string[][] {
-  const summary = trackSummary(kind, profile, state);
+export function scheduleLines(kind: RuleKind, profile: Profile, state?: ProcedureTrackState, mode: 'amend' | 'enact' = 'amend'): string[][] {
+  const summary = trackSummary(kind, profile, state, mode);
   return summary.rows.map(r => [String(r.index + 1), r.step.name, STEP_STATUS_LABEL[r.status], r.date ? formatKoreanDate(r.date) : '—', [r.step.basis, r.note].filter(Boolean).join(' / ') || '—']);
 }

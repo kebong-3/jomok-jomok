@@ -6,6 +6,11 @@
 .eyes { transform-origin: 64px 56px; transform-box: view-box; animation: blink 4.6s ease-in-out var(--jomoki-repeat, 1); }
 .mouth { transform-origin: 64px 69px; transform-box: view-box; }
 .shadow { transform-origin: 66px 128px; transform-box: view-box; }
+.look { transition: transform .18s ease-out; }
+.speakingMouth { display: none; transform-origin: 64px 70px; transform-box: view-box; }
+.talking .speakingMouth { display: inline; animation: talk .32s ease-in-out infinite alternate; }
+.talking .mouth { display: none; }
+.talking .body { animation: nod 1.3s ease-in-out infinite; }
 .sparkle { transform-origin: center; transform-box: fill-box; animation: glimmer 4.6s ease-in-out var(--jomoki-repeat, 1); }
 .wave .rightArm { animation: wave 2.6s ease-in-out var(--jomoki-repeat, 1); }
 .wave .leftArm { animation: pencilHello 2.6s ease-in-out var(--jomoki-repeat, 1); }
@@ -42,7 +47,9 @@
 @keyframes ground { 0%, 48%, 100% { transform: scaleX(1); opacity: .65; } 16% { transform: scaleX(.87); opacity: .45; } }
 @keyframes confetti { 0%, 65%, 100% { opacity: .5; transform: translateY(0); } 24% { opacity: 1; transform: translateY(-3px); } }
 @keyframes listen { 0%, 100% { transform: rotate(3deg); } 45% { transform: rotate(5deg); } }
+@keyframes talk { 0% { transform: scaleY(.25) scaleX(.9); } 55% { transform: scaleY(1) scaleX(1); } 100% { transform: scaleY(.55) scaleX(1.05); } }
+@keyframes nod { 0%, 100% { transform: translateY(0) rotate(0); } 30% { transform: translateY(-1.5px) rotate(-1deg); } 65% { transform: translateY(.5px) rotate(.8deg); } }
 @keyframes heart { 0%, 100% { transform: scale(1); } 42% { transform: scale(1.09); } }
 .character[data-motion='none'] *, .character[data-motion='none'] { animation: none !important; transition: none !important; }
-@media (prefers-reduced-motion: reduce) { .character *, .character { animation: none !important; transition: none !important; } }
+@media (prefers-reduced-motion: reduce) { .character *, .character { animation: none !important; transition: none !important; } .talking .speakingMouth { transform: scaleY(.6); } }
 @media print { .character { display: none; } }

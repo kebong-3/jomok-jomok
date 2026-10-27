@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { knowledgePageLabel, knowledgeSourceHref, type KnowledgeCitation, type KnowledgeRecord } from '@/lib/knowledge';
 import styles from '../Knowledge.module.css';
-import Jomoki from '@/components/Jomoki';
 import guideStyles from './KnowledgeGuide.module.css';
 
 const ROLE_NAMES: Record<string, string> = {
@@ -36,8 +35,8 @@ export default function KnowledgePanel({ records = [], question = '', kind = 'or
     } catch { /* 저장 공간을 사용할 수 없으면 자료실에서 질문과 본문을 직접 입력합니다. */ }
   };
   return <section className={styles.knowledgePanel} aria-label="입안 참고자료">
-    <div className={guideStyles.heading}><Jomoki size={58} /><div><span>곁에서 함께 챙기는</span><h3>조목이 실무도움</h3></div></div>
-    <p className={guideStyles.intro}>{onReview ? '현재 초안을 보면서 물어보세요. 검토한 문장 중 원하는 수정만 골라 반영할 수 있어요.' : '입안 기준과 원문 근거를 함께 살펴봐요.'}</p>
+    <div className={guideStyles.heading}><div><span>원문 근거로 확인하는</span><h3>입안 참고자료·검토</h3></div></div>
+    <p className={guideStyles.intro}>{onReview ? '현재 초안을 기준서 근거로 검토하고, 원하는 수정만 골라 반영해요. 짧은 질문은 오른쪽 아래 조목이에게 물어보세요.' : '입안 기준과 원문 근거를 함께 살펴봐요.'}</p>
     <div className={styles.panelActions}>
       {onReview ? <button type="button" className={styles.primaryLink} onClick={onReview} disabled={reviewDisabled}>이 작업 이어서 검토</button> : <Link className={styles.primaryLink} href={`/knowledge?${params}`} onClick={preserveContext}>이 작업 이어서 검토</Link>}
       <Link className={styles.secondaryLink} href="/knowledge?tab=library">원본 자료</Link>
