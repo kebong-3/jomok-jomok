@@ -1,0 +1,240 @@
+{
+  "recordType": "enactment_export_validation",
+  "publishedOnKoreanDate": "2026-10-21",
+  "provenance": {
+    "initialRecord": "Sanitized copy of the available initial enact-export-final-qa.json. Absolute filesystem paths and rendering environment details were removed; original initial checks and file hashes were retained.",
+    "finalRecord": "Restored from actual observations recorded in the previous session. The final ZIP and its separate original QA file are unavailable in the current workspace. The final ZIP was not downloaded or revalidated during this publication turn.",
+    "originalArtifactsIncludedInRepository": false,
+    "repositoryContents": "This combined record contains initial QA results and a restored summary of the prior final content comparison. The source ZIPs, rendered pages and separate original QA files are not included in the repository."
+  },
+  "initialStructuralAndVisualQa": {
+    "source_zip": "enact-export-final.zip",
+    "source_zip_bytes": 81062,
+    "source_zip_sha256": "4a1ba8c603a2876d1ae1beb6f36c80582cdeb885d19d2e43c7a75f531d258b11",
+    "inspected_at_utc": "2026-10-20T06:43:09.962172+00:00",
+    "scope": "Actual browser-downloaded enactment package from d713157. Content/package QA of 10 documents and visual inspection of enactment and reasons documents only. This is the initial QA record, preceding the b4ccbfd checklist and outline fixes.",
+    "counts": {
+      "docx": 5,
+      "hwpx": 5,
+      "readme": 1,
+      "documents_visually_rendered": 2,
+      "pages_visually_inspected": 2
+    },
+    "verdict": "PASS for requested fictional enactment content and file integrity. One shared-checklist wording/provenance observation remains nonblocking.",
+    "checks": {
+      "five_docx_and_five_hwpx": true,
+      "all_pairs_identical": true,
+      "exactly_three_articles": true,
+      "purpose_internal_hanbit_meeting_materials": true,
+      "submission_three_days_before_by_email": true,
+      "confirmation_by_next_day": true,
+      "correct_guideline_effective_subject": true,
+      "outline_matches_three_articles": true,
+      "reason_is_substantive": true,
+      "reason_main_points_match": true,
+      "reason_no_generation_command_copy": true,
+      "notice_uses_same_reason": true,
+      "notice_is_conditional_administrative_draft": true,
+      "no_arbitrary_notice_deadline": true,
+      "no_three_year_default": true,
+      "review_requirement_disclosed": true,
+      "no_budget_or_consultation_no_action_assumption": true,
+      "no_amendment_comparison_for_enactment": true
+    },
+    "format_pairs": [
+      {
+        "document": "입안점검표",
+        "text_equal_ignoring_whitespace": true
+      },
+      {
+        "document": "제정안",
+        "text_equal_ignoring_whitespace": true
+      },
+      {
+        "document": "제정이유및주요내용",
+        "text_equal_ignoring_whitespace": true
+      },
+      {
+        "document": "조문체계표",
+        "text_equal_ignoring_whitespace": true
+      },
+      {
+        "document": "행정예고문(검토용)",
+        "text_equal_ignoring_whitespace": true
+      }
+    ],
+    "files": [
+      {
+        "file": "20261020_검증용회의자료제출지침_입안점검표.docx",
+        "bytes": 10865,
+        "sha256": "e6204f65cf15dba3df26ee01057439023ee5009dd7a1a6ef08d57376eb557bb5",
+        "crc_ok": true,
+        "xml_errors": []
+      },
+      {
+        "file": "20261020_검증용회의자료제출지침_입안점검표.hwpx",
+        "bytes": 8104,
+        "sha256": "4f1cd49e3f29eea5f511001daa35ee7965eccd2a726730b99c6dca5400a78f4b",
+        "crc_ok": true,
+        "xml_errors": [],
+        "hancom_native_open": "not_tested"
+      },
+      {
+        "file": "20261020_검증용회의자료제출지침_제정안.docx",
+        "bytes": 10166,
+        "sha256": "e97bdc6197ee58bdb867b6f52d43933d7d984067a12030dc4767d2ee3cee0a5e",
+        "crc_ok": true,
+        "xml_errors": [],
+        "visual_inspection": "All pages inspected; Korean text readable; no observed clipping, overlap, missing content or page overflow.",
+        "rendered_pages_count": 1
+      },
+      {
+        "file": "20261020_검증용회의자료제출지침_제정안.hwpx",
+        "bytes": 6845,
+        "sha256": "8dd2894f3798bddd53c33c3805fb0d4f9c5d37d39a495f42e1bc724e9592709c",
+        "crc_ok": true,
+        "xml_errors": [],
+        "hancom_native_open": "not_tested"
+      },
+      {
+        "file": "20261020_검증용회의자료제출지침_제정이유및주요내용.docx",
+        "bytes": 10466,
+        "sha256": "eba5ae03f132970e5dcfe4b2dd83ceae10854999a802aa3fc8ffd022cff0f3f9",
+        "crc_ok": true,
+        "xml_errors": [],
+        "visual_inspection": "All pages inspected; Korean text readable; no observed clipping, overlap, missing content or page overflow.",
+        "rendered_pages_count": 1
+      },
+      {
+        "file": "20261020_검증용회의자료제출지침_제정이유및주요내용.hwpx",
+        "bytes": 7364,
+        "sha256": "8554b33485a5808d5d07ab58ee8276424e93ba1f73c9eca425c3f7170ec3f3fb",
+        "crc_ok": true,
+        "xml_errors": [],
+        "hancom_native_open": "not_tested"
+      },
+      {
+        "file": "20261020_검증용회의자료제출지침_조문체계표.docx",
+        "bytes": 10565,
+        "sha256": "6942ecdd5ae0359c79b9801b20811be54a9e2a85f90c22d92568ffaff50bc55d",
+        "crc_ok": true,
+        "xml_errors": []
+      },
+      {
+        "file": "20261020_검증용회의자료제출지침_조문체계표.hwpx",
+        "bytes": 7581,
+        "sha256": "4891f69286d87bf4cfcb0b795575f0c60ad3827b6ccdcbb9f0e612d4a6efbe19",
+        "crc_ok": true,
+        "xml_errors": [],
+        "hancom_native_open": "not_tested"
+      },
+      {
+        "file": "20261020_검증용회의자료제출지침_행정예고문(검토용).docx",
+        "bytes": 10948,
+        "sha256": "6811d853fbd7eae891108a33209360dca16470c5211a96c4f863cb93de116e67",
+        "crc_ok": true,
+        "xml_errors": []
+      },
+      {
+        "file": "20261020_검증용회의자료제출지침_행정예고문(검토용).hwpx",
+        "bytes": 8159,
+        "sha256": "25eecfb2ebcc010930c6575f45184162f19df1b1111649a020371d9e67750581",
+        "crc_ok": true,
+        "xml_errors": [],
+        "hancom_native_open": "not_tested"
+      },
+      {
+        "file": "읽어보세요.txt",
+        "bytes": 249,
+        "sha256": "a2248ccdf8873dd550f9f49d14f72d6ec9ac5f3d6b54974d3869c7457ec231e5"
+      }
+    ],
+    "visual_qa": {
+      "renderer": "LibreOffice",
+      "font": "Noto Serif CJK KR fallback",
+      "documents": [
+        "제정안",
+        "제정이유및주요내용"
+      ],
+      "all_rendered_pages_inspected": true,
+      "findings": "Both documents fit one page each. Korean text, article headings, effective-date clause, reasons and three main points are legible. No observed clipping, text overlap or missing content. Other three document types were not newly rendered per task scope."
+    },
+    "known_warnings": [
+      {
+        "severity": "minor",
+        "document": "입안점검표",
+        "finding": "The initial shared amendment template labels section 2 이번 개정으로 생긴 문제, and section 5 AI가 작성한 변경 lists 없음 although this was an AI-assisted enactment. Article contents and review status were separately verified in the live UI; this initial exported checklist did not record that enactment provenance.",
+        "status": "Historical finding in d713157. The later b4ccbfd content-comparison observation records its correction; see finalContentComparison."
+      }
+    ],
+    "ai_observation": "The reasons and three main points are substantive Korean prose, not the purpose-generation instruction. Provider identity and live timings were observed in the UI and cannot be proven solely from exported XML.",
+    "limits": [
+      "HWPX native opening and layout in Hancom were not tested. CRC and XML parsing do not establish application compatibility.",
+      "Visual inspection used LibreOffice and fallback Korean font, not native Microsoft Word.",
+      "Only enactment and reasons documents were rendered in this pass, as requested.",
+      "This fictional three-article scenario does not establish correctness of all enactments or legal validity."
+    ],
+    "deploymentCommit": "d7131572809f433c79ee41558895043365c9ab0b"
+  },
+  "finalContentComparison": {
+    "evidenceSource": "restored_from_prior_session_observation",
+    "observedOnKoreanDate": "2026-10-21",
+    "deploymentCommit": "b4ccbfd8f477fab65cb0977b8558699b3d95e726",
+    "sourceZipBytes": 81152,
+    "sourceZipSha256": "6aa839a45638e3c4063a159db0df2112974c91d1ff0786e97d1e7dce84ecf2b9",
+    "sourceZipAvailableInCurrentWorkspace": false,
+    "separateOriginalQaFileAvailableInCurrentWorkspace": false,
+    "revalidatedThisTurn": false,
+    "scope": "Prior-session content comparison of the final b4ccbfd download: revised checklist, outline/current article agreement, preservation of the other three document bodies, and text agreement of all five DOCX/HWPX pairs. This is a restored observation record, not a repeat inspection of the final ZIP.",
+    "counts": {
+      "docx": 5,
+      "hwpx": 5,
+      "textPairsCompared": 5
+    },
+    "checks": {
+      "allFiveDocxHwpxTextPairsEqualIgnoringWhitespace": true,
+      "checklistIssueSectionTitle": "제정 초안에서 확인한 문제",
+      "checklistItemsToConfirm": 1,
+      "aiAuthoredArticles": 3,
+      "allThreeAiAuthoredArticlesMarkedReviewerConfirmed": true,
+      "toolVersion": "0.2.0",
+      "outlineAllThreeArticlesMatchCurrentEnactmentText": true,
+      "enactmentReasonsAndNoticeBodyTextUnchangedFromInitial": true,
+      "documentDateUpdatedToNewDownloadDate": "2026-10-21"
+    },
+    "formatPairs": [
+      {
+        "document": "입안점검표",
+        "textEqualIgnoringWhitespace": true
+      },
+      {
+        "document": "제정안",
+        "textEqualIgnoringWhitespace": true
+      },
+      {
+        "document": "제정이유및주요내용",
+        "textEqualIgnoringWhitespace": true
+      },
+      {
+        "document": "조문체계표",
+        "textEqualIgnoringWhitespace": true
+      },
+      {
+        "document": "행정예고문(검토용)",
+        "textEqualIgnoringWhitespace": true
+      }
+    ],
+    "notRepeatedOnFinalZip": {
+      "crcChecks": true,
+      "xmlStructureChecks": true,
+      "documentRendering": true
+    },
+    "limits": [
+      "The recorded size, hash and final content findings are restored from previous-session observations, not recalculated from a currently available final ZIP.",
+      "CRC/XML and visual-rendering results in this combined record apply only to the initial d713157 ZIP. They do not independently establish the final b4ccbfd ZIP integrity or layout.",
+      "Native opening or layout in Hancom was not tested for either ZIP.",
+      "The initial visual inspection covered only the enactment and reasons documents, two pages in total.",
+      "This fictional three-article scenario does not establish correctness of all enactments or legal validity."
+    ]
+  }
+}

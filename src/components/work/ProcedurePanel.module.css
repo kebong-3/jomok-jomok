@@ -1,0 +1,22 @@
+.panel { margin-bottom: 20px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+.tabs button[aria-pressed='true'] { background: #e8e3f8; border-color: #8d7eaf; color: #312344; }
+.lead { font-size: 1.7rem; line-height: 1.75; color: var(--ink); margin: 0 0 10px; }
+.status { display: flex; flex-wrap: wrap; gap: 10px; background: #eef5ef; border: 1px solid #c8dccb; border-radius: 10px; padding: 14px; margin: 18px 0; color: #274b36; }
+.section { border: 1px solid var(--line); border-radius: 12px; margin: 16px 0; padding: 16px; background: #fff; }
+.section summary { font-size: 1.65rem; font-weight: 700; line-height: 1.65; cursor: pointer; }
+.section[open] summary { margin-bottom: 16px; }
+.field { display: flex; flex-direction: column; gap: 7px; font-size: 1.5rem; line-height: 1.65; margin: 12px 0; color: var(--ink); }
+.field textarea { min-height: 88px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
+.subsection { padding: 14px; background: #f7f7fc; border-radius: 10px; margin: 14px 0; }
+.next { border: 1px solid #d8cbb8; background: #fff8ed; color: #503a21; padding: 16px; border-radius: 10px; margin: 18px 0; font-size: 1.5rem; line-height: 1.7; }
+.next p { margin: 6px 0 10px; }
+.next details { font-size: 1.4rem; }
+.tag { display: inline-block; margin-left: 8px; border-radius: 8px; background: #f2edf9; padding: 3px 9px; color: #544169; font-size: 1.3rem; }
+.source { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 320px; overflow: auto; font-size: 1.4rem; line-height: 1.8; border: 1px solid var(--line); padding: 14px; background: #fff; }
+.signal { padding: 12px 14px; background: #f0f6fa; border-left: 3px solid #86a8c1; margin: 10px 0; border-radius: 0 8px 8px 0; font-size: 1.45rem; }
+.signal p { margin: 6px 0 0; line-height: 1.7; }
+.entries { margin: 18px 0; }
+@media (max-width: 700px) { .grid { grid-template-columns: 1fr; } .section { padding: 12px; } .tabs button { flex: 1 1 220px; } }
+@media print { .panel { display: none; } }

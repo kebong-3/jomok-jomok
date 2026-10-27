@@ -1,0 +1,187 @@
+{
+  "expectedCommit": "6c6692a",
+  "checkedAt": "2026-10-25T15:14:30.364442Z",
+  "environment": "public production deployment with its configured server connection; no API keys read or copied",
+  "checks": {
+    "history": {
+      "url": "https://jomokjomok.vercel.app/api/law/history?q=%EC%A3%BC%EB%AF%BC%EC%B0%B8%EC%97%AC%EC%98%88%EC%82%B0&endYear=2026&org=6130000&sborg=5810000",
+      "checkedAt": "2026-10-25T15:14:33.395764Z",
+      "httpStatus": 200,
+      "durationMs": 1344,
+      "responseBytes": 4704,
+      "responseSha256": "4547f6bef96e62241e430b107920ccbe28247b0502791d5ca203417607b2b88c",
+      "contentType": "application/json",
+      "passed": true,
+      "complete": true,
+      "more": false,
+      "period": {
+        "from": "2022-01-01",
+        "to": "2026-10-26"
+      },
+      "counts": [
+        {
+          "year": 2022,
+          "count": 0,
+          "amended": 0
+        },
+        {
+          "year": 2023,
+          "count": 0,
+          "amended": 0
+        },
+        {
+          "year": 2024,
+          "count": 1,
+          "amended": 1
+        },
+        {
+          "year": 2025,
+          "count": 1,
+          "amended": 1
+        },
+        {
+          "year": 2026,
+          "count": 1,
+          "amended": 1
+        }
+      ],
+      "scopeCount": 10,
+      "scopeErrors": {},
+      "events": [
+        {
+          "documentId": "2035792",
+          "mst": "2132533",
+          "title": "전남광주통합특별시 서구 주민참여예산제 운영 조례",
+          "org": "전남광주통합특별시 서구",
+          "promulgatedAt": "2026-06-16",
+          "effectiveAt": "2026-07-01",
+          "amendment": "일부개정",
+          "scopes": [
+            "current",
+            "history"
+          ],
+          "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=2132533"
+        },
+        {
+          "documentId": "2035792",
+          "mst": "2029315",
+          "title": "광주광역시 서구 주민참여예산제 운영 조례",
+          "org": "전남광주통합특별시 서구",
+          "promulgatedAt": "2025-04-15",
+          "effectiveAt": "2025-04-15",
+          "amendment": "일부개정",
+          "scopes": [
+            "history"
+          ],
+          "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=2029315"
+        },
+        {
+          "documentId": "2035792",
+          "mst": "1972513",
+          "title": "광주광역시 서구 주민참여예산제 운영 조례",
+          "org": "전남광주통합특별시 서구",
+          "promulgatedAt": "2024-09-30",
+          "effectiveAt": "2024-09-30",
+          "amendment": "일부개정",
+          "scopes": [
+            "history"
+          ],
+          "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=1972513"
+        }
+      ]
+    },
+    "version2024": {
+      "url": "https://jomokjomok.vercel.app/api/law/history?mst=1972513&id=2035792",
+      "checkedAt": "2026-10-25T15:14:34.742084Z",
+      "httpStatus": 200,
+      "durationMs": 1082,
+      "responseBytes": 18146,
+      "responseSha256": "700b9193422aba1869962ac3229769520bed2f0c028050a46ff8a24b9a3e27d8",
+      "contentType": "application/json",
+      "passed": true,
+      "documentId": "2035792",
+      "mst": "1972513",
+      "title": "광주광역시 서구 주민참여예산제 운영 조례",
+      "promulgatedAt": "2024-09-30",
+      "effectiveAt": "2024-09-30",
+      "articleCount": 31,
+      "addendaCount": 1,
+      "reasonsCount": 1,
+      "via": "live",
+      "sourceUrl": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=1972513"
+    },
+    "version2025": {
+      "url": "https://jomokjomok.vercel.app/api/law/history?mst=2029315&id=2035792",
+      "checkedAt": "2026-10-25T15:14:34.742963Z",
+      "httpStatus": 200,
+      "durationMs": 1224,
+      "responseBytes": 18113,
+      "responseSha256": "b8fc3ba4b8ca746d54f768afe1dc083d041bcbb6bea831541a82c30b06edaf20",
+      "contentType": "application/json",
+      "passed": true,
+      "documentId": "2035792",
+      "mst": "2029315",
+      "title": "광주광역시 서구 주민참여예산제 운영 조례",
+      "promulgatedAt": "2025-04-15",
+      "effectiveAt": "2025-04-15",
+      "articleCount": 31,
+      "addendaCount": 1,
+      "reasonsCount": 0,
+      "via": "live",
+      "sourceUrl": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=2029315"
+    },
+    "current": {
+      "url": "https://jomokjomok.vercel.app/api/law/text?kind=ordin&id=2035792",
+      "checkedAt": "2026-10-25T15:14:34.743823Z",
+      "httpStatus": 200,
+      "durationMs": 412,
+      "responseBytes": 17454,
+      "responseSha256": "ca76f06fcd72e09752f3a8a36e06d8d19871ccc6b3bbe17e459134f0e5d1c852",
+      "contentType": "application/json",
+      "passed": true,
+      "id": "2035792",
+      "title": "전남광주통합특별시 서구 주민참여예산제 운영 조례",
+      "kind": "ordin",
+      "effectiveAt": "2026-07-01",
+      "articleCount": 31,
+      "via": "live",
+      "partial": true,
+      "sourceUrl": "https://www.law.go.kr/자치법규/%EC%A0%84%EB%82%A8%EA%B4%91%EC%A3%BC%ED%86%B5%ED%95%A9%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%84%9C%EA%B5%AC%20%EC%A3%BC%EB%AF%BC%EC%B0%B8%EC%97%AC%EC%98%88%EC%82%B0%EC%A0%9C%20%EC%9A%B4%EC%98%81%20%EC%A1%B0%EB%A1%80"
+    },
+    "twoVersionComparison": {
+      "passed": true,
+      "method": "unique identical article heading; direct text and article-number comparison, uncertain correspondence retained",
+      "same": 14,
+      "changed": 5,
+      "unmatchedRows": 24,
+      "changedHeadings": [
+        "정의",
+        "위원회의 구성",
+        "위원회 운영원칙",
+        "분과위원회",
+        "예산학교"
+      ]
+    }
+  },
+  "status": "passed",
+  "deployment": {
+    "url": "https://jomokjomok.vercel.app/api/diag",
+    "checkedAt": "2026-10-25T15:14:30.364466Z",
+    "httpStatus": 200,
+    "durationMs": 3031,
+    "responseBytes": 3195,
+    "responseSha256": "a30c7ad96583b4b6462f9570d82f54e510c742a630ab17e3885380cfd4e75ba9",
+    "contentType": "application/json",
+    "version": "0.5.0",
+    "commit": "6c6692a",
+    "region": "icn1"
+  },
+  "finishedAt": "2026-10-25T15:14:35.968929Z",
+  "limitations": [
+    "This verifies live public production JSON endpoints, not browser interaction or handoff clicks.",
+    "Counts are limited to the stated keyword, institution and promulgation period.",
+    "Article text is not retained in this evidence file; response fingerprints identify the inspected responses.",
+    "Matched textual differences are not a legal determination of substantive rights or obligations."
+  ],
+  "noteOnDate": "The production response used its Asia/Seoul date 2026-10-26 because the request timestamp was after 15:00 UTC on 2026-10-25. The recorded period is preserved exactly as returned."
+}

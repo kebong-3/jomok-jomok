@@ -1,0 +1,77 @@
+{
+  "testedAt": "2026-10-20T06:18:17.941464+00:00",
+  "koreaDate": "2026-10-20",
+  "deploymentCommit": "f9b54c6",
+  "checks": [
+    {
+      "requestedTitle": "행정절차법",
+      "url": "https://jomokjomok.vercel.app/api/law/text?kind=law&title=%ED%96%89%EC%A0%95%EC%A0%88%EC%B0%A8%EB%B2%95",
+      "httpStatus": 200,
+      "title": "행정절차법",
+      "id": "001362",
+      "effectiveAt": "2023-03-24",
+      "articleCount": 70,
+      "firstLabels": [
+        "제1조",
+        "제2조",
+        "제3조"
+      ],
+      "lastLabels": [
+        "제54조",
+        "제55조",
+        "제56조"
+      ],
+      "meta": {
+        "via": "live",
+        "fetchedAt": "2026-10-20T06:18:16.927Z",
+        "partial": true,
+        "note": "조문 본문을 조회했습니다. 부칙·별표·별지서식은 공식 원문에서 별도로 확인해 주세요."
+      },
+      "checks": {
+        "exactTitle": true,
+        "liveOfficialSource": true,
+        "effectiveToday": true,
+        "hasArticles": true,
+        "uniqueArticleLabels": true,
+        "nonemptyArticleText": true,
+        "scopeDisclosed": true
+      },
+      "elapsedMs": 880
+    },
+    {
+      "requestedTitle": "지방자치법",
+      "url": "https://jomokjomok.vercel.app/api/law/text?kind=law&title=%EC%A7%80%EB%B0%A9%EC%9E%90%EC%B9%98%EB%B2%95",
+      "httpStatus": 200,
+      "title": "지방자치법",
+      "id": "001656",
+      "effectiveAt": "2026-10-15",
+      "articleCount": 215,
+      "firstLabels": [
+        "제1조",
+        "제2조",
+        "제3조"
+      ],
+      "lastLabels": [
+        "제209조",
+        "제210조",
+        "제211조"
+      ],
+      "meta": {
+        "via": "live",
+        "fetchedAt": "2026-10-20T06:18:17.024Z",
+        "partial": true,
+        "note": "조문 본문을 조회했습니다. 부칙·별표·별지서식은 공식 원문에서 별도로 확인해 주세요."
+      },
+      "checks": {
+        "exactTitle": true,
+        "liveOfficialSource": true,
+        "effectiveToday": true,
+        "hasArticles": true,
+        "uniqueArticleLabels": true,
+        "nonemptyArticleText": true,
+        "scopeDisclosed": true
+      },
+      "elapsedMs": 1138
+    }
+  ]
+}

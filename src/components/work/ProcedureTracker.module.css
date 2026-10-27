@@ -1,0 +1,67 @@
+.wrap { margin: 0 0 24px; color: #213f47; }
+.head { display: flex; gap: 20px; align-items: center; padding: 22px 26px; border: 1px solid #d3dedf; border-radius: 22px; background: linear-gradient(115deg, #eef7f3 0%, #f3f0fa 60%, #fff9ea 100%); }
+.headText { flex: 1; min-width: 0; }
+.eyebrow { color: #4e5875; font-size: 1.3rem; font-weight: 750; }
+.headText h2 { margin: 6px 0; font-size: clamp(2rem, 2.1vw, 2.4rem); font-weight: 800; letter-spacing: -.03em; line-height: 1.4; word-break: keep-all; }
+.headText h2 em { font-style: normal; color: #1f6a5b; box-shadow: inset 0 -.38em 0 #d9efe5; }
+.headText p { margin: 0 0 12px; color: #4a5f66; font-size: 1.45rem; line-height: 1.75; word-break: keep-all; }
+.progress { height: 10px; border-radius: 99px; background: #ffffffc7; border: 1px solid #d5e3dd; overflow: hidden; }
+.progress span { display: block; height: 100%; background: linear-gradient(90deg, #4f9c87, #2b6e60); border-radius: 99px; transition: width .3s ease; }
+.headText small { display: block; margin-top: 6px; color: #5b6b70; font-size: 1.25rem; }
+
+.grid { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; margin-top: 20px; align-items: start; }
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.step { position: relative; display: flex; gap: 14px; padding: 16px 18px; background: #fff; border: 1px solid #dfe6e8; border-radius: 16px; box-shadow: 0 2px 8px #304e5808; }
+.step.current { border-color: #6aa995; box-shadow: 0 0 0 3px #d8eee6; }
+.step.done { background: #f7fbf9; }
+.step.skip { opacity: .62; }
+.no { flex: 0 0 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 11px; background: #edf2f6; color: #4b5c6b; font-weight: 800; font-size: 1.35rem; }
+.current .no { background: #2b6e60; color: #fff; }
+.done .no { background: #d9efe5; color: #1f6a5b; }
+.doing .no { background: #fff1d1; color: #8a5a00; }
+.body { flex: 1; min-width: 0; }
+.titleRow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.titleRow h3 { margin: 4px 0; font-size: 1.6rem; font-weight: 750; line-height: 1.5; word-break: keep-all; }
+.nowBadge { font-size: 1.15rem; font-weight: 750; color: #1f6a5b; background: #e1f2eb; border-radius: 99px; padding: 2px 10px; }
+.tip { margin: 2px 0 6px; color: #4d6168; font-size: 1.3rem; line-height: 1.75; word-break: keep-all; }
+.docs { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 6px 0; font-size: 1.25rem; }
+.docs b { color: #355c51; font-weight: 700; margin-right: 2px; }
+.docs button { border: 1px solid #cfe1da; background: #f3faf7; color: #245a4e; border-radius: 99px; padding: 3px 11px; font-size: 1.2rem; cursor: pointer; }
+.docs button:hover { background: #e3f3ec; }
+.basis { margin: 4px 0 8px; color: #6b7682; font-size: 1.2rem; line-height: 1.7; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-top: 6px; }
+.status { display: inline-flex; border: 1px solid #d3dbe1; border-radius: 11px; overflow: hidden; background: #fff; }
+.status button { border: 0; border-right: 1px solid #e3e8ec; background: transparent; padding: 7px 12px; font-size: 1.25rem; color: #4b5866; cursor: pointer; min-height: 36px; }
+.status button:last-child { border-right: 0; }
+.status button[aria-pressed='true'] { background: #2b6e60; color: #fff; font-weight: 700; }
+.date { display: inline-flex; align-items: center; gap: 8px; font-size: 1.2rem; color: #5b6870; }
+.date input, .calcField input { border: 1px solid #d3dbe1; border-radius: 9px; padding: 6px 9px; font-size: 1.3rem; background: #fff; }
+.note { width: 100%; margin-top: 8px; border: 1px dashed #d6dde3; border-radius: 9px; padding: 7px 10px; font-size: 1.25rem; background: #fcfdfd; }
+
+.calc { position: sticky; top: 84px; padding: 18px; background: #fff; border: 1px solid #dfe6e8; border-radius: 18px; box-shadow: 0 2px 10px #304e580a; }
+.calc h3 { margin: 0 0 4px; font-size: 1.7rem; font-weight: 800; }
+.calcLead { margin: 0 0 12px; color: #55666c; font-size: 1.25rem; line-height: 1.7; word-break: keep-all; }
+.calcField { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 8px 0; font-size: 1.3rem; font-weight: 650; }
+.calcField small { display: block; font-weight: 400; font-size: 1.1rem; color: #7a858d; }
+.deadlines { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 8px; }
+.deadlines li { padding: 10px 12px; border-radius: 12px; background: #f4f8fb; border: 1px solid #e3eaf0; }
+.deadlines span { display: block; font-size: 1.2rem; color: #4d5e69; line-height: 1.6; }
+.deadlines strong { display: block; font-size: 1.7rem; color: #1d4f45; margin: 2px 0; }
+.deadlines small { display: block; font-size: 1.1rem; color: #75808a; }
+.empty { margin: 12px 0 0; padding: 12px; border-radius: 12px; background: #f6f7f9; color: #6a7580; font-size: 1.25rem; }
+.apply { margin-top: 12px; width: 100%; min-height: 42px; border: 1px solid #26594f; background: #275c52; color: #fff; border-radius: 11px; font-weight: 750; font-size: 1.35rem; cursor: pointer; }
+.apply:hover { background: #1e4c43; }
+.caution { margin: 12px 0 0; color: #7a6a4a; font-size: 1.15rem; line-height: 1.7; background: #fffaf0; border-radius: 10px; padding: 8px 10px; }
+.status button:focus-visible, .docs button:focus-visible, .apply:focus-visible { outline: 3px solid #5265a7; outline-offset: 2px; }
+
+@media (max-width: 960px) {
+  .grid { grid-template-columns: 1fr; }
+  .calc { position: static; }
+}
+@media (max-width: 600px) {
+  .head { flex-direction: column; align-items: flex-start; padding: 18px; }
+  .step { padding: 14px; }
+  .controls { flex-direction: column; align-items: stretch; }
+  .status { width: 100%; }
+  .status button { flex: 1; padding: 7px 4px; }
+}

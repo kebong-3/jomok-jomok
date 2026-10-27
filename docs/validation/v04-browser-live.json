@@ -1,0 +1,162 @@
+{
+  "testedOn": "2026-10-25",
+  "timezone": "Asia/Seoul",
+  "productionOrigin": "https://jomokjomok.vercel.app",
+  "executionCommit": "b40bc9024bb43a0da558db188289c9e09555d688",
+  "method": "Actual production browser interaction with existing server credentials; fictional fixtures, no example cassette, no forced law-offline setting.",
+  "ai": {
+    "modelId": "gemma4-31b@google",
+    "providerModel": "gemma-4-31b-it",
+    "selection": "automatic",
+    "otherProvidersTestedInTheseFlows": false
+  },
+  "rag": {
+    "question": "조례를 일부개정할지 전부개정할지 판단할 때 어떤 기준과 예외를 확인해야 하나요?",
+    "status": "completed_with_excluded_item",
+    "displayedSeconds": 21.9,
+    "retrievedSources": 6,
+    "firstTwoPdfPages": [
+      421,
+      422
+    ],
+    "retainedPoints": 2,
+    "excludedItems": 1,
+    "warning": "검색 원문과 일치하지 않는 인용·변경 제안 1건을 제외했습니다.",
+    "summaryNeutralized": true,
+    "sourceTextDownload": "v04-rag-live.txt",
+    "screenshot": "../screenshots/v04-rag-live.jpg",
+    "limits": "Quote existence checking does not establish legal entailment; a rejected generated item is not a successful citation."
+  },
+  "amendment": {
+    "title": "검증용 회의자료 작성 지침",
+    "kind": "guideline",
+    "institution": "한빛시 · 기초자치단체(가상)",
+    "source": "검증용 회의자료 작성 지침\n제1조(목적) 이 지침은 내부 검증을 위한 회의자료 작성 기준을 정함을 목적으로 한다.\n제2조(제출기한) 담당자는 회의 개최 3일 전까지 자료를 제출하여야 한다.\n제3조(접수확인) 담당부서는 접수한 날의 다음 날까지 접수 여부를 확인하여야 한다.",
+    "intent": "내부 검증용 가상 지침입니다. 제2조의 제출기한만 회의 개최 3일 전에서 5일 전으로 바꾸고, 나머지 조문과 용어는 유지해 주세요.",
+    "status": "download_completed",
+    "displayedPlanSeconds": 6.7,
+    "proposals": 1,
+    "acceptedProposals": 1,
+    "amendingText": "제2조 중 “3일”을 “5일”로 한다.",
+    "reasonHumanEdited": true,
+    "confirmedReason": "검증용 회의자료의 제출기한을 회의 개최 3일 전에서 5일 전으로 조정하려는 것임.",
+    "mustFixIssues": 0,
+    "unreviewedProposals": 0,
+    "upperLawLookup": "skipped_no_explicit_basis_provided",
+    "documentKinds": 6,
+    "formats": [
+      "DOCX",
+      "HWPX"
+    ],
+    "download": "v04-amendment-live.zip",
+    "inspection": "v04-amendment-export-inspection.json",
+    "screenshot": "../screenshots/v04-amendment-live.jpg"
+  },
+  "enactment": {
+    "title": "검증용 회의자료 제출 지침",
+    "kind": "guideline",
+    "purpose": "내부 검증을 위한 가상 지침입니다. 정확히 3개 조로 구성해 주세요: 제1조 목적, 제2조 제출방법, 제3조 접수확인. 회의자료 담당자는 회의 개최 3일 전까지 담당부서에 전자우편으로 자료를 제출합니다. 담당부서는 접수한 날의 다음 날까지 접수 여부를 확인합니다. 외부인의 권리·의무나 제재는 규정하지 않습니다. 입력하지 않은 위임 근거·절차·기한을 만들어 넣지 말아 주세요.",
+    "status": "download_completed",
+    "displayedOutlineSeconds": 7.7,
+    "displayedDraftSeconds": 7.3,
+    "displayedPipelineSeconds": 15.0,
+    "articles": 3,
+    "confirmedArticles": 3,
+    "articleTexts": [
+      "제1조(목적) 이 지침은 내부 검증을 위한 회의자료 제출 및 접수 확인에 관한 사항을 규정함을 목적으로 한다.",
+      "제2조(제출방법) 회의자료 담당자는 회의 개최 3일 전까지 담당부서에 전자우편으로 자료를 제출하여야 한다.",
+      "제3조(접수확인) 담당부서는 자료를 접수한 날의 다음 날까지 접수 여부를 확인하여야 한다."
+    ],
+    "reasonHumanEdited": false,
+    "confirmedReason": "내부 검증을 위한 회의자료의 제출 및 접수 확인에 관한 사항을 규정하려는 것임.",
+    "upperLawLookup": "skipped_no_explicit_basis_provided",
+    "mustFixIssues": 0,
+    "documentKinds": 5,
+    "formats": [
+      "DOCX",
+      "HWPX"
+    ],
+    "download": "v04-enactment-live.zip",
+    "inspection": "v04-enactment-export-inspection.json",
+    "screenshot": "../screenshots/v04-enactment-live.jpg",
+    "knowledgeHandoff": {
+      "keyboardNavigationSucceeded": true,
+      "questionCharacters": 210,
+      "bodyCharacters": 188,
+      "bodyContainsThreeDraftArticles": true,
+      "urlContainsQuestionOrBody": false,
+      "pointerIssue": "Sticky log panel overlapped the reference link. Fixed in subsequent source change; production retest recorded separately."
+    }
+  },
+  "similarRulesInitialObservation": {
+    "query": "위원회 운영",
+    "kind": "ordin",
+    "status": "failed_structure_parse",
+    "note": "법제처 검색 응답에 검색 결과 구조가 없습니다.",
+    "snapshotNotDisplayedAsLive": true,
+    "followup": "Official ordin JSON uses OrdinSearch.law and LawService. Adapter correction and production retest recorded separately."
+  },
+  "remainingLimits": [
+    "These are small fictional internal-guideline fixtures, not an independent legal evaluation of actual institutional cases.",
+    "Timings are observed single runs, not a percentile or latency guarantee.",
+    "DOCX rendering and HWPX package/XML checks do not substitute for testing in native Hancom Hangul.",
+    "Notice templates still require confirmation and entry of publication date, deadline and contact details.",
+    "Institutional profile import UI, cross-device restore and a second live model provider remain unverified. Same-browser project backup import and restored state were verified."
+  ],
+  "backupRestore": {
+    "status": "restored_as_new_project",
+    "sameBrowser": true,
+    "source": "v04-amendment-live.zip / 작업백업.jomok.json",
+    "integrityVerifiedInUi": true,
+    "acceptedChanges": 1,
+    "pendingChanges": 0,
+    "reasonConfirmationPreserved": true,
+    "institutionSnapshotPreserved": true,
+    "knowledgeRecordsPreserved": 2,
+    "oldAndNewDeadlineVisible": [
+      "3일",
+      "5일"
+    ],
+    "originalProjectPreserved": true,
+    "screenshot": "../screenshots/v04-backup-restored.jpg",
+    "automationNote": "File chooser completion was slow in the remote browser; the subsequent in-app restore and state verification succeeded."
+  },
+  "productionRetest": {
+    "commit": "0f7f54a336e8ab643dca90d35bdb10143813a1a5",
+    "enactmentKnowledgePointerNavigation": {
+      "status": "passed",
+      "draftArticles": 3,
+      "questionCharacters": 210,
+      "bodyCharacters": 188,
+      "noQuestionOrBodyInUrl": true
+    },
+    "noticeDownloads": {
+      "amendment": "v04-amendment-final.zip",
+      "enactment": "v04-enactment-final.zip",
+      "inspection": "See productionVerification in the corresponding export inspection JSON."
+    },
+    "similarRules": {
+      "status": "passed_live",
+      "initialQuery": "위원회 운영",
+      "initialQueryHits": 20,
+      "comparisonQuery": "각종 위원회",
+      "comparisonQueryHits": 20,
+      "selected": [
+        {
+          "title": "가평군 각종 위원회 설치 및 운영 조례",
+          "articles": 15,
+          "effectiveAt": "2026-04-20"
+        },
+        {
+          "title": "강릉시 각종 위원회 구성 및 운영 조례",
+          "articles": 14,
+          "effectiveAt": "2020-12-30"
+        }
+      ],
+      "firstArticlesExpanded": true,
+      "uniqueTitleMatchingOnly": true,
+      "mismatchedHeadingsMarkedUncertain": true,
+      "screenshot": "../screenshots/v04-similar-final.jpg"
+    }
+  }
+}

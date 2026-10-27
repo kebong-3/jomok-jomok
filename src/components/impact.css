@@ -1,0 +1,55 @@
+.impact-page { max-width: 1040px; margin: 36px auto 80px; padding: 0 24px; }
+.impact-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.impact-heading h1 { margin: 0; font-size: 2.9rem; letter-spacing: -.025em; }
+.impact-eyebrow { margin: 0 0 8px; font-size: 1.3rem; color: var(--gov-ink); font-weight: 700; }
+.impact-lead { max-width: 800px; color: var(--ink-2); margin: 12px 0 20px; line-height: 1.8; }
+.impact-scope { padding: 14px 18px; background: var(--gov-soft); border-radius: 6px; font-size: 1.4rem; line-height: 1.8; }
+.impact-section { padding: 28px 0; border-bottom: 1px solid var(--line); }
+.impact-fields { margin: 0; padding: 0; border: 0; min-width: 0; }
+.impact-fields:disabled { opacity: .8; }
+.impact-fields:disabled .field { color: var(--ink); -webkit-text-fill-color: var(--ink); opacity: 1; }
+.impact-label { display: block; font-size: 1.45rem; font-weight: 600; margin-bottom: 16px; }
+.impact-label > .field { display: block; margin-top: 6px; font-weight: 400; }
+.impact-label .help { font-weight: 400; }
+.impact-example { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; margin: 0 0 20px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; font-size: 1.4rem; }
+.impact-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+.impact-version { min-width: 0; padding: 16px; background: var(--paper); border: 1px solid var(--line); border-radius: 6px; margin-bottom: 20px; }
+.impact-version textarea.field { min-height: 200px; font-size: 1.45rem; }
+.impact-version .impact-label:last-of-type { margin-bottom: 4px; }
+.impact-institution.field { min-height: 220px; font-size: 1.45rem; }
+.impact-confirm { display: flex; align-items: flex-start; gap: 10px; padding: 12px 0 20px; font-size: 1.45rem; font-weight: 500; }
+.impact-confirm input, .impact-candidate-pick input { width: 18px; height: 18px; accent-color: var(--gov); flex: none; margin-top: 3px; }
+.impact-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; }
+.impact-progress { color: var(--gov-ink); font-size: 1.4rem; }
+.impact-analysis { padding: 18px 20px; border-radius: 6px; background: var(--gov-soft); margin: 18px 0; border-left: 4px solid var(--gov); }
+.impact-analysis.literal { background: var(--amber-soft); border-left-color: #b38336; }
+.impact-analysis p { margin: 6px 0 0; font-size: 1.4rem; }
+.impact-candidates { display: grid; gap: 20px; }
+.impact-candidate { padding: 20px; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; min-width: 0; }
+.impact-candidate.selected { border-color: var(--gov); box-shadow: 0 0 0 1px var(--gov); }
+.impact-candidate-pick { display: flex; align-items: flex-start; gap: 12px; cursor: pointer; }
+.impact-candidate-pick > span:nth-of-type(1) { flex: 1; }
+.impact-candidate-pick strong { font-size: 1.9rem; }
+.impact-target-upper { display: inline-block; color: var(--ink-2); margin-left: 12px; font-size: 1.4rem; }
+.impact-reason { font-size: 1.5rem; line-height: 1.8; margin: 14px 0; }
+.impact-quote { min-width: 0; margin: 14px 0 0; padding: 12px 14px; background: var(--desk); border: 1px solid var(--line); border-radius: 4px; }
+.impact-quote h3, .impact-checks h3 { margin: 0 0 6px; font-size: 1.3rem; color: var(--ink-2); font-weight: 700; }
+.impact-quote blockquote { margin: 0; font-size: 1.45rem; line-height: 1.85; white-space: pre-wrap; overflow-wrap: anywhere; }
+.impact-quote-pair { gap: 12px; }
+.impact-quote.after { background: var(--gov-soft); }
+.impact-checks { margin: 18px 0 0; font-size: 1.4rem; }
+.impact-checks ul { margin: 0; padding-left: 20px; color: var(--ink-2); }
+.impact-checks li + li { margin-top: 5px; }
+.impact-empty { padding: 24px; text-align: center; background: var(--paper); border: 1px dashed var(--line); border-radius: 8px; }
+.impact-empty h3 { margin: 0; font-size: 1.8rem; }
+.impact-empty p { font-size: 1.45rem; color: var(--ink-2); }
+.impact-error { margin: 20px 0; border: 1px solid #da9a92; border-radius: 6px; background: #fff3f1; color: #8b3226; padding: 16px; white-space: pre-line; font-size: 1.45rem; }
+@media (max-width: 760px) {
+  .impact-page { padding: 0 16px; margin-top: 24px; }
+  .impact-heading, .impact-example { align-items: flex-start; flex-direction: column; }
+  .impact-heading h1 { font-size: 2.45rem; }
+  .impact-columns { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .impact-target-upper { display: block; margin: 2px 0 0; }
+  .impact-candidate { padding: 16px; }
+  .impact-actions .btn, .impact-section > .btn.primary { white-space: normal; text-align: center; padding: 10px 16px; }
+}

@@ -1,0 +1,361 @@
+{
+  "checkedAt": "2026-10-25T14:19:11.244Z",
+  "environment": "local implementation against official API using the published sample credential; production deployment not tested here",
+  "listMs": 2145,
+  "list": {
+    "complete": true,
+    "more": false,
+    "from": "2022-01-01",
+    "to": "2026-10-25",
+    "counts": [
+      {
+        "year": 2022,
+        "total": 0,
+        "enacted": 0,
+        "amended": 0,
+        "repealed": 0,
+        "replaced": 0,
+        "other": 0
+      },
+      {
+        "year": 2023,
+        "total": 0,
+        "enacted": 0,
+        "amended": 0,
+        "repealed": 0,
+        "replaced": 0,
+        "other": 0
+      },
+      {
+        "year": 2024,
+        "total": 1,
+        "enacted": 0,
+        "amended": 1,
+        "repealed": 0,
+        "replaced": 0,
+        "other": 0
+      },
+      {
+        "year": 2025,
+        "total": 1,
+        "enacted": 0,
+        "amended": 1,
+        "repealed": 0,
+        "replaced": 0,
+        "other": 0
+      },
+      {
+        "year": 2026,
+        "total": 1,
+        "enacted": 0,
+        "amended": 1,
+        "repealed": 0,
+        "replaced": 0,
+        "other": 0
+      }
+    ],
+    "coverage": {
+      "2022:current": {
+        "year": 2022,
+        "scope": "current",
+        "key": "2022:current",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 0,
+        "total": 0,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      },
+      "2022:history": {
+        "year": 2022,
+        "scope": "history",
+        "key": "2022:history",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 0,
+        "total": 0,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      },
+      "2023:current": {
+        "year": 2023,
+        "scope": "current",
+        "key": "2023:current",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 0,
+        "total": 0,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      },
+      "2023:history": {
+        "year": 2023,
+        "scope": "history",
+        "key": "2023:history",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 0,
+        "total": 0,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      },
+      "2024:current": {
+        "year": 2024,
+        "scope": "current",
+        "key": "2024:current",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 0,
+        "total": 0,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      },
+      "2024:history": {
+        "year": 2024,
+        "scope": "history",
+        "key": "2024:history",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 1,
+        "total": 1,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      },
+      "2025:current": {
+        "year": 2025,
+        "scope": "current",
+        "key": "2025:current",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 0,
+        "total": 0,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      },
+      "2025:history": {
+        "year": 2025,
+        "scope": "history",
+        "key": "2025:history",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 1,
+        "total": 1,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      },
+      "2026:current": {
+        "year": 2026,
+        "scope": "current",
+        "key": "2026:current",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 1,
+        "total": 1,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      },
+      "2026:history": {
+        "year": 2026,
+        "scope": "history",
+        "key": "2026:history",
+        "page": 1,
+        "nextPage": null,
+        "complete": true,
+        "skipped": false,
+        "count": 1,
+        "total": 1,
+        "excluded": 0,
+        "pagesRead": [
+          1
+        ],
+        "excludedPages": {
+          "1": 0
+        },
+        "via": "live"
+      }
+    },
+    "events": [
+      {
+        "eventId": "[\"2035792\",\"2026-06-16\",\"2032\",\"일부개정\"]",
+        "documentId": "2035792",
+        "mst": "2132533",
+        "title": "전남광주통합특별시 서구 주민참여예산제 운영 조례",
+        "org": "전남광주통합특별시 서구",
+        "promulgatedAt": "2026-06-16",
+        "promulgationNumber": "2032",
+        "effectiveAt": "2026-07-01",
+        "amendment": "일부개정",
+        "changeGroup": "amended",
+        "year": 2026,
+        "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=2132533",
+        "scopes": [
+          "current",
+          "history"
+        ],
+        "versions": [
+          {
+            "mst": "2132533",
+            "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=2132533"
+          }
+        ],
+        "identityUncertain": false
+      },
+      {
+        "eventId": "[\"2035792\",\"2025-04-15\",\"1938\",\"일부개정\"]",
+        "documentId": "2035792",
+        "mst": "2029315",
+        "title": "광주광역시 서구 주민참여예산제 운영 조례",
+        "org": "전남광주통합특별시 서구",
+        "promulgatedAt": "2025-04-15",
+        "promulgationNumber": "1938",
+        "effectiveAt": "2025-04-15",
+        "amendment": "일부개정",
+        "changeGroup": "amended",
+        "year": 2025,
+        "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=2029315",
+        "scopes": [
+          "history"
+        ],
+        "versions": [
+          {
+            "mst": "2029315",
+            "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=2029315"
+          }
+        ],
+        "identityUncertain": false
+      },
+      {
+        "eventId": "[\"2035792\",\"2024-09-30\",\"1880\",\"일부개정\"]",
+        "documentId": "2035792",
+        "mst": "1972513",
+        "title": "광주광역시 서구 주민참여예산제 운영 조례",
+        "org": "전남광주통합특별시 서구",
+        "promulgatedAt": "2024-09-30",
+        "promulgationNumber": "1880",
+        "effectiveAt": "2024-09-30",
+        "amendment": "일부개정",
+        "changeGroup": "amended",
+        "year": 2024,
+        "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=1972513",
+        "scopes": [
+          "history"
+        ],
+        "versions": [
+          {
+            "mst": "1972513",
+            "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=1972513"
+          }
+        ],
+        "identityUncertain": false
+      }
+    ]
+  },
+  "versions": [
+    {
+      "documentId": "2035792",
+      "mst": "1972513",
+      "title": "광주광역시 서구 주민참여예산제 운영 조례",
+      "promulgatedAt": "2024-09-30",
+      "effectiveAt": "2024-09-30",
+      "articles": 31,
+      "addenda": 1,
+      "reasons": 1,
+      "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=1972513"
+    },
+    {
+      "documentId": "2035792",
+      "mst": "2029315",
+      "title": "광주광역시 서구 주민참여예산제 운영 조례",
+      "promulgatedAt": "2025-04-15",
+      "effectiveAt": "2025-04-15",
+      "articles": 31,
+      "addenda": 1,
+      "reasons": 0,
+      "url": "https://www.law.go.kr/ordinInfoP.do?ordinSeq=2029315"
+    }
+  ],
+  "comparison": {
+    "same": 14,
+    "changed": 5,
+    "unmatched": 24,
+    "changedHeadings": [
+      "정의",
+      "위원회의 구성",
+      "위원회 운영원칙",
+      "분과위원회",
+      "예산학교"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-26",
+  "productionCommit": "a115dac1892189d16cf1b55ca85f65c37827f194",
+  "browserDownloads": [
+    {
+      "file": "docs/validation/v06-live-bill.hwpx",
+      "bytes": 8984,
+      "sha256": "97871350efe8360543beb7f094cf8ff538d1db8e40c8d83b8bc174de63a9fc97",
+      "zipAndXmlValid": true,
+      "reviewDraftNotice": true,
+      "unreviewedArticleCount": 7,
+      "noticeNumber": null
+    },
+    {
+      "file": "docs/validation/v06-live-bill.docx",
+      "bytes": 11698,
+      "sha256": "a9ebb35ff561b7d418c56553eebafc14439b971fdeeb562bb85651beef77d3df",
+      "zipAndXmlValid": true,
+      "reviewDraftNotice": true,
+      "unreviewedArticleCount": 7,
+      "noticeNumber": null
+    },
+    {
+      "file": "docs/validation/v06-live-notice.hwpx",
+      "bytes": 8755,
+      "sha256": "2aaec8659ecb3e255ae33f0d2bf45adfc5acebc23cc6e71baeaf77e2363b8948",
+      "zipAndXmlValid": true,
+      "reviewDraftNotice": true,
+      "unreviewedArticleCount": 7,
+      "noticeNumber": "검증01호"
+    },
+    {
+      "file": "docs/validation/v06-live-notice.docx",
+      "bytes": 11376,
+      "sha256": "ba9bd0b77cb7dedc5a39246fe50fda7e95ef369fef3de0d3aac23a4f3e82bad9",
+      "zipAndXmlValid": true,
+      "reviewDraftNotice": true,
+      "unreviewedArticleCount": 7,
+      "noticeNumber": "검증02호"
+    }
+  ],
+  "stalePreparedLinkAfterEdit": 0,
+  "nativeHancomOpened": false
+}

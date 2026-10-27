@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-10-22T00:03:43.571Z",
+  "localRuntime": "v24.19.0",
+  "result": "passed",
+  "scope": "Actual production ZIP backup parsed and restored through application functions including the pending evidence-reference guard, with an injected in-memory persistence callback.",
+  "productionSource": {
+    "url": "https://jomokjomok.vercel.app/",
+    "workPath": "/work/ykwbawo607x8",
+    "reportedExportReleaseCommitPrefix": "3115179",
+    "zipBytes": 101485,
+    "zipSha256": "176f49c5ded240d34f26f0b4474f0577d367746a0b355b90af234e9890feee6d",
+    "backupEntry": "작업백업.jomok.json",
+    "backupBytes": 10119,
+    "backupSha256": "ee57c487ee5fe492316aedf99d82fb452111ae0a92f617d2e3932066d8d60bc3"
+  },
+  "codeUnderTest": {
+    "includesPendingEvidenceReferenceGuard": true,
+    "projectTransferSha256": "485954df726062b7cc766486b2f33437448a3a68dac487720b8ed024bb316338",
+    "focusedTestCases": 33
+  },
+  "restored": {
+    "originalProjectId": "ykwbawo607x8",
+    "newProjectId": "import-452276f6-bc5e-4639-8712-2688ea89bf4e",
+    "acceptedOperations": [
+      {
+        "id": "upyu0qeu0dsk",
+        "status": "accepted",
+        "provenance": "ai_accepted",
+        "changeType": "replace_text",
+        "evidence": [
+          "EV-IMPACT-AFTER"
+        ]
+      }
+    ],
+    "evidenceCount": 2,
+    "userEvidenceIds": [
+      "EV-IMPACT-BEFORE",
+      "EV-IMPACT-AFTER"
+    ],
+    "selectedImpactIds": [
+      "IC-1"
+    ],
+    "selectedImpactTargets": [
+      "제2조"
+    ],
+    "reasonReviewed": true,
+    "reasonFingerprintMatchesCurrentInputs": true,
+    "sourceHash": "bf79a10d25aa8647c0d5a34d6b56ca9587c550a5c75af58acc98b2e6faed7555",
+    "evaluation": {
+      "status": "paused",
+      "activeMs": 107399,
+      "runningSincePresent": false,
+      "elapsedAfterAnotherDayMs": 107399
+    },
+    "logStatuses": [
+      {
+        "step": "load",
+        "status": "ok"
+      },
+      {
+        "step": "upper",
+        "status": "skipped"
+      },
+      {
+        "step": "plan",
+        "status": "ok"
+      },
+      {
+        "step": "link",
+        "status": "ok"
+      },
+      {
+        "step": "lint",
+        "status": "ok"
+      },
+      {
+        "step": "docs",
+        "status": "ok"
+      }
+    ]
+  },
+  "checks": {
+    "archiveSchemaAndProjectIntegrity": true,
+    "sourceAndEvidenceHashes": true,
+    "impactCandidateAndSelectedReferences": true,
+    "allOperationAndEnactmentEvidenceReferencesResolve": true,
+    "newIdAndOriginalProjectPreserved": true,
+    "preparedBackupUnchanged": true,
+    "acceptedOperationAndReviewStatePreserved": true,
+    "derivedAmendmentOutputUnchanged": true,
+    "evaluationPausedWithoutAddedIdleTime": true,
+    "noRunningOrWaitingLogAfterRestore": true,
+    "saveCallbackCompletedOnce": true
+  },
+  "notExercised": [
+    "Browser file chooser or file input event",
+    "Browser IndexedDB persistence",
+    "Opening the restored work screen in a different browser"
+  ],
+  "note": "This proof does not claim a browser UI restore. The earlier file chooser automation hung before file selection. Interrupted-running/wait log normalization, failed persistence and dangling evidence references are separately covered by the 33 unit cases in tests/project-transfer.test.ts. Recorded time is a synthetic QA session value, not an employee efficiency benchmark."
+}

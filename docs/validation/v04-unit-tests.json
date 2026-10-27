@@ -1,0 +1,109 @@
+{
+  "numTotalTests": 299,
+  "numPassedTests": 299,
+  "numFailedTests": 0,
+  "success": true,
+  "numTestFiles": 20,
+  "files": [
+    {
+      "name": "ai-client.test.ts",
+      "status": "passed",
+      "tests": 8
+    },
+    {
+      "name": "complex-workflow.test.ts",
+      "status": "passed",
+      "tests": 5
+    },
+    {
+      "name": "documents-regressions.test.ts",
+      "status": "passed",
+      "tests": 14
+    },
+    {
+      "name": "engine-regressions.test.ts",
+      "status": "passed",
+      "tests": 13
+    },
+    {
+      "name": "engine.test.ts",
+      "status": "passed",
+      "tests": 9
+    },
+    {
+      "name": "evidence-delegation.test.ts",
+      "status": "passed",
+      "tests": 3
+    },
+    {
+      "name": "impact.test.ts",
+      "status": "passed",
+      "tests": 15
+    },
+    {
+      "name": "knowledge-answer.test.ts",
+      "status": "passed",
+      "tests": 15
+    },
+    {
+      "name": "knowledge-assist.test.ts",
+      "status": "passed",
+      "tests": 24
+    },
+    {
+      "name": "knowledge-independent-audit.test.ts",
+      "status": "passed",
+      "tests": 8
+    },
+    {
+      "name": "knowledge-integrity.test.ts",
+      "status": "passed",
+      "tests": 16
+    },
+    {
+      "name": "knowledge-search.test.ts",
+      "status": "passed",
+      "tests": 11
+    },
+    {
+      "name": "law.test.ts",
+      "status": "passed",
+      "tests": 23
+    },
+    {
+      "name": "llm.test.ts",
+      "status": "passed",
+      "tests": 24
+    },
+    {
+      "name": "pipeline.test.ts",
+      "status": "passed",
+      "tests": 5
+    },
+    {
+      "name": "profiles.test.ts",
+      "status": "passed",
+      "tests": 16
+    },
+    {
+      "name": "project-transfer.test.ts",
+      "status": "passed",
+      "tests": 33
+    },
+    {
+      "name": "review-evaluation.test.ts",
+      "status": "passed",
+      "tests": 10
+    },
+    {
+      "name": "similar-rules.test.ts",
+      "status": "passed",
+      "tests": 21
+    },
+    {
+      "name": "source-review.test.ts",
+      "status": "passed",
+      "tests": 26
+    }
+  ]
+}

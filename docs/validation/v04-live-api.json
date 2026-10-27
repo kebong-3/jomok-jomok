@@ -1,0 +1,282 @@
+{
+  "checkedAt": "2026-10-25T08:27:01Z",
+  "expectedCommit": "b40bc90",
+  "diagnostics": {
+    "app": "jomokjomok",
+    "version": "0.4.0",
+    "commit": "b40bc90",
+    "region": "icn1",
+    "law": {
+      "law": {
+        "ok": true,
+        "via": "live",
+        "ms": 258
+      },
+      "hasOC": true,
+      "hasRelay": false,
+      "snapshots": [
+        {
+          "title": "공무원 여비 규정",
+          "date": "2026-10-20",
+          "effectiveAt": "2026-10-02",
+          "usable": true,
+          "articles": 34
+        },
+        {
+          "title": "지방자치법",
+          "date": "2026-10-20",
+          "effectiveAt": "2027-04-14",
+          "usable": false,
+          "articles": 8
+        },
+        {
+          "title": "행정절차법",
+          "date": "2026-10-20",
+          "effectiveAt": "2022-07-12",
+          "usable": true,
+          "articles": 5
+        },
+        {
+          "title": "공유재산 및 물품 관리법",
+          "date": "2026-10-20",
+          "effectiveAt": "2026-10-13",
+          "usable": true,
+          "articles": 121
+        }
+      ]
+    },
+    "models": [
+      {
+        "id": "gpt54-mini@openai",
+        "label": "GPT-5.4 mini · OpenAI",
+        "family": "other",
+        "note": "선택 연결 · 같은 입안 자료와 문서 엔진 사용",
+        "official": false,
+        "limits": "계정별 제공자 요금·한도 적용",
+        "configured": false,
+        "connected": false,
+        "verified": false,
+        "keyEnv": "OPENAI_API_KEY"
+      },
+      {
+        "id": "gptoss-120b@groq",
+        "label": "GPT-OSS 120B · Groq",
+        "family": "gpt-oss",
+        "note": "연결 시험 후 선택할 수 있는 비교 모델",
+        "official": true,
+        "limits": "계정별 제공자 한도 적용",
+        "configured": true,
+        "connected": true,
+        "verified": false,
+        "keyEnv": "GROQ_API_KEY"
+      },
+      {
+        "id": "gemma4-31b@google",
+        "label": "Gemma 4 31B · Google AI Studio",
+        "family": "gemma",
+        "note": "기본 우선 모델 · 공개 모델",
+        "official": true,
+        "configured": true,
+        "connected": true,
+        "verified": false,
+        "keyEnv": "GOOGLE_API_KEY",
+        "keyEnvAliases": [
+          "GEMINI_API_KEY",
+          "GOOGLE_GENERATIVE_AI_API_KEY"
+        ]
+      },
+      {
+        "id": "gptoss-120b@cerebras",
+        "label": "GPT-OSS 120B · Cerebras",
+        "family": "gpt-oss",
+        "note": "예비 · 긴 입력(무료 30K TPM)",
+        "official": true,
+        "limits": "계정별 제공자 한도 적용",
+        "configured": false,
+        "connected": false,
+        "verified": false,
+        "keyEnv": "CEREBRAS_API_KEY"
+      },
+      {
+        "id": "gptoss-120b@openrouter",
+        "label": "GPT-OSS 120B · OpenRouter",
+        "family": "gpt-oss",
+        "note": "예비 · 무료 경로",
+        "official": true,
+        "configured": false,
+        "connected": false,
+        "verified": false,
+        "keyEnv": "OPENROUTER_API_KEY"
+      },
+      {
+        "id": "gemma4-31b@openrouter",
+        "label": "Gemma 4 31B · OpenRouter",
+        "family": "gemma",
+        "note": "예비 · 무료 경로",
+        "official": true,
+        "configured": false,
+        "connected": false,
+        "verified": false,
+        "keyEnv": "OPENROUTER_API_KEY"
+      },
+      {
+        "id": "solar-pro4@upstage",
+        "label": "Solar Pro 4 · 업스테이지",
+        "family": "solar",
+        "note": "국산 · 한국어 문장",
+        "official": true,
+        "configured": false,
+        "connected": false,
+        "verified": false,
+        "keyEnv": "UPSTAGE_API_KEY"
+      },
+      {
+        "id": "hcx-007@clova",
+        "label": "HyperCLOVA X HCX-007 · 네이버",
+        "family": "hyperclovax",
+        "note": "국산 · 한국어 문장",
+        "official": true,
+        "configured": false,
+        "connected": false,
+        "verified": false,
+        "keyEnv": "CLOVA_API_KEY"
+      },
+      {
+        "id": "llama33-70b@groq",
+        "label": "Llama 3.3 70B · Groq",
+        "family": "llama",
+        "note": "공개 모델",
+        "official": true,
+        "configured": true,
+        "connected": true,
+        "verified": false,
+        "keyEnv": "GROQ_API_KEY"
+      },
+      {
+        "id": "custom",
+        "label": "우리 기관 AI 서버(OpenAI 호환)",
+        "family": "other",
+        "note": "운영자가 등록한 OpenAI 호환 기관 서버(EXAONE 등)",
+        "official": false,
+        "configured": false,
+        "connected": false,
+        "verified": false,
+        "keyEnv": "CUSTOM_LLM_KEY"
+      }
+    ],
+    "knowledge": {
+      "ok": true,
+      "version": "moleg-2026-10-24-v1",
+      "documents": 6,
+      "pages": 1997,
+      "chunks": 2283,
+      "method": "hybrid-lexical"
+    }
+  },
+  "diagnosticsElapsedMs": 2443,
+  "search": [
+    {
+      "query": "조례를 일부개정할지 전부개정할지 판단할 때 어떤 기준과 예외를 확인해야 하나요?",
+      "elapsedMs": 2237,
+      "hits": [
+        {
+          "id": "KB-local-ordinance-2026-p0421-c01",
+          "documentId": "local-ordinance-2026",
+          "pdfPage": 421,
+          "title": "자치법규 입안 길라잡이"
+        },
+        {
+          "id": "KB-local-ordinance-2026-p0422-c01",
+          "documentId": "local-ordinance-2026",
+          "pdfPage": 422,
+          "title": "자치법규 입안 길라잡이"
+        },
+        {
+          "id": "KB-local-ordinance-2026-p0450-c01",
+          "documentId": "local-ordinance-2026",
+          "pdfPage": 450,
+          "title": "자치법규 입안 길라잡이"
+        },
+        {
+          "id": "KB-legislation-2026-p0808-c01",
+          "documentId": "legislation-2026",
+          "pdfPage": 808,
+          "title": "법령 입안·심사 기준"
+        },
+        {
+          "id": "KB-legislation-2026-p0809-c01",
+          "documentId": "legislation-2026",
+          "pdfPage": 809,
+          "title": "법령 입안·심사 기준"
+        },
+        {
+          "id": "KB-legislation-2026-p0840-c01",
+          "documentId": "legislation-2026",
+          "pdfPage": 840,
+          "title": "법령 입안·심사 기준"
+        }
+      ]
+    },
+    {
+      "query": "가지조문 인용 정정",
+      "elapsedMs": 365,
+      "hits": [
+        {
+          "id": "KB-local-ordinance-2026-p0440-c01",
+          "documentId": "local-ordinance-2026",
+          "pdfPage": 440,
+          "title": "자치법규 입안 길라잡이"
+        },
+        {
+          "id": "KB-legislation-2026-p0825-c01",
+          "documentId": "legislation-2026",
+          "pdfPage": 825,
+          "title": "법령 입안·심사 기준"
+        },
+        {
+          "id": "KB-local-ordinance-2026-p0436-c01",
+          "documentId": "local-ordinance-2026",
+          "pdfPage": 436,
+          "title": "자치법규 입안 길라잡이"
+        }
+      ]
+    },
+    {
+      "query": "맛있는 피자 레시피 알려줘",
+      "elapsedMs": 220,
+      "hits": []
+    }
+  ],
+  "originals": [
+    {
+      "id": "local-ordinance-2026",
+      "bytes": 3593472,
+      "sha256": "462f645af7974344e5a3ec60f47f8c9f32b8f3c35482490c5d12d54be3214a72"
+    },
+    {
+      "id": "legislation-2026",
+      "bytes": 5831688,
+      "sha256": "5f8f02e62145f077cc45f759904ce8cd59cd6a5d40b96ebe4704927624abc4b0"
+    },
+    {
+      "id": "administrative-rules-2025",
+      "bytes": 3874632,
+      "sha256": "d7a13929a9f69c80e892c2ad15da095889eca18ac1411c9336c8cb605c7901e5"
+    },
+    {
+      "id": "plain-language-2026",
+      "bytes": 7293749,
+      "sha256": "38553647aeaf960f32906eab2129b2fa55aefbaea25ff6ee084f5f91b7572094"
+    },
+    {
+      "id": "opinion-request",
+      "bytes": 113094,
+      "sha256": "3bb19d6fdd91c8da692794ed4270fca3220f086023dee408fec888c24a32efdf"
+    },
+    {
+      "id": "source-guide",
+      "bytes": 5595,
+      "sha256": "fd394dcb283ac5a3ab9da0a8b3ec45a70944fcc4b1d0c84efb7a467c2560cdf4"
+    }
+  ]
+}

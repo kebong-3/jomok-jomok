@@ -1,0 +1,21 @@
+.panel { margin: 20px 0; border: 1px solid #d3d9eb; border-radius: 14px; background: #fff; overflow: hidden; }
+.intro { display: flex; align-items: center; gap: 12px; background: #f2f1fc; padding: 18px; }
+.intro h3 { font-size: 20px; margin: 0 0 7px; color: #454365; }
+.intro p { margin: 0; color: #55536d; line-height: 1.75; }
+.body { padding: 18px; }
+.body label { display: grid; gap: 7px; margin: 12px 0; font-size: 14px; font-weight: 650; }
+.body input:not([type=checkbox]), .body select, .body textarea { padding: 10px; border: 1px solid #bdc8d5; border-radius: 7px; width: 100%; background: #fff; font: inherit; color: #293e4c; }
+.body textarea { min-height: 110px; resize: vertical; line-height: 1.7; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.check { display: flex !important; align-items: flex-start; gap: 9px !important; font-weight: 500 !important; }
+.check input { margin-top: 5px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 14px 0; }
+.result { border: 1px solid #dde3ed; border-radius: 10px; margin-top: 14px; padding: 15px; }
+.result h4 { font-size: 17px; margin: 0 0 10px; }
+.badge { display: inline-block; background: #f4eddb; color: #70561c; padding: 4px 9px; border-radius: 12px; font-size: 13px; margin-bottom: 9px; }
+.body pre { font: inherit; font-size: 13px; line-height: 1.8; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 220px; overflow: auto; padding: 12px; border-radius: 7px; background: #f7f9fb; }
+.body details summary { cursor: pointer; line-height: 1.7; }
+.body small { color: #596b75; line-height: 1.7; display: block; }
+.body ul { line-height: 1.8; padding-left: 21px; }
+.alert { color: #7a471a; background: #fff3df; padding: 11px; border-radius: 8px; }
+@media(max-width:640px) { .grid { grid-template-columns: 1fr; gap: 0; } .body, .intro { padding: 14px; } }

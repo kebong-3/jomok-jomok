@@ -1,0 +1,83 @@
+.nextSteps { margin: 0 0 24px; border: 1px solid #d3dedf; border-radius: 22px; overflow: hidden; background: #fff; box-shadow: 0 5px 18px #304e5808; color: #213f47; }
+.hero { display: flex; gap: 22px; align-items: center; padding: 24px 28px 20px; background: linear-gradient(115deg, #f0edf9 0%, #eef7f3 64%, #fff9ea 100%); }
+.guide { flex: 0 0 92px; text-align: center; }
+.guide > span:last-child { display: block; margin-top: 3px; color: #586172; font-size: 1.2rem; font-weight: 700; letter-spacing: .04em; }
+.main { min-width: 0; flex: 1; }
+.eyebrow { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; color: #4e5875; font-size: 1.35rem; font-weight: 750; }
+.stage { border: 1px solid #c8d7d5; border-radius: 20px; background: #ffffffb8; color: #48605e; padding: 2px 9px; font-size: 1.15rem; font-weight: 600; }
+.main h2 { margin: 7px 0 7px; font-size: clamp(2rem, 2.1vw, 2.45rem); font-weight: 800; letter-spacing: -.035em; line-height: 1.4; word-break: keep-all; overflow-wrap: anywhere; color: #203d45; }
+.description { margin: 0; max-width: 78ch; font-size: 1.5rem; line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; color: #425b63; }
+.actions { display: flex; gap: 9px; flex-wrap: wrap; align-items: center; margin-top: 15px; }
+.actions button { min-height: 42px; font: inherit; font-size: 1.4rem; border-radius: 11px; padding: 9px 15px; cursor: pointer; line-height: 1.5; transition: background .15s ease, box-shadow .15s ease; }
+.primary { display: inline-flex; align-items: center; gap: 17px; border: 1px solid #26594f; background: #275c52; color: #fff; font-weight: 750; box-shadow: 0 3px 7px #224b4217; }
+.primary:hover { background: #1e4c43; box-shadow: 0 4px 9px #224b4226; }
+.secondary { border: 1px solid #b9b9d6; background: #fff; color: #4f5079; font-weight: 700; }
+.secondary:hover { background: #f6f3ff; }
+.actions .textAction { border: 0; background: transparent; color: #48625e; text-decoration: underline; text-underline-offset: 4px; padding-inline: 8px; }
+.actions button:focus-visible, .procedures summary:focus-visible { outline: 3px solid #5265a7; outline-offset: 3px; }
+.tip { display: flex; align-items: baseline; gap: 10px; padding: 12px 28px; background: #fafbf9; border-top: 1px solid #e1e8e2; font-size: 1.3rem; line-height: 1.75; }
+.tipLabel { white-space: nowrap; color: #58604b; font-size: 1.2rem; font-weight: 750; background: #efefdf; padding: 0 7px; border-radius: 5px; }
+.tip p { margin: 0; color: #526166; }
+.procedures { border-top: 1px solid #e0e7e4; }
+.procedureLink { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 15px 28px; border: 0; border-top: 1px solid #e0e7e4; background: #fff; cursor: pointer; text-align: left; font: inherit; }
+.procedureLink:hover { background: #f6faf8; }
+.procedureLink strong { color: #374e57; font-size: 1.45rem; font-weight: 750; }
+.procedureLink:focus-visible { outline: 3px solid #5265a7; outline-offset: -3px; }
+.procedures > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 15px 28px; cursor: pointer; list-style: none; }
+.procedures > summary::-webkit-details-marker { display: none; }
+.procedures > summary strong { color: #374e57; font-size: 1.45rem; font-weight: 750; }
+.profile { display: inline-block; color: #68767d; margin-left: 12px; font-size: 1.15rem; }
+.expandHint { flex: 0 0 auto; color: #5c6b73; font-size: 1.2rem; }
+.expandHint > span { display: inline-block; margin-left: 9px; transition: transform .15s ease; }
+.procedures[open] .expandHint > span { transform: rotate(180deg); }
+.procedureBody { padding: 4px 28px 22px; }
+.procedureIntro { border-radius: 12px; background: #f6f8fb; padding: 12px 15px; }
+.procedureIntro p { margin: 6px 0 0; font-size: 1.3rem; line-height: 1.8; color: #53636d; }
+.settingBadge { display: inline-block; color: #606579; font-size: 1.15rem; font-weight: 650; }
+.timeline { margin: 20px 0 0; padding: 0; list-style: none; }
+.timeline > li { position: relative; display: flex; gap: 15px; padding: 0 0 21px; }
+.timeline > li:not(:last-child)::before { content: ''; position: absolute; width: 2px; background: #dfe9e5; top: 34px; bottom: 0; left: 18px; }
+.stepNo { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 38px; height: 38px; border: 1px solid #d2e4dd; border-radius: 12px; background: #edf5f0; color: #41685c; font-size: 1.3rem; font-weight: 750; }
+.timeline > li:nth-child(3n + 2) .stepNo { background: #f2eef8; border-color: #e0d9ed; color: #6d5b86; }
+.timeline > li:nth-child(3n) .stepNo { background: #fcf4e5; border-color: #ece0c7; color: #8d6b34; }
+.stepContent { flex: 1; min-width: 0; padding-top: 5px; }
+.stepContent h3 { margin: 0 0 5px; font-size: 1.65rem; font-weight: 750; color: #2b4750; line-height: 1.55; word-break: keep-all; }
+.docHint { margin: 4px 0 0; font-size: 1.3rem; line-height: 1.8; color: #536971; }
+.docHint b { font-weight: 600; color: #355c51; margin-right: 6px; }
+.stepTip { margin: 5px 0 0; font-size: 1.3rem; line-height: 1.85; color: #4a5f66; }
+.basis { margin-top: 6px; }
+.basis > summary { width: fit-content; color: #69727d; cursor: pointer; font-size: 1.2rem; line-height: 1.8; }
+.basis > div { border-left: 2px solid #d7dfeb; margin-top: 8px; padding: 2px 12px; background: #f8f9fc; }
+.basis p { font-size: 1.2rem; color: #61707b; line-height: 1.85; margin: 4px 0; }
+.basis b { color: #4f5c67; font-weight: 650; margin-right: 6px; }
+.snapshotNote { border-top: 1px solid #e0e6e8; padding-top: 10px; }
+.snapshotNote p { margin: 5px 0; white-space: pre-wrap; color: #68767d; font-size: 1.15rem; line-height: 1.85; }
+@media (max-width: 700px) {
+  .hero { align-items: flex-start; gap: 13px; padding: 20px 18px 18px; }
+  .guide { flex-basis: 62px; }
+  .guide > span:first-child { width: 62px; }
+  .guide > span:last-child { font-size: 1.1rem; }
+  .main h2 { font-size: 2rem; }
+  .description { font-size: 1.4rem; line-height: 1.8; }
+  .tip, .procedures > summary, .procedureLink { padding-inline: 18px; }
+  .procedureLink { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .profile { display: block; margin: 3px 0 0; }
+  .procedureBody { padding-inline: 18px; }
+  .stepContent h3 { font-size: 1.5rem; }
+}
+@media (max-width: 430px) {
+  .hero { gap: 10px; padding-inline: 14px; }
+  .guide { flex-basis: 48px; }
+  .guide > span:first-child { width: 48px; }
+  .eyebrow { font-size: 1.25rem; }
+  .stage { font-size: 1rem; }
+  .main h2 { font-size: 1.85rem; }
+  .actions { gap: 7px; }
+  .actions button { padding: 8px 12px; font-size: 1.3rem; }
+  .tip { align-items: flex-start; gap: 8px; padding-inline: 14px; }
+  .procedures > summary { padding-inline: 14px; }
+  .procedureBody { padding-inline: 14px; }
+  .timeline > li { gap: 11px; }
+}
+@media (prefers-reduced-motion: reduce) { .actions button, .expandHint > span { transition: none; } }
+@media print { .nextSteps { display: none; } }

@@ -1,0 +1,21 @@
+[
+  {
+    "kind": "reference",
+    "bytes": 113094,
+    "sha256": "3bb19d6fdd91c8da692794ed4270fca3220f086023dee408fec888c24a32efdf",
+    "zipReadable": true,
+    "xmlFilesParsed": 6,
+    "containsJomokiUi": false,
+    "matchesOriginal": true
+  },
+  {
+    "kind": "docx",
+    "bytes": 11699,
+    "sha256": "3a986d0aec32474cce9f79dbf475edd1a87874d23815f4b31c597953404d0fcd",
+    "zipReadable": true,
+    "xmlFilesParsed": 12,
+    "containsJomokiUi": false,
+    "containsDraftLabel": true,
+    "containsRestoredSentence": true
+  }
+]

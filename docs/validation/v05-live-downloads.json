@@ -1,0 +1,481 @@
+{
+  "version": "0.5.0",
+  "deploymentCommitPrefix": "6c6692a",
+  "reviewedAtUtc": "2026-10-25T15:28:21.045514+00:00",
+  "fixture": "Fictional Hanbit City live Gemma 9-article enactment; actual production UI downloads supplied by root.",
+  "sourceZip": {
+    "file": "v05-live-document-set.zip",
+    "bytes": 124106,
+    "sha256": "7f2c860220b54a654f56d25d05d09a3fef1e3f2d7841e9960acb9b8f32095b00",
+    "zipCrc": true,
+    "hwpxCount": 5,
+    "docxCount": 5,
+    "entries": [
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_제정안.hwpx",
+        "bytes": 8641,
+        "sha256": "46f70ea586e6235f8a94ed4e1be614dba20cc94c73d9e9caf0ca8f203bd1ff43"
+      },
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_제정안.docx",
+        "bytes": 11281,
+        "sha256": "fc60d4d9ed548a2261bf3333a00a9afe9b87c5d4db51cb6b0efd4ae6eb99e229"
+      },
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_제정이유및주요내용.hwpx",
+        "bytes": 8031,
+        "sha256": "df5a1bd0962176bdde2055dc9d75651d9502c21b2655ca6ff87b81811f0d341b"
+      },
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_제정이유및주요내용.docx",
+        "bytes": 10940,
+        "sha256": "1b2113037d6aa8a340ab75db6b2d858308549bddff48ba7e2f29ecbf5cb04827"
+      },
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_조문체계표.hwpx",
+        "bytes": 9733,
+        "sha256": "b3003912f48df3c1898fa387861ffeaea12e2b50ff8b8d8ef20dcc2c47a8c0e1"
+      },
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_조문체계표.docx",
+        "bytes": 11945,
+        "sha256": "339116090a14b5727b461ca91a8a982b31300cbf8b3bf5a2c1ec236f3cbab98e"
+      },
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_입법예고문.hwpx",
+        "bytes": 8923,
+        "sha256": "b772b2b50a6311327cae3d039bc0839c2dcec28e2c40d027ae27e935c20e6a4e"
+      },
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_입법예고문.docx",
+        "bytes": 11516,
+        "sha256": "2e2d94ee94829806003b0bec88ca061b6e4fe443a6e9e59c07aaa217d688e85a"
+      },
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_입안점검표.hwpx",
+        "bytes": 11245,
+        "sha256": "9d181aeafb40d57a98806aaedfadb74bec7b1a85c2f1a91cb9a07bc418bae485"
+      },
+      {
+        "name": "20261026_한빛시주민참여예산교육지원조례_입안점검표.docx",
+        "bytes": 13447,
+        "sha256": "aa74b2dc69205aee3788919df1c9c17186ca2343cde920212f0e942ca8579270"
+      },
+      {
+        "name": "작업백업.jomok.json",
+        "bytes": 111272,
+        "sha256": "23112722023ed6855392de0df04f4f61454ef5f39677652e30846bc55122a046"
+      },
+      {
+        "name": "입안참고자료_검색기록.txt",
+        "bytes": 84993,
+        "sha256": "99aad19dcc288496c8f469dbe6b383c0ec63cf24725d00e1d111a6790fd39a54"
+      },
+      {
+        "name": "근거원문.txt",
+        "bytes": 119,
+        "sha256": "bf9cef916856bf4b87702c84916c5afa295b0efc3a89f43d82fabb8bda8c20c0"
+      },
+      {
+        "name": "서식기준.txt",
+        "bytes": 1040,
+        "sha256": "906de23245836d91041a311277d12be1cd6ff91dd43d78c13edd5d1e8cecb5f4"
+      },
+      {
+        "name": "읽어보세요.txt",
+        "bytes": 1447,
+        "sha256": "efe0b5c40557c0930405a3b7e2e42248549009bb3e766dcf3105a0c7106b4b1d"
+      }
+    ]
+  },
+  "summary": {
+    "allRequestedChecksPassed": true,
+    "standaloneHwpxChecked": 2,
+    "packagedHwpxChecked": 5,
+    "packagedDocxChecked": 5,
+    "backupArticlesWithNonemptyBodies": 9,
+    "noticeInputFieldsMatched": 11,
+    "checklistRowsMatched": 12,
+    "noticeDocxRenderedAndViewedPages": 1
+  },
+  "standalone": [
+    {
+      "file": "v05-live-notice.hwpx",
+      "bytes": 8923,
+      "sha256": "402bf0262dbee9b4ac2cc7540f06696d2a82a1b0d2b0835704ad8592187340ea",
+      "zipCrc": true,
+      "firstStoredMimetype": true,
+      "xmlWellFormed": true,
+      "styleReferences": true,
+      "headerCounts": true,
+      "officialCharacterOrder": true,
+      "manifestAndSpine": true,
+      "tableStructure": true,
+      "bodyXmlEqualsDocumentSet": true,
+      "bodyTextEqualsDocumentSet": true
+    },
+    {
+      "file": "v05-live-checklist.hwpx",
+      "bytes": 11245,
+      "sha256": "4a9c680e397bce9ec5f91bdba9c5b89a6578a5ecb805d60b6533f52d2de2eade",
+      "zipCrc": true,
+      "firstStoredMimetype": true,
+      "xmlWellFormed": true,
+      "styleReferences": true,
+      "headerCounts": true,
+      "officialCharacterOrder": true,
+      "manifestAndSpine": true,
+      "tableStructure": true,
+      "bodyXmlEqualsDocumentSet": true,
+      "bodyTextEqualsDocumentSet": true
+    }
+  ],
+  "packagedDocuments": [
+    {
+      "file": "20261026_한빛시주민참여예산교육지원조례_제정안.hwpx",
+      "bytes": 8641,
+      "sha256": "46f70ea586e6235f8a94ed4e1be614dba20cc94c73d9e9caf0ca8f203bd1ff43",
+      "zipCrc": true,
+      "firstStoredMimetype": true,
+      "xmlWellFormed": true,
+      "styleReferences": true,
+      "headerCounts": true,
+      "officialCharacterOrder": true,
+      "manifestAndSpine": true,
+      "tableStructure": true,
+      "pairedDocx": {
+        "file": "20261026_한빛시주민참여예산교육지원조례_제정안.docx",
+        "sha256": "fc60d4d9ed548a2261bf3333a00a9afe9b87c5d4db51cb6b0efd4ae6eb99e229",
+        "zipCrc": true,
+        "xmlWellFormed": true,
+        "bodyTextEqualsHwpx": true
+      }
+    },
+    {
+      "file": "20261026_한빛시주민참여예산교육지원조례_제정이유및주요내용.hwpx",
+      "bytes": 8031,
+      "sha256": "df5a1bd0962176bdde2055dc9d75651d9502c21b2655ca6ff87b81811f0d341b",
+      "zipCrc": true,
+      "firstStoredMimetype": true,
+      "xmlWellFormed": true,
+      "styleReferences": true,
+      "headerCounts": true,
+      "officialCharacterOrder": true,
+      "manifestAndSpine": true,
+      "tableStructure": true,
+      "pairedDocx": {
+        "file": "20261026_한빛시주민참여예산교육지원조례_제정이유및주요내용.docx",
+        "sha256": "1b2113037d6aa8a340ab75db6b2d858308549bddff48ba7e2f29ecbf5cb04827",
+        "zipCrc": true,
+        "xmlWellFormed": true,
+        "bodyTextEqualsHwpx": true
+      }
+    },
+    {
+      "file": "20261026_한빛시주민참여예산교육지원조례_조문체계표.hwpx",
+      "bytes": 9733,
+      "sha256": "b3003912f48df3c1898fa387861ffeaea12e2b50ff8b8d8ef20dcc2c47a8c0e1",
+      "zipCrc": true,
+      "firstStoredMimetype": true,
+      "xmlWellFormed": true,
+      "styleReferences": true,
+      "headerCounts": true,
+      "officialCharacterOrder": true,
+      "manifestAndSpine": true,
+      "tableStructure": true,
+      "pairedDocx": {
+        "file": "20261026_한빛시주민참여예산교육지원조례_조문체계표.docx",
+        "sha256": "339116090a14b5727b461ca91a8a982b31300cbf8b3bf5a2c1ec236f3cbab98e",
+        "zipCrc": true,
+        "xmlWellFormed": true,
+        "bodyTextEqualsHwpx": true
+      }
+    },
+    {
+      "file": "20261026_한빛시주민참여예산교육지원조례_입법예고문.hwpx",
+      "bytes": 8923,
+      "sha256": "b772b2b50a6311327cae3d039bc0839c2dcec28e2c40d027ae27e935c20e6a4e",
+      "zipCrc": true,
+      "firstStoredMimetype": true,
+      "xmlWellFormed": true,
+      "styleReferences": true,
+      "headerCounts": true,
+      "officialCharacterOrder": true,
+      "manifestAndSpine": true,
+      "tableStructure": true,
+      "pairedDocx": {
+        "file": "20261026_한빛시주민참여예산교육지원조례_입법예고문.docx",
+        "sha256": "2e2d94ee94829806003b0bec88ca061b6e4fe443a6e9e59c07aaa217d688e85a",
+        "zipCrc": true,
+        "xmlWellFormed": true,
+        "bodyTextEqualsHwpx": true
+      }
+    },
+    {
+      "file": "20261026_한빛시주민참여예산교육지원조례_입안점검표.hwpx",
+      "bytes": 11245,
+      "sha256": "9d181aeafb40d57a98806aaedfadb74bec7b1a85c2f1a91cb9a07bc418bae485",
+      "zipCrc": true,
+      "firstStoredMimetype": true,
+      "xmlWellFormed": true,
+      "styleReferences": true,
+      "headerCounts": true,
+      "officialCharacterOrder": true,
+      "manifestAndSpine": true,
+      "tableStructure": true,
+      "pairedDocx": {
+        "file": "20261026_한빛시주민참여예산교육지원조례_입안점검표.docx",
+        "sha256": "aa74b2dc69205aee3788919df1c9c17186ca2343cde920212f0e942ca8579270",
+        "zipCrc": true,
+        "xmlWellFormed": true,
+        "bodyTextEqualsHwpx": true
+      }
+    }
+  ],
+  "noticeFieldChecks": {
+    "number": {
+      "expected": "서식 검증용 제2026-1호",
+      "backupEqualsExpected": true,
+      "renderedValue": "서식 검증용 제2026-1호",
+      "presentInHwpxAndDocx": true
+    },
+    "issuer": {
+      "expected": "한빛시장(가상 기관)",
+      "backupEqualsExpected": true,
+      "renderedValue": "한빛시장(가상 기관)",
+      "presentInHwpxAndDocx": true
+    },
+    "date": {
+      "expected": "2026-10-26",
+      "backupEqualsExpected": true,
+      "renderedValue": "2026. 10. 26.",
+      "presentInHwpxAndDocx": true
+    },
+    "deadline": {
+      "expected": "2026-11-16",
+      "backupEqualsExpected": true,
+      "renderedValue": "2026. 11. 16.",
+      "presentInHwpxAndDocx": true
+    },
+    "department": {
+      "expected": "한빛시 법무정책과(검증용)",
+      "backupEqualsExpected": true,
+      "renderedValue": "한빛시 법무정책과(검증용)",
+      "presentInHwpxAndDocx": true
+    },
+    "address": {
+      "expected": "가상 한빛시 검증로 1",
+      "backupEqualsExpected": true,
+      "renderedValue": "가상 한빛시 검증로 1",
+      "presentInHwpxAndDocx": true
+    },
+    "email": {
+      "expected": "test@example.org",
+      "backupEqualsExpected": true,
+      "renderedValue": "test@example.org",
+      "presentInHwpxAndDocx": true
+    },
+    "phone": {
+      "expected": "000-000-0000",
+      "backupEqualsExpected": true,
+      "renderedValue": "000-000-0000",
+      "presentInHwpxAndDocx": true
+    },
+    "method": {
+      "expected": "전자우편 또는 방문 제출(서식 검증용)",
+      "backupEqualsExpected": true,
+      "renderedValue": "전자우편 또는 방문 제출(서식 검증용)",
+      "presentInHwpxAndDocx": true
+    },
+    "website": {
+      "expected": "https://example.org/public-notice",
+      "backupEqualsExpected": true,
+      "renderedValue": "https://example.org/public-notice",
+      "presentInHwpxAndDocx": true
+    },
+    "extra": {
+      "expected": "앱 출력 기능을 확인하기 위한 가상 서식이며 실제 공고가 아닙니다.",
+      "backupEqualsExpected": true,
+      "renderedValue": "앱 출력 기능을 확인하기 위한 가상 서식이며 실제 공고가 아닙니다.",
+      "presentInHwpxAndDocx": true
+    }
+  },
+  "checklistChecks": [
+    {
+      "number": 1,
+      "renderedState": "보완 필요",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 2,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 3,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 4,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 5,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 6,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 7,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 8,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 9,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 10,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 11,
+      "renderedState": "검토함",
+      "backupStateAndMemoMatch": true
+    },
+    {
+      "number": 12,
+      "renderedState": "미확인",
+      "backupStateAndMemoMatch": true
+    }
+  ],
+  "backup": {
+    "format": "jomokjomok.project",
+    "version": 1,
+    "canonicalSha256Verified": true,
+    "projectHash": "df3b889e2c7b12a856e9b128487e1e6351b6cd7f120b240a094921f141dba96f",
+    "articleChecks": [
+      {
+        "number": 1,
+        "title": "목적",
+        "paragraphCount": 1,
+        "bodyNonempty": true,
+        "exportMatchesBackup": true,
+        "bodySha256": "a81beacc6ab960e2d0e661e517b55ccd64a81efe2bd2f26e76d2bd3821d7c7f9"
+      },
+      {
+        "number": 2,
+        "title": "정의",
+        "paragraphCount": 1,
+        "bodyNonempty": true,
+        "exportMatchesBackup": true,
+        "bodySha256": "f1867e5a963faa409c16304763b4746d79ef826c0a540517c6d3d91deb8f7518"
+      },
+      {
+        "number": 3,
+        "title": "시장의 책무",
+        "paragraphCount": 1,
+        "bodyNonempty": true,
+        "exportMatchesBackup": true,
+        "bodySha256": "8faf288391acb9db8ecd96ed971bcad6a6748c137035cfe5c47b7da7fed02cc2"
+      },
+      {
+        "number": 4,
+        "title": "교육계획의 수립",
+        "paragraphCount": 2,
+        "bodyNonempty": true,
+        "exportMatchesBackup": true,
+        "bodySha256": "ec91ad66a1d65b4c942cda2dafd5cced9ca6fbda9637a9950019b11de9da07c2"
+      },
+      {
+        "number": 5,
+        "title": "교육의 운영",
+        "paragraphCount": 3,
+        "bodyNonempty": true,
+        "exportMatchesBackup": true,
+        "bodySha256": "91c59fe670cb40112e41e04670094de4de3d29ecfe3cb862b339701282adccf5"
+      },
+      {
+        "number": 6,
+        "title": "참여 지원",
+        "paragraphCount": 3,
+        "bodyNonempty": true,
+        "exportMatchesBackup": true,
+        "bodySha256": "f2be1d702ac13eaebb7ae1c1f01b02e9c2137f551774aa1207d11ca232abd54f"
+      },
+      {
+        "number": 7,
+        "title": "협력체계",
+        "paragraphCount": 1,
+        "bodyNonempty": true,
+        "exportMatchesBackup": true,
+        "bodySha256": "86ce462e27e73808f027fb9b45f2a11aff7f7afda99b1b4e7383e4a8e0ae4a06"
+      },
+      {
+        "number": 8,
+        "title": "성과 점검",
+        "paragraphCount": 1,
+        "bodyNonempty": true,
+        "exportMatchesBackup": true,
+        "bodySha256": "5406bd4244a908dfc3c60e08f8da5b77d75ca5908029d07f572d58b7ab3129e3"
+      },
+      {
+        "number": 9,
+        "title": "시행규칙",
+        "paragraphCount": 1,
+        "bodyNonempty": true,
+        "exportMatchesBackup": true,
+        "bodySha256": "cf803c3bc2b0d4b9e51510181c86d7453dac90873cec1a402ba2094ed59e29da"
+      }
+    ],
+    "documentSettingsMatchOutput": true,
+    "firstSixPreservedAcrossResume": "Verified by root in UI; this independent download check verifies final content and hashes, not the earlier checkpoint state."
+  },
+  "rag": {
+    "recordCount": 5,
+    "roles": [
+      "enact_outline",
+      "enact_draft:1,2,3",
+      "enact_draft:4,5,6",
+      "enact_draft:7,8,9",
+      "reason"
+    ],
+    "citationCount": 30,
+    "allCitationTextHashesVerified": true,
+    "allCitationIdsPresentInSearchRecord": true
+  },
+  "evidence": {
+    "filePresent": true,
+    "preservedLegalSourceCount": 0,
+    "absenceExplicitlyStated": true,
+    "note": "No upper-law evidence was supplied in this fictional test. RAG manuals are retained separately and do not establish a verified legal basis."
+  },
+  "visualReview": {
+    "document": "입법예고문.docx",
+    "renderer": "LibreOffice via render_docx.py",
+    "pages": 1,
+    "everyPageViewed": true,
+    "result": "All new fields and long main-content list fit one page without clipping or overlap. Last fictional-notice memo remains visible.",
+    "fonts": "Noto Serif CJK KR / Noto Sans CJK KR used as QA fallback; requested document fonts retained."
+  },
+  "nativeHancomOpened": false,
+  "limitations": [
+    "No native Hancom executable: Hancom opening/re-save/printing untested.",
+    "Structural XML checks are not a complete KS X 6101 schema certification.",
+    "Only the live notice DOCX was rendered in this additional pass; other live documents were checked structurally and by exact DOCX/HWPX body-text equality.",
+    "Fictional sample; no legal sufficiency determination."
+  ]
+}

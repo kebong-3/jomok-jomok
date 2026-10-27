@@ -1,0 +1,115 @@
+{
+  "verificationDateUtc": "2026-10-26",
+  "verificationDateKst": "2026-10-27",
+  "url": "https://jomokjomok.vercel.app/",
+  "applicationCommit": "4db6db420e99aa786d915a3b38395c2c5b0d10b6",
+  "deploymentUrl": "https://vercel.com/kevin-jeong/jomokjomok-law/HUji3jCTzHQ6SfeJtkgdBKPRnHxv",
+  "ciRun": 40346148450,
+  "ciConclusion": "success",
+  "diagnostic": {
+    "app": "jomokjomok",
+    "version": "0.7.0",
+    "commit": "4db6db4",
+    "region": "icn1",
+    "knowledge": {
+      "ok": true,
+      "version": "moleg-2026-10-24-v1",
+      "documents": 6,
+      "pages": 1997,
+      "chunks": 2283,
+      "method": "hybrid-lexical"
+    }
+  },
+  "viewport": {
+    "width": 1363,
+    "height": 936,
+    "horizontalOverflow": false
+  },
+  "characterBoundsCssPx": {
+    "width": 234,
+    "height": 248.625
+  },
+  "expressions": [
+    {
+      "animationName": "NY7SVW_hello",
+      "autoButton": "자동 전환 켜기",
+      "description": "손을 흔들며 인사하는 조목이",
+      "motion": "loop",
+      "selected": "✦인사",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "animationName": "NY7SVW_breathe",
+      "autoButton": "자동 전환 켜기",
+      "description": "방긋 웃는 조목이",
+      "motion": "loop",
+      "selected": "⌣미소",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "animationName": "NY7SVW_giggle",
+      "autoButton": "자동 전환 켜기",
+      "description": "눈을 접고 활짝 웃는 조목이",
+      "motion": "loop",
+      "selected": "◡활짝 웃음",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "animationName": "NY7SVW_ponder",
+      "autoButton": "자동 전환 켜기",
+      "description": "연필을 들고 곰곰이 생각하는 조목이",
+      "motion": "loop",
+      "selected": "···생각",
+      "transform": "matrix(0.999391, -0.0348995, 0.0348995, 0.999391, 0, 0)"
+    },
+    {
+      "animationName": "NY7SVW_pleased",
+      "autoButton": "자동 전환 켜기",
+      "description": "두 팔을 들고 응원하는 조목이",
+      "motion": "loop",
+      "selected": "☆응원",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    {
+      "animationName": "NY7SVW_listen",
+      "autoButton": "자동 전환 켜기",
+      "description": "고개를 기울여 다정하게 살피는 조목이",
+      "motion": "loop",
+      "selected": "♡다정함",
+      "transform": "matrix(0.99863, 0.052336, -0.052336, 0.99863, 0, 0)"
+    }
+  ],
+  "observations": {
+    "allSixExpressionButtonsChangedLabelAndSvg": true,
+    "manualChoiceDisabledAutomaticRotation": true,
+    "automaticRotationResumedAndChangedExpression": true,
+    "pauseChangedMotionToNoneAndAnimationNameToNone": true,
+    "resumeRestoredMotion": true,
+    "enterKeySelectedSmile": true,
+    "newEnactmentStartLinkOpenedExpectedRoute": true,
+    "coreDocumentCount5WithExtraSourceGuide": true,
+    "originalDownloadLinks6": true,
+    "downloadedOpinionRequestMatchedOriginal": true,
+    "existingSevenArticleProjectResumed": true,
+    "reviewAppliedStateCelebrate": true,
+    "editingAppliedDraftChangedMoodToCareAndDisplayedStaleMessage": true,
+    "testEditRestoredExactOriginalSentence": true,
+    "docxDownloadedAfterUiChange": true,
+    "documentReadyMascotCelebratesOnce": true
+  },
+  "notExecuted": [
+    "real mobile device or viewport emulation",
+    "screen reader user session",
+    "OS reduced-motion preference toggle",
+    "Hancom native open/edit/resave",
+    "independent legal accuracy benchmark",
+    "real staff time-saving trial",
+    "second-institution deployment"
+  ],
+  "noAdditionalExternalAiCallForThisUiVerification": true,
+  "screenshots": [
+    "../screenshots/v07-hero-wave.jpg",
+    "../screenshots/v07-hero-laugh.jpg"
+  ],
+  "downloadChecks": "v07-downloads.json"
+}

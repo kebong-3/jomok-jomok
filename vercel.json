@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "fluid": true,
+  "regions": ["icn1"]
+}

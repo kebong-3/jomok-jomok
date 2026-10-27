@@ -1,0 +1,39 @@
+.transferPanel { padding: 24px; margin: 24px 0; }
+.heading { display: flex; align-items: flex-start; gap: 16px; justify-content: space-between; }
+.heading > div { min-width: 0; }
+.heading h3 { font-size: 1.8rem; color: var(--ink); margin: 0 0 8px; }
+.heading p { font-size: 1.45rem; color: var(--ink-2); margin: 0 0 16px; }
+.heading > span { flex-shrink: 0; }
+.fileLabel { display: block; font-size: 1.4rem; font-weight: 700; margin-bottom: 6px; }
+.fileInput { width: 100%; min-width: 0; font-size: 1.45rem; padding: 10px; border: 1px solid var(--line); border-radius: var(--radius-s); background: var(--paper); }
+.fileInput::file-selector-button { font: inherit; margin-right: 12px; padding: 6px 12px; border: 1px solid var(--line); border-radius: var(--radius-s); background: var(--desk); cursor: pointer; }
+.note { color: var(--ink-3); font-size: 1.3rem; margin: 10px 0 0; }
+.preview { border-top: 1px solid var(--line); padding-top: 20px; margin-top: 20px; }
+.previewHeading { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.previewHeading strong { overflow-wrap: anywhere; }
+.verified { color: var(--ok); font-size: 1.3rem; background: var(--ok-soft); padding: 3px 8px; border-radius: 4px; }
+.fileName { color: var(--ink-3); font-size: 1.3rem; overflow-wrap: anywhere; margin: 6px 0 16px; }
+.facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; margin: 0 0 16px; }
+.facts > div { display: flex; align-items: baseline; gap: 12px; font-size: 1.4rem; }
+.facts dt { flex: 0 0 82px; color: var(--ink-3); }
+.facts dd { margin: 0; overflow-wrap: anywhere; }
+.warning { font-size: 1.4rem; padding: 12px; background: var(--amber-soft); color: var(--amber); border-radius: var(--radius-s); overflow-wrap: anywhere; }
+.profileChoice { max-width: 540px; margin-bottom: 16px; }
+.profileChoice label { display: block; font-weight: 700; font-size: 1.4rem; margin-bottom: 8px; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.error { display: block; font-size: 1.35rem; color: var(--seal); max-width: 600px; white-space: normal; overflow-wrap: anywhere; }
+.backupAction { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.smallStatus { font-size: 1.2rem; color: var(--ok); }
+.success { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 18px; padding: 14px; background: var(--ok-soft); border-radius: var(--radius-s); color: var(--ok); font-size: 1.4rem; }
+.success strong { overflow-wrap: anywhere; }
+.recentRow { flex-wrap: wrap; }
+.recentIntro { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+.recentIntro h3 { margin: 0; }
+.recentIntro p { margin: 0; color: var(--ink-3); font-size: 1.3rem; }
+@media (max-width: 640px) {
+  .transferPanel { padding: 18px; }
+  .heading { flex-direction: column; gap: 0; margin-bottom: 16px; }
+  .facts { grid-template-columns: 1fr; }
+  .recentRow > span:first-child { flex-basis: 100%; }
+  .success { align-items: flex-start; flex-direction: column; }
+}

@@ -1,0 +1,929 @@
+{
+  "reportVersion": 2,
+  "run": "V03-IMPACT-R2",
+  "projectId": "ykwbawo607x8",
+  "workUrl": "https://jomokjomok.vercel.app/work/ykwbawo607x8",
+  "verifiedAt": "2026-10-22T00:04:13.505266Z",
+  "exportedAt": "2026-10-22T00:02:28.693000Z",
+  "sourceCommitReportedByOperator": "311517956c57bc448386929b1f6dd79df7bdea63",
+  "scope": "Fresh actual production download after runtime reset. ZIP CRC, XML and package references, six HWPX/DOCX text pairs, intended changes, preserved source/evidence/backup hashes, and CSV point-in-time records. No optional rendering.",
+  "priorRunHandling": "This report is based only on fresh run ykwbawo607x8 / V03-IMPACT-R2. Earlier lost downloads and their hashes/timings are not used as present artifacts.",
+  "artifacts": {
+    "zip": {
+      "path": "docs/validation/v3-impact-export.zip",
+      "bytes": 101485,
+      "sha256": "176f49c5ded240d34f26f0b4474f0577d367746a0b355b90af234e9890feee6d",
+      "copiedOriginalBytes": true,
+      "filenamesPreserved": true
+    },
+    "finalCsv": {
+      "path": "docs/validation/v3-pilot-qa.csv",
+      "bytes": 716,
+      "sha256": "dfae8a41a7732548f87aada1ef576ec8b0be0510fbe4e5d6d8cf34e93438c1ed",
+      "copiedOriginalBytes": true
+    }
+  },
+  "archive": {
+    "entryCount": 16,
+    "hwpxCount": 6,
+    "docxCount": 6,
+    "entries": [
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정안.hwpx",
+        "bytes": 6684,
+        "sha256": "a83f5f073a3eec767ec80f911d047037c4d1e22160e2d57e03bd9b0966ae0521"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정안.docx",
+        "bytes": 10099,
+        "sha256": "b680295c6e13056c3ca2527850c971002f2fe26be757922663a9c2790141e8ac"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_신구조문대비표.hwpx",
+        "bytes": 7392,
+        "sha256": "2df185b5b51688450cf2ce500d8efca275fbe1535fcfa80f8918cf7b29b0c2e2"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_신구조문대비표.docx",
+        "bytes": 10493,
+        "sha256": "4084244e35896af25dd60efdc93b4ed1cab89a7efba4ff7a14bcd427cb1878b3"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정이유및주요내용.hwpx",
+        "bytes": 7327,
+        "sha256": "d889ce3b353206b2b474118a6d1bc5b489411d5820fede32d4837ddd5ec6b5ba"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정이유및주요내용.docx",
+        "bytes": 10459,
+        "sha256": "e62d6250dd63f3be07b317f5b7926045e247d94ee2a6a004e2926009d7735578"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_입법예고문.hwpx",
+        "bytes": 8113,
+        "sha256": "b97335e5374eeac7f3b5b33ba8b5f723d49cee12fb427d0217bf91bdcd12403b"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_입법예고문.docx",
+        "bytes": 10927,
+        "sha256": "43e335f802c7d1dec27a289230229bfff4469447760c3902850c0b2c81941f2e"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_입안점검표.hwpx",
+        "bytes": 8533,
+        "sha256": "157c57fe7666a7303542f21a79f6393d52c56b382bd5e4e739823d0237b7d72a"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_입안점검표.docx",
+        "bytes": 11216,
+        "sha256": "92808b0af9fb3429431524a4e8e33061ccb386edfe0c405250916b64f5e0c5a3"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정후전문(참고).hwpx",
+        "bytes": 6813,
+        "sha256": "4c71cd9f7bc91f773435e5432375ac90460957fe9b31bd2b56ebfe0312d2d823"
+      },
+      {
+        "name": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정후전문(참고).docx",
+        "bytes": 10163,
+        "sha256": "b0b692fd45f619f2ae59ae369ec8ac6c16ffdd5b5c8d7ee5c71451e9426626bd"
+      },
+      {
+        "name": "작업백업.jomok.json",
+        "bytes": 10119,
+        "sha256": "ee57c487ee5fe492316aedf99d82fb452111ae0a92f617d2e3932066d8d60bc3"
+      },
+      {
+        "name": "근거원문.txt",
+        "bytes": 1369,
+        "sha256": "5fa83f9d1ff5cbbb72955b99c674818212362c91ee80b9acf6db9b4aebc8a231"
+      },
+      {
+        "name": "사용기록.csv",
+        "bytes": 692,
+        "sha256": "d56fbb4a9aa35a699de7bfd0abc2a0615b89133da0117451281d512e30f0c3a8"
+      },
+      {
+        "name": "읽어보세요.txt",
+        "bytes": 837,
+        "sha256": "dcaae71f6b5fa25163b83ef2578c8dd3eaf7ab530c5cc802d1552204f5eef12c"
+      }
+    ]
+  },
+  "expectedChange": {
+    "op": "replace_text",
+    "target": {
+      "kind": "unit",
+      "ref": {
+        "art": 2
+      }
+    },
+    "find": "30명 이내",
+    "replace": "20명 이내"
+  },
+  "unchangedArticles": [
+    1,
+    3
+  ],
+  "documents": [
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정안.hwpx",
+      "document": "개정안",
+      "format": "hwpx",
+      "bytes": 6684,
+      "sha256": "a83f5f073a3eec767ec80f911d047037c4d1e22160e2d57e03bd9b0966ae0521",
+      "zipEntryCount": 10,
+      "xmlPartsChecked": 8,
+      "mainXmlSha256": "ca1cce5ed60d6e66dfd3f3c985aaace626cbae0a995a4854dae1000a02d8ff36",
+      "textRunCount": 5,
+      "textRunSequenceSha256": "b5f3716b76adfec8e8e16daff4e02231e0e9b40b16f63f405daf3314fc8080a4",
+      "packageReferences": {
+        "valid": true,
+        "missingStyleDefinitions": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정안.docx",
+      "document": "개정안",
+      "format": "docx",
+      "bytes": 10099,
+      "sha256": "b680295c6e13056c3ca2527850c971002f2fe26be757922663a9c2790141e8ac",
+      "zipEntryCount": 22,
+      "xmlPartsChecked": 17,
+      "mainXmlSha256": "1360811df23a4943b8f0353479ca0c3161ce459a4d24bcb271df92d4f11ae175",
+      "textRunCount": 5,
+      "textRunSequenceSha256": "b5f3716b76adfec8e8e16daff4e02231e0e9b40b16f63f405daf3314fc8080a4",
+      "packageReferences": {
+        "valid": true,
+        "internalCount": 11,
+        "externalCount": 0,
+        "missingTargets": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_신구조문대비표.hwpx",
+      "document": "신구조문대비표",
+      "format": "hwpx",
+      "bytes": 7392,
+      "sha256": "2df185b5b51688450cf2ce500d8efca275fbe1535fcfa80f8918cf7b29b0c2e2",
+      "zipEntryCount": 10,
+      "xmlPartsChecked": 8,
+      "mainXmlSha256": "bf61dc3026048f58aad40ab6ac62589180be6901c156ebd9b42b2b83f2ecfbd9",
+      "textRunCount": 16,
+      "textRunSequenceSha256": "b17f5182bc6513996c0b41be1230c2aef8230aea29b9d6e6c247bcc2a1d2e192",
+      "packageReferences": {
+        "valid": true,
+        "missingStyleDefinitions": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_신구조문대비표.docx",
+      "document": "신구조문대비표",
+      "format": "docx",
+      "bytes": 10493,
+      "sha256": "4084244e35896af25dd60efdc93b4ed1cab89a7efba4ff7a14bcd427cb1878b3",
+      "zipEntryCount": 22,
+      "xmlPartsChecked": 17,
+      "mainXmlSha256": "70bcb7f96a9a7a701ab83bea821f34ddf9485340d45783ef3bf5822c178d5caf",
+      "textRunCount": 16,
+      "textRunSequenceSha256": "b17f5182bc6513996c0b41be1230c2aef8230aea29b9d6e6c247bcc2a1d2e192",
+      "packageReferences": {
+        "valid": true,
+        "internalCount": 11,
+        "externalCount": 0,
+        "missingTargets": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정이유및주요내용.hwpx",
+      "document": "개정이유및주요내용",
+      "format": "hwpx",
+      "bytes": 7327,
+      "sha256": "d889ce3b353206b2b474118a6d1bc5b489411d5820fede32d4837ddd5ec6b5ba",
+      "zipEntryCount": 10,
+      "xmlPartsChecked": 8,
+      "mainXmlSha256": "c6af5094a59a0209a8daff2657969d7f230fb2ae0259bd02eb0e11ec1c89e867",
+      "textRunCount": 10,
+      "textRunSequenceSha256": "cc1ae9d2c93bf96d4e35fad0684da2298ac0ba96239561cf06d8fda71b3eca16",
+      "packageReferences": {
+        "valid": true,
+        "missingStyleDefinitions": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정이유및주요내용.docx",
+      "document": "개정이유및주요내용",
+      "format": "docx",
+      "bytes": 10459,
+      "sha256": "e62d6250dd63f3be07b317f5b7926045e247d94ee2a6a004e2926009d7735578",
+      "zipEntryCount": 22,
+      "xmlPartsChecked": 17,
+      "mainXmlSha256": "452427fda5bf3ab7587e0b5d73220942911dbf87ede1a9f7afb31a0c5467c98b",
+      "textRunCount": 10,
+      "textRunSequenceSha256": "cc1ae9d2c93bf96d4e35fad0684da2298ac0ba96239561cf06d8fda71b3eca16",
+      "packageReferences": {
+        "valid": true,
+        "internalCount": 11,
+        "externalCount": 0,
+        "missingTargets": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_입법예고문.hwpx",
+      "document": "입법예고문",
+      "format": "hwpx",
+      "bytes": 8113,
+      "sha256": "b97335e5374eeac7f3b5b33ba8b5f723d49cee12fb427d0217bf91bdcd12403b",
+      "zipEntryCount": 10,
+      "xmlPartsChecked": 8,
+      "mainXmlSha256": "eb12027e9fd1f66fa588adc4bf5b613c26d16ef5d927ca0c87564cfc5b5fd861",
+      "textRunCount": 17,
+      "textRunSequenceSha256": "54041326388f24b947ee960d7886eef8a7a7a45cae7bb034bec77bb84acb01d7",
+      "packageReferences": {
+        "valid": true,
+        "missingStyleDefinitions": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_입법예고문.docx",
+      "document": "입법예고문",
+      "format": "docx",
+      "bytes": 10927,
+      "sha256": "43e335f802c7d1dec27a289230229bfff4469447760c3902850c0b2c81941f2e",
+      "zipEntryCount": 22,
+      "xmlPartsChecked": 17,
+      "mainXmlSha256": "c49d56425a406b7c3b44fc0c4a83c1d5791950b39a93a37772e3cef0feddc3c7",
+      "textRunCount": 17,
+      "textRunSequenceSha256": "54041326388f24b947ee960d7886eef8a7a7a45cae7bb034bec77bb84acb01d7",
+      "packageReferences": {
+        "valid": true,
+        "internalCount": 11,
+        "externalCount": 0,
+        "missingTargets": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_입안점검표.hwpx",
+      "document": "입안점검표",
+      "format": "hwpx",
+      "bytes": 8533,
+      "sha256": "157c57fe7666a7303542f21a79f6393d52c56b382bd5e4e739823d0237b7d72a",
+      "zipEntryCount": 10,
+      "xmlPartsChecked": 8,
+      "mainXmlSha256": "36e1fe96df31a33b7ab8df719bd72c1bd8e6ea80350f23ea4787e8a74a215e32",
+      "textRunCount": 26,
+      "textRunSequenceSha256": "99d2d8d657cca1c9987abfb4c0c9ce3c6f22cfc4590725ad2255c5749d1f6dd2",
+      "packageReferences": {
+        "valid": true,
+        "missingStyleDefinitions": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_입안점검표.docx",
+      "document": "입안점검표",
+      "format": "docx",
+      "bytes": 11216,
+      "sha256": "92808b0af9fb3429431524a4e8e33061ccb386edfe0c405250916b64f5e0c5a3",
+      "zipEntryCount": 22,
+      "xmlPartsChecked": 17,
+      "mainXmlSha256": "5b3bf4eabfc4f36636a0cb0578f91f84452e237754642e167fdc4f47c6af51ae",
+      "textRunCount": 26,
+      "textRunSequenceSha256": "99d2d8d657cca1c9987abfb4c0c9ce3c6f22cfc4590725ad2255c5749d1f6dd2",
+      "packageReferences": {
+        "valid": true,
+        "internalCount": 11,
+        "externalCount": 0,
+        "missingTargets": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정후전문(참고).hwpx",
+      "document": "개정후전문(참고)",
+      "format": "hwpx",
+      "bytes": 6813,
+      "sha256": "4c71cd9f7bc91f773435e5432375ac90460957fe9b31bd2b56ebfe0312d2d823",
+      "zipEntryCount": 10,
+      "xmlPartsChecked": 8,
+      "mainXmlSha256": "291073fdfce0a7ab6ceb654dadfe71fe4f3a50d9688ade52cc9f544942a4db7c",
+      "textRunCount": 4,
+      "textRunSequenceSha256": "ec37e10f511a83596ed5d3160daaaa4f7cf75b427e5b9ee22356663f33b3d13d",
+      "packageReferences": {
+        "valid": true,
+        "missingStyleDefinitions": []
+      }
+    },
+    {
+      "filename": "20261022_한빛시공공위원회운영규칙(가상)일부개정_개정후전문(참고).docx",
+      "document": "개정후전문(참고)",
+      "format": "docx",
+      "bytes": 10163,
+      "sha256": "b0b692fd45f619f2ae59ae369ec8ac6c16ffdd5b5c8d7ee5c71451e9426626bd",
+      "zipEntryCount": 22,
+      "xmlPartsChecked": 17,
+      "mainXmlSha256": "6e5a045bac629991f1a22901ac5293ee374b7f9a8d8f4284ca288968c5084152",
+      "textRunCount": 4,
+      "textRunSequenceSha256": "ec37e10f511a83596ed5d3160daaaa4f7cf75b427e5b9ee22356663f33b3d13d",
+      "packageReferences": {
+        "valid": true,
+        "internalCount": 11,
+        "externalCount": 0,
+        "missingTargets": []
+      }
+    }
+  ],
+  "documentTextByType": {
+    "개정안": "한빛시 공공위원회 운영 규칙(가상) 일부개정규칙안\n한빛시 공공위원회 운영 규칙(가상) 일부를 다음과 같이 개정한다.\n제2조 중 “30명”을 “20명”으로 한다.\n부      칙\n이 규칙은 공포한 날부터 시행한다.",
+    "신구조문대비표": "한빛시 공공위원회 운영 규칙(가상) 일부개정규칙안 신·구조문대비표\n현      행\n개   정   안\n제2조\n(\n구성\n)\n \n「공공위원회 운영기준(가상)」 제10조에 따라 위원회는 위원장 1명을 포함하여 \n30명\n 이내의 위원으로 구성한다.\n제2조\n \n-------------------------------------------------------- \n20명\n ---------------------.",
+    "개정이유및주요내용": "한빛시 공공위원회 운영 규칙(가상) 일부개정규칙안\n1. 개정이유\n상위기준인 「공공위원회 운영기준(가상)」 제10조의 위원회 구성 인원 제한이 변경됨에 따라 이를 반영하려는 것임. 이에 따라 기관 규정의 위원 정수를 조정하여 상위기준과의 일치성을 확보하고자 함.\n2. 주요내용\n가. 위원회 구성 인원을 30명 이내에서 20명 이내로 변경함(안 제2조).\n3. 참고사항\n가. 관계법령: [담당자 확인 필요]\n나. 예산조치: [재정 수반 여부와 비용추계서 작성 대상 여부 확인 필요]\n다. 합    의: [관계부서·기관 협의 대상 및 결과 작성]\n라. 기    타: 신·구조문대비표 별첨",
+    "입법예고문": "한빛시 공고 제2026-○○○호\n한빛시 공공위원회 운영 규칙(가상) 일부개정규칙안 입법예고\n「한빛시 공공위원회 운영 규칙(가상)」을 개정하면서 그 취지와 주요내용을 미리 알려 의견을 듣고자 「행정절차법」 제41조에 따라 다음과 같이 공고합니다.\n담당자 확인: 적용 법령에 따른 예고 대상·예외·기간을 검토하고 공고일, 의견 제출 기한, 제출처 및 공개 장소를 확정하세요.\n[공고일 확인 후 작성]\n한빛시장\n1. 개정이유\n상위기준인 「공공위원회 운영기준(가상)」 제10조의 위원회 구성 인원 제한이 변경됨에 따라 이를 반영하려는 것임. 이에 따라 기관 규정의 위원 정수를 조정하여 상위기준과의 일치성을 확보하고자 함.\n2. 주요내용\n가. 위원회 구성 인원을 30명 이내에서 20명 이내로 변경함(안 제2조).\n3. 의견제출\n이 안에 대하여 의견이 있는 기관·단체 또는 개인은 [확정한 의견 제출 기한]까지 다음 사항을 적은 의견서를 제출하여 주시기 바랍니다.\n가. 예고사항에 대한 항목별 의견(찬반 여부와 그 사유)\n나. 성명(단체는 단체명과 대표자 성명) 및 의견 확인에 필요한 연락처\n다. 제출처: 한빛시 ○○과(주소, 전화, 팩스, 전자우편)\n라. 제출방법: [실제 운영할 제출 방법 작성]\n4. 그 밖의 사항: [예고안 전문 공개 장소 및 문의처 작성]",
+    "입안점검표": "한빛시 공공위원회 운영 규칙(가상) 일부개정규칙안 입안 점검표\n작성일 2026. 10. 22. · 작성 도구 조목조목 v0.3.0 · 변경명세 지문 3e08d6bcf1430e2a\n1. 점검 요약\n반드시 고칠 것 0건 · 확인할 것 0건 · 참고 0건 · 확인 못 함 0건 · 원래 있던 문제 0건\n2. 이번 개정으로 생긴 문제\n없음\n3. 원래 있던 문제(참고)\n없음\n4. 근거 법령\nEV-IMPACT-BEFORE 「공공위원회 운영기준(가상)」 개정 전 · 담당자 제공 — 사용자 제공·공식 원문 대조 필요\n시행일: 2025-01-01 · 조회/등록 시각: 2026-10-22T00:01:33.212Z · 자료 기준일: 2025-01-01\n원문 지문(SHA-256): 81dedd01be220bc555c73041ee43feccb878517fc34770297dbf691bed24bae8\n조회 범위: 영향 검토에 사용한 담당자 제공 원문. 적용 범위·시행일은 별도 확인이 필요합니다.\nEV-IMPACT-AFTER 「공공위원회 운영기준(가상)」 개정 후 · 담당자 제공 — 사용자 제공·공식 원문 대조 필요\n시행일: 2026-01-01 · 조회/등록 시각: 2026-10-22T00:01:33.212Z · 자료 기준일: 2026-01-01\n원문 지문(SHA-256): 82d0cd447f934edbb54f2bfe2514a1042158b6553532878bf1c43599c3087951\n조회 범위: 영향 검토에 사용한 담당자 제공 원문. 최신 법령 전체를 확인한 자료가 아닙니다.\n5. AI가 작성한 변경(담당자 확인 필요)\n- 상위기준인 「공공위원회 운영기준(가상)」 제10조의 위원 구성 인원 제한이 20명으로 변경됨에 따라 이를 반영함. [수락함]\n상위법 개정 영향 검토 기록\n공공위원회 운영기준(가상) · AI 후보 검토(Gemma 4 31B · Google AI Studio) · 사용자 제공 원문 기반 · 공식 원문 대조 필요\n제2조 ← 제10조: 상위법인 공공위원회 운영기준 제10조의 위원회 구성 인원 제한이 30명에서 20명으로 변경됨에 따라 이를 인용하고 있는 기관 규정의 수정이 필요합니다.\n상위법 변경 전: 위원회는 위원장 1명을 포함하여 30명 이내의 위원으로 구성한다.\n상위법 변경 후: 위원회는 위원장 1명을 포함하여 20명 이내의 위원으로 구성한다.\n담당자 확인: 상위법 개정 사항의 기관 규정 반영 필요 여부 및 시행일 확인\n※ 형식 점검은 규칙 엔진이 한 것이며, 내용의 타당성은 담당자와 법무 담당이 판단합니다.",
+    "개정후전문(참고)": "한빛시 공공위원회 운영 규칙(가상)\n제1조(목적) 이 규칙은 한빛시 공공위원회의 운영에 필요한 사항을 정한다.\n제2조(구성) 「공공위원회 운영기준(가상)」 제10조에 따라 위원회는 위원장 1명을 포함하여 20명 이내의 위원으로 구성한다.\n제3조(회의) 위원장은 위원회의 회의를 소집하고 그 의장이 된다."
+  },
+  "backup": {
+    "filename": "작업백업.jomok.json",
+    "bytes": 10119,
+    "sha256": "ee57c487ee5fe492316aedf99d82fb452111ae0a92f617d2e3932066d8d60bc3",
+    "format": "jomokjomok.project",
+    "version": 1,
+    "projectHashDeclared": "8f993a7c1fb2a2447028241eb25a008ee46d1f1fcd06dbe906d350a199013e1e",
+    "projectHashCalculated": "8f993a7c1fb2a2447028241eb25a008ee46d1f1fcd06dbe906d350a199013e1e",
+    "sourceHashDeclared": "bf79a10d25aa8647c0d5a34d6b56ca9587c550a5c75af58acc98b2e6faed7555",
+    "sourceHashCalculated": "bf79a10d25aa8647c0d5a34d6b56ca9587c550a5c75af58acc98b2e6faed7555",
+    "canonicalization": "Recursively sorted JSON object keys, compact separators, array order preserved, UTF-8 with no Unicode escaping.",
+    "originalSource": "한빛시 공공위원회 운영 규칙(가상)\n제1조(목적) 이 규칙은 한빛시 공공위원회의 운영에 필요한 사항을 정한다.\n제2조(구성) 「공공위원회 운영기준(가상)」 제10조에 따라 위원회는 위원장 1명을 포함하여 30명 이내의 위원으로 구성한다.\n제3조(회의) 위원장은 위원회의 회의를 소집하고 그 의장이 된다.",
+    "acceptedOperations": [
+      {
+        "id": "upyu0qeu0dsk",
+        "change": {
+          "op": "replace_text",
+          "target": {
+            "kind": "unit",
+            "ref": {
+              "art": 2
+            }
+          },
+          "find": "30명 이내",
+          "replace": "20명 이내"
+        },
+        "status": "accepted",
+        "provenance": "ai_accepted",
+        "why": "상위기준인 「공공위원회 운영기준(가상)」 제10조의 위원 구성 인원 제한이 20명으로 변경됨에 따라 이를 반영함.",
+        "evidence": [
+          "EV-IMPACT-AFTER"
+        ]
+      }
+    ],
+    "credentialFields": []
+  },
+  "evidence": {
+    "filename": "근거원문.txt",
+    "sha256": "5fa83f9d1ff5cbbb72955b99c674818212362c91ee80b9acf6db9b4aebc8a231",
+    "records": [
+      {
+        "id": "EV-IMPACT-BEFORE",
+        "kind": "user",
+        "label": "「공공위원회 운영기준(가상)」 개정 전 · 담당자 제공",
+        "text": "공공위원회 운영기준(가상)\n제10조(위원회 구성) 위원회는 위원장 1명을 포함하여 30명 이내의 위원으로 구성한다.",
+        "via": "user",
+        "date": "2025-01-01",
+        "effectiveAt": "2025-01-01",
+        "fetchedAt": "2026-10-22T00:01:33.212Z",
+        "contentHash": "81dedd01be220bc555c73041ee43feccb878517fc34770297dbf691bed24bae8",
+        "partial": true,
+        "note": "영향 검토에 사용한 담당자 제공 원문. 적용 범위·시행일은 별도 확인이 필요합니다.",
+        "actualSha256": "81dedd01be220bc555c73041ee43feccb878517fc34770297dbf691bed24bae8"
+      },
+      {
+        "id": "EV-IMPACT-AFTER",
+        "kind": "user",
+        "label": "「공공위원회 운영기준(가상)」 개정 후 · 담당자 제공",
+        "text": "공공위원회 운영기준(가상)\n제10조(위원회 구성) 위원회는 위원장 1명을 포함하여 20명 이내의 위원으로 구성한다.",
+        "via": "user",
+        "date": "2026-01-01",
+        "effectiveAt": "2026-01-01",
+        "fetchedAt": "2026-10-22T00:01:33.212Z",
+        "contentHash": "82d0cd447f934edbb54f2bfe2514a1042158b6553532878bf1c43599c3087951",
+        "partial": true,
+        "note": "영향 검토에 사용한 담당자 제공 원문. 최신 법령 전체를 확인한 자료가 아닙니다.",
+        "actualSha256": "82d0cd447f934edbb54f2bfe2514a1042158b6553532878bf1c43599c3087951"
+      }
+    ],
+    "officialLawLookupStatus": "skipped",
+    "officialLawOrLatestStatusVerified": false
+  },
+  "recordedAiExecution": {
+    "impact": {
+      "method": "ai",
+      "elapsedMs": 8977,
+      "actualModel": "gemma-4-31b-it",
+      "promptVersion": "impact_review@v1.3",
+      "trace": {
+        "tokens": 1249,
+        "repairs": 0,
+        "fallbacks": [],
+        "family": "gemma"
+      }
+    },
+    "amendment": {
+      "via": "live",
+      "elapsedMs": 5099,
+      "trace": {
+        "actualModel": "gemma-4-31b-it",
+        "family": "gemma",
+        "repairs": 0,
+        "promptVersion": "amend_plan@v1.3",
+        "tokens": 1544,
+        "fallbacks": []
+      }
+    },
+    "pipelineStepSumMs": 6247,
+    "reason": {
+      "via": "live",
+      "recordedModelLabel": "Gemma 4 31B · Google AI Studio",
+      "reviewed": true
+    },
+    "source": "Actual exported backup metadata, not independent provider request replay."
+  },
+  "csv": {
+    "inArchive": {
+      "bytes": 692,
+      "sha256": "d56fbb4a9aa35a699de7bfd0abc2a0615b89133da0117451281d512e30f0c3a8",
+      "row": {
+        "기록버전": "1",
+        "참여자코드": "QA-AI",
+        "과제코드": "V03-IMPACT-R2",
+        "작업종류": "amend",
+        "기록상태": "paused",
+        "결과": "in_progress",
+        "기록시작": "2026-10-22T00:00:28.790Z",
+        "기록종료": "",
+        "경과분(일시정지제외)": "1.79",
+        "기존방식소요분(사용자입력)": "",
+        "시간변화율%(조건부)": "",
+        "수동수정건수(사용자입력)": "0",
+        "남은오류(사용자입력)": "0",
+        "만족도(1~5)": "",
+        "문서세트다운로드횟수": "1",
+        "계획모델": "gemma4-31b@google",
+        "실제모델": "gemma-4-31b-it",
+        "AI방식": "live",
+        "메모(사용자입력)": "가상 자료를 이용한 자동화 기능 검증. 실제 직원 실증이나 업무효율 측정 결과가 아님."
+      }
+    },
+    "laterStandalone": {
+      "bytes": 716,
+      "sha256": "dfae8a41a7732548f87aada1ef576ec8b0be0510fbe4e5d6d8cf34e93438c1ed",
+      "row": {
+        "기록버전": "1",
+        "참여자코드": "QA-AI",
+        "과제코드": "V03-IMPACT-R2",
+        "작업종류": "amend",
+        "기록상태": "finished",
+        "결과": "completed",
+        "기록시작": "2026-10-22T00:00:28.790Z",
+        "기록종료": "2026-10-22T00:03:02.316Z",
+        "경과분(일시정지제외)": "1.79",
+        "기존방식소요분(사용자입력)": "",
+        "시간변화율%(조건부)": "",
+        "수동수정건수(사용자입력)": "0",
+        "남은오류(사용자입력)": "0",
+        "만족도(1~5)": "",
+        "문서세트다운로드횟수": "1",
+        "계획모델": "gemma4-31b@google",
+        "실제모델": "gemma-4-31b-it",
+        "AI방식": "live",
+        "메모(사용자입력)": "가상 자료를 이용한 자동화 기능 검증. 실제 직원 실증이나 업무효율 측정 결과가 아님."
+      }
+    },
+    "activeMs": 107399,
+    "pointInTimeDifferenceExpected": true,
+    "interpretation": "ZIP is the paused/in-progress export snapshot; later standalone CSV is finished/completed. Both are synthetic automation QA, explicitly not staff pilot or business-efficiency results. Zero correction/error counts are stored input fields, not independently established employee outcomes."
+  },
+  "checks": [
+    {
+      "name": "outer_zip_crc",
+      "passed": true
+    },
+    {
+      "name": "actual_zip_byte_size",
+      "passed": true
+    },
+    {
+      "name": "archive_unique_safe_names",
+      "passed": true
+    },
+    {
+      "name": "six_hwpx_six_docx_four_support_files",
+      "passed": true
+    },
+    {
+      "name": "fresh_run_project_id",
+      "passed": true
+    },
+    {
+      "name": "backup_format",
+      "passed": true
+    },
+    {
+      "name": "backup_project_hash",
+      "passed": true
+    },
+    {
+      "name": "source_hash",
+      "passed": true
+    },
+    {
+      "name": "impact_source_hash",
+      "passed": true
+    },
+    {
+      "name": "one_accepted_change_only_selected_article",
+      "passed": true
+    },
+    {
+      "name": "one_selected_impact_candidate_article_2",
+      "passed": true
+    },
+    {
+      "name": "three_original_articles_and_original_number_preserved",
+      "passed": true
+    },
+    {
+      "name": "evidence_integrity_EV-IMPACT-BEFORE",
+      "passed": true
+    },
+    {
+      "name": "evidence_txt_content_and_metadata_EV-IMPACT-BEFORE",
+      "passed": true
+    },
+    {
+      "name": "evidence_user_provided_partial_EV-IMPACT-BEFORE",
+      "passed": true
+    },
+    {
+      "name": "evidence_integrity_EV-IMPACT-AFTER",
+      "passed": true
+    },
+    {
+      "name": "evidence_txt_content_and_metadata_EV-IMPACT-AFTER",
+      "passed": true
+    },
+    {
+      "name": "evidence_user_provided_partial_EV-IMPACT-AFTER",
+      "passed": true
+    },
+    {
+      "name": "impact_quotes_present_in_sources",
+      "passed": true
+    },
+    {
+      "name": "impact_evidence_texts_identical",
+      "passed": true
+    },
+    {
+      "name": "no_connection_or_credential_fields",
+      "passed": true
+    },
+    {
+      "name": "개정안.hwpx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 8
+      }
+    },
+    {
+      "name": "개정안.hwpx_mimetype",
+      "passed": true
+    },
+    {
+      "name": "개정안.hwpx_style_references",
+      "passed": true
+    },
+    {
+      "name": "amendment_exact_instruction_hwpx",
+      "passed": true
+    },
+    {
+      "name": "amendment_addendum_hwpx",
+      "passed": true
+    },
+    {
+      "name": "개정안.docx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 17
+      }
+    },
+    {
+      "name": "개정안.docx_relationship_targets",
+      "passed": true
+    },
+    {
+      "name": "amendment_exact_instruction_docx",
+      "passed": true
+    },
+    {
+      "name": "amendment_addendum_docx",
+      "passed": true
+    },
+    {
+      "name": "신구조문대비표.hwpx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 8
+      }
+    },
+    {
+      "name": "신구조문대비표.hwpx_mimetype",
+      "passed": true
+    },
+    {
+      "name": "신구조문대비표.hwpx_style_references",
+      "passed": true
+    },
+    {
+      "name": "comparison_two_columns_one_change_hwpx",
+      "passed": true
+    },
+    {
+      "name": "comparison_30_to_20_only_article_2_hwpx",
+      "passed": true
+    },
+    {
+      "name": "comparison_values_underlined_hwpx",
+      "passed": true
+    },
+    {
+      "name": "신구조문대비표.docx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 17
+      }
+    },
+    {
+      "name": "신구조문대비표.docx_relationship_targets",
+      "passed": true
+    },
+    {
+      "name": "comparison_two_columns_one_change_docx",
+      "passed": true
+    },
+    {
+      "name": "comparison_30_to_20_only_article_2_docx",
+      "passed": true
+    },
+    {
+      "name": "comparison_values_underlined_docx",
+      "passed": true
+    },
+    {
+      "name": "개정이유및주요내용.hwpx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 8
+      }
+    },
+    {
+      "name": "개정이유및주요내용.hwpx_mimetype",
+      "passed": true
+    },
+    {
+      "name": "개정이유및주요내용.hwpx_style_references",
+      "passed": true
+    },
+    {
+      "name": "reason_matches_reviewed_backup_hwpx",
+      "passed": true
+    },
+    {
+      "name": "개정이유및주요내용.docx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 17
+      }
+    },
+    {
+      "name": "개정이유및주요내용.docx_relationship_targets",
+      "passed": true
+    },
+    {
+      "name": "reason_matches_reviewed_backup_docx",
+      "passed": true
+    },
+    {
+      "name": "입법예고문.hwpx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 8
+      }
+    },
+    {
+      "name": "입법예고문.hwpx_mimetype",
+      "passed": true
+    },
+    {
+      "name": "입법예고문.hwpx_style_references",
+      "passed": true
+    },
+    {
+      "name": "notice_change_and_unconfirmed_date_placeholders_hwpx",
+      "passed": true
+    },
+    {
+      "name": "입법예고문.docx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 17
+      }
+    },
+    {
+      "name": "입법예고문.docx_relationship_targets",
+      "passed": true
+    },
+    {
+      "name": "notice_change_and_unconfirmed_date_placeholders_docx",
+      "passed": true
+    },
+    {
+      "name": "입안점검표.hwpx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 8
+      }
+    },
+    {
+      "name": "입안점검표.hwpx_mimetype",
+      "passed": true
+    },
+    {
+      "name": "입안점검표.hwpx_style_references",
+      "passed": true
+    },
+    {
+      "name": "checklist_version_and_evidence_metadata_hwpx",
+      "passed": true
+    },
+    {
+      "name": "checklist_source_limits_and_impact_record_hwpx",
+      "passed": true
+    },
+    {
+      "name": "checklist_not_legal_correctness_claim_hwpx",
+      "passed": true
+    },
+    {
+      "name": "입안점검표.docx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 17
+      }
+    },
+    {
+      "name": "입안점검표.docx_relationship_targets",
+      "passed": true
+    },
+    {
+      "name": "checklist_version_and_evidence_metadata_docx",
+      "passed": true
+    },
+    {
+      "name": "checklist_source_limits_and_impact_record_docx",
+      "passed": true
+    },
+    {
+      "name": "checklist_not_legal_correctness_claim_docx",
+      "passed": true
+    },
+    {
+      "name": "개정후전문(참고).hwpx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 8
+      }
+    },
+    {
+      "name": "개정후전문(참고).hwpx_mimetype",
+      "passed": true
+    },
+    {
+      "name": "개정후전문(참고).hwpx_style_references",
+      "passed": true
+    },
+    {
+      "name": "full_exact_expected_three_articles_hwpx",
+      "passed": true
+    },
+    {
+      "name": "articles_1_and_3_unchanged_hwpx",
+      "passed": true
+    },
+    {
+      "name": "article_2_new_number_only_hwpx",
+      "passed": true
+    },
+    {
+      "name": "개정후전문(참고).docx_crc_and_xml",
+      "passed": true,
+      "detail": {
+        "xmlParts": 17
+      }
+    },
+    {
+      "name": "개정후전문(참고).docx_relationship_targets",
+      "passed": true
+    },
+    {
+      "name": "full_exact_expected_three_articles_docx",
+      "passed": true
+    },
+    {
+      "name": "articles_1_and_3_unchanged_docx",
+      "passed": true
+    },
+    {
+      "name": "article_2_new_number_only_docx",
+      "passed": true
+    },
+    {
+      "name": "hwpx_docx_same_text_runs_개정안",
+      "passed": true
+    },
+    {
+      "name": "hwpx_docx_same_text_runs_신구조문대비표",
+      "passed": true
+    },
+    {
+      "name": "hwpx_docx_same_text_runs_개정이유및주요내용",
+      "passed": true
+    },
+    {
+      "name": "hwpx_docx_same_text_runs_입법예고문",
+      "passed": true
+    },
+    {
+      "name": "hwpx_docx_same_text_runs_입안점검표",
+      "passed": true
+    },
+    {
+      "name": "hwpx_docx_same_text_runs_개정후전문(참고)",
+      "passed": true
+    },
+    {
+      "name": "csv_same_fresh_case",
+      "passed": true
+    },
+    {
+      "name": "zip_csv_export_snapshot",
+      "passed": true
+    },
+    {
+      "name": "final_csv_finished_completed",
+      "passed": true
+    },
+    {
+      "name": "csv_same_active_time",
+      "passed": true
+    },
+    {
+      "name": "zip_csv_synthetic_nonstaff_nonperformance",
+      "passed": true
+    },
+    {
+      "name": "zip_csv_no_savings_claim",
+      "passed": true
+    },
+    {
+      "name": "final_csv_synthetic_nonstaff_nonperformance",
+      "passed": true
+    },
+    {
+      "name": "final_csv_no_savings_claim",
+      "passed": true
+    },
+    {
+      "name": "csv_bom_and_readme_limit",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "passed": true,
+    "checkCount": 92,
+    "passedCount": 92,
+    "failed": [],
+    "documentCount": 12,
+    "xmlPartsChecked": 150,
+    "formatPairs": 6
+  },
+  "limitations": [
+    "No native Hancom/Hangul or Microsoft Word opening, printing, font substitution, pagination, or visual rendering test.",
+    "Synthetic three-article case; not staff pilot, legal-correctness validation, or business-efficiency evidence.",
+    "Official law lookup was skipped for the fictional source; the two evidence records remain explicitly user-provided and partial.",
+    "Checklist zero counts refer to rule-engine findings, with separate source and legal-review caveats present.",
+    "Backup upload/restore UI was not tested by this archive inspection.",
+    "Source commit was supplied by the browser operator; packages encode v0.3.0 but do not encode the Git SHA."
+  ],
+  "nativeHancomTested": false,
+  "visualRenderingTested": false,
+  "employeePilot": false,
+  "businessEfficiencyMeasurement": false
+}

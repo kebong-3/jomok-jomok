@@ -1,0 +1,89 @@
+{
+  "recordedAt": "2026-10-25T15:29:18.117726+00:00",
+  "deploymentCommit": "6c6692ade4bc6c15fb152848e8e3311a0caae215",
+  "baseUrl": "https://jomokjomok.vercel.app",
+  "method": "Actual cloud-browser clicks, visible DOM and downloaded artifacts; no mock AI responses.",
+  "fictionalCase": "한빛시 주민참여예산 교육 지원 조례",
+  "enactment": {
+    "selectedModel": "gemma4-31b@google",
+    "outlineArticles": 9,
+    "outlineSeconds": 19.0,
+    "firstDraftSeconds": 26.4,
+    "firstDraftOutcome": "Provider HTTP 429 after two completed batches; 6/9 persisted; remaining stages kept waiting.",
+    "reloadEquality": true,
+    "recoveredArticles": 6,
+    "resumeSeconds": 8.0,
+    "finalArticles": 9,
+    "allNonEmpty": true,
+    "firstSixUnchanged": true,
+    "reasonGenerated": true,
+    "manualReviewForFixture": true,
+    "nativeHancomOpened": false
+  },
+  "history": {
+    "query": "주민참여예산",
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "region": {
+      "org": "6130000",
+      "sborg": "5810000"
+    },
+    "events": 3,
+    "coverageComplete": true,
+    "selectedVersions": [
+      "1972513",
+      "2029315"
+    ],
+    "initialComparison": {
+      "same": 14,
+      "changed": 5,
+      "unmatchedRows": 24
+    },
+    "refinement": "See v05-history-comparison-refinement.json; refined code was not yet on this UI observation."
+  },
+  "fourReferences": {
+    "titles": [
+      "전남광주통합특별시 서구 주민참여예산제 운영 조례",
+      "가평군 주민참여예산제 운영 조례",
+      "강릉시 주민참여예산제 운영 조례",
+      "거제시 주민참여예산제 운영 조례"
+    ],
+    "articleCounts": [
+      31,
+      25,
+      26,
+      18
+    ],
+    "copiedCharacters": 35155,
+    "copiedAllTitles": true,
+    "selectionSurvivedQueryChangeTo": "위원회",
+    "bulkBasketCount": 4,
+    "enactStartHandoffCount": 4,
+    "defaultReferencePanelOpen": true,
+    "fourReferenceAIGenerationExercised": false
+  },
+  "downloads": {
+    "individual": [
+      "입법예고문 HWPX",
+      "입안점검표 HWPX"
+    ],
+    "completeSet": "5 DOCX + 5 HWPX and backup/evidence/RAG/form-source notes",
+    "independentChecks": "v05-live-downloads.json"
+  },
+  "screenshots": [
+    "../screenshots/v05-law-overview.jpg",
+    "../screenshots/v05-ai-progress.jpg",
+    "../screenshots/v05-four-references.jpg",
+    "../screenshots/v05-notice-form.jpg"
+  ],
+  "limitations": [
+    "Automatic 429 recovery was added after the observed manual-resume case and verified separately with fake-timer tests.",
+    "Native Hancom open/save/print was unavailable.",
+    "The fictional draft does not establish legal authority or real public notice."
+  ]
+}

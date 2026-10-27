@@ -1,0 +1,140 @@
+{
+  "checkedAt": "2026-10-25T15:18:17.487Z",
+  "environment": "Live production responses re-compared with the refined local comparison function; this refinement is not deployed at this checkpoint.",
+  "inputDeployment": {
+    "version": "0.5.0",
+    "commit": "6c6692a"
+  },
+  "sourceFile": "src/lib/ordinance-history.ts",
+  "sourceFileSha256": "7de84de2842fdc49b4d011b783ddc30ee98854f182f8e8b77952da1c8420f0a1",
+  "testResult": {
+    "suite": "tests/ordinance-history.test.ts",
+    "passed": 31,
+    "failed": 0,
+    "typecheck": "passed"
+  },
+  "rules": [
+    "Unique headings normalize whitespace and only middle-dot variants U+00B7/U+318D/U+FF65.",
+    "Repeated headings require the same article label, normalized title and normalized body, with exactly one composite-key occurrence on each side.",
+    "Different body, moved label or ambiguous duplicate candidates remain unmatched.",
+    "Original article objects and raw text used by the diff renderer are unchanged."
+  ],
+  "inputs": [
+    {
+      "url": "https://jomokjomok.vercel.app/api/law/history?mst=1972513&id=2035792",
+      "httpStatus": 200,
+      "durationMs": 456,
+      "responseSha256": "b8a6e50a97a9a9b731e869d06ba35b4d7f3b86488f7909cfcddc8aabf4dfda46",
+      "articleDataSha256": "d903a6f3b93ea9f25a2886ca2321dbb16f1158e2f8b0dbd57768b8a2e647b5af",
+      "documentId": "2035792",
+      "mst": "1972513",
+      "promulgatedAt": "2024-09-30",
+      "articleCount": 31
+    },
+    {
+      "url": "https://jomokjomok.vercel.app/api/law/history?mst=2029315&id=2035792",
+      "httpStatus": 200,
+      "durationMs": 974,
+      "responseSha256": "e394286902ce3b86185f3b1a929a9c830d7b5556dc4450aed6ee3bfa4dc046f9",
+      "articleDataSha256": "49feb160e1ce9a58a4f14e64c689accf303704770e237b9ad5131e07156a7540",
+      "documentId": "2035792",
+      "mst": "2029315",
+      "promulgatedAt": "2025-04-15",
+      "articleCount": 31
+    }
+  ],
+  "previousProductionRecord": "docs/validation/v05-history-production.json (unchanged)",
+  "baseline": {
+    "same": 14,
+    "changed": 5,
+    "unmatchedRows": 24
+  },
+  "refined": {
+    "same": 20,
+    "changed": 11,
+    "unmatchedRows": 0,
+    "changedHeadings": [
+      {
+        "beforeLabel": "제2조",
+        "afterLabel": "제2조",
+        "beforeTitle": "정의",
+        "afterTitle": "정의"
+      },
+      {
+        "beforeLabel": "제7조",
+        "afterLabel": "제7조",
+        "beforeTitle": "위원회의 구성",
+        "afterTitle": "위원회의 구성"
+      },
+      {
+        "beforeLabel": "제8조",
+        "afterLabel": "제8조",
+        "beforeTitle": "위원의 위·해촉 및 임기",
+        "afterTitle": "위원의 위ㆍ해촉 및 임기"
+      },
+      {
+        "beforeLabel": "제11조",
+        "afterLabel": "제11조",
+        "beforeTitle": "위원회 운영원칙",
+        "afterTitle": "위원회 운영원칙"
+      },
+      {
+        "beforeLabel": "제12조",
+        "afterLabel": "제12조",
+        "beforeTitle": "분과위원회",
+        "afterTitle": "분과위원회"
+      },
+      {
+        "beforeLabel": "제13조",
+        "afterLabel": "제13조",
+        "beforeTitle": "기능",
+        "afterTitle": "기능"
+      },
+      {
+        "beforeLabel": "제17조",
+        "afterLabel": "제17조",
+        "beforeTitle": "예산학교",
+        "afterTitle": "예산학교"
+      },
+      {
+        "beforeLabel": "제22조",
+        "afterLabel": "제22조",
+        "beforeTitle": "기능",
+        "afterTitle": "기능"
+      },
+      {
+        "beforeLabel": "제23조",
+        "afterLabel": "제23조",
+        "beforeTitle": "구성 및 운영",
+        "afterTitle": "구성 및 운영"
+      },
+      {
+        "beforeLabel": "제26조",
+        "afterLabel": "제26조",
+        "beforeTitle": "구성 및 운영",
+        "afterTitle": "구성 및 운영"
+      },
+      {
+        "beforeLabel": "제28조",
+        "afterLabel": "제28조",
+        "beforeTitle": "기능",
+        "afterTitle": "기능"
+      }
+    ]
+  },
+  "keyClause": {
+    "matched": true,
+    "status": "changed",
+    "beforeTitle": "위원의 위·해촉 및 임기",
+    "afterTitle": "위원의 위ㆍ해촉 및 임기",
+    "beforeExcerpt": "② 위원의 임기는 2년으로 하되, 1회에 한하여 연임할 수 있다",
+    "afterExcerpt": "② 위원의 임기는 2년으로 하되, 2회에 한하여 연임할 수 있다",
+    "beforeOriginalObjectPreserved": true,
+    "afterOriginalObjectPreserved": true
+  },
+  "passed": true,
+  "limitations": [
+    "This is a correspondence and raw text comparison refinement, not a legal significance judgment.",
+    "A new production deployment and UI check are still required for this local refinement."
+  ]
+}

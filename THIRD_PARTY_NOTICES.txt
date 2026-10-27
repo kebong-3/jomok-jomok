@@ -1,0 +1,30 @@
+조목조목이 쓰는 외부 자료와 라이선스
+
+[글꼴]
+- Pretendard GOV (pretendard-gov) — SIL Open Font License 1.1
+- Noto Serif KR (@fontsource/noto-serif-kr) — SIL Open Font License 1.1
+
+[라이브러리]
+- Next.js, React — MIT
+- docx — MIT
+- fflate — MIT
+- diff-match-patch — Apache License 2.0
+- idb-keyval — Apache License 2.0
+- jsonrepair — ISC
+- zod — MIT
+- fast-xml-parser — MIT
+
+[법령 데이터]
+- 법제처 국가법령정보 공동활용 API(open.law.go.kr) — 공공누리 제1유형
+- src/data/snapshots/*.json — legalize-kr(공개 법령 원문 미러)에서 변환한 저장본. 기준일은 각 파일과 화면에 표시
+
+[디자인]
+- 범정부 UI/UX 디자인 시스템(KRDS) 색상 토큰 참고
+
+[AI 모델]
+- GPT-OSS 120B — Apache License 2.0
+- Gemma 4 — Gemma Terms of Use
+- 각 모델은 해당 제공사 API 이용약관을 따릅니다.
+
+[예시 규정]
+- 한빛시·한빛공단 규정은 시연용 가상 자료입니다. 실제 기관·규정과 관계없습니다.

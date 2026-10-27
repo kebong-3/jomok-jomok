@@ -1,0 +1,76 @@
+{
+  "checkedAtUTC": "2026-10-21T09:49:38.801573+00:00",
+  "applicationCommit": "b4ccbfd",
+  "appVersion": "0.2.0",
+  "region": "icn1",
+  "probes": [
+    {
+      "requestedModel": "gptoss-120b@groq",
+      "httpStatus": 502,
+      "elapsedMs": 1215,
+      "response": {
+        "ok": false,
+        "modelId": "gptoss-120b@groq",
+        "checkedAt": "2026-10-21T09:49:37.286Z",
+        "latencyMs": 215,
+        "error": {
+          "code": "LLM_AUTH",
+          "message": "GPT-OSS 120B · Groq: API 키 인증 또는 모델 사용 권한을 확인해 주세요 (HTTP 401)."
+        }
+      }
+    },
+    {
+      "requestedModel": "gemma4-31b@google",
+      "httpStatus": 200,
+      "elapsedMs": 2167,
+      "response": {
+        "ok": true,
+        "modelId": "gemma4-31b@google",
+        "modelLabel": "Gemma 4 31B · Google AI Studio",
+        "family": "gemma",
+        "actualModel": "gemma-4-31b-it",
+        "checkedAt": "2026-10-21T09:49:38.241Z",
+        "latencyMs": 1166
+      }
+    }
+  ],
+  "law": {
+    "law": {
+      "ok": true,
+      "via": "live",
+      "ms": 259
+    },
+    "hasOC": true,
+    "hasRelay": false,
+    "snapshots": [
+      {
+        "title": "공무원 여비 규정",
+        "date": "2026-10-20",
+        "effectiveAt": "2026-10-02",
+        "usable": true,
+        "articles": 34
+      },
+      {
+        "title": "지방자치법",
+        "date": "2026-10-20",
+        "effectiveAt": "2027-04-14",
+        "usable": false,
+        "articles": 8
+      },
+      {
+        "title": "행정절차법",
+        "date": "2026-10-20",
+        "effectiveAt": "2022-07-12",
+        "usable": true,
+        "articles": 5
+      },
+      {
+        "title": "공유재산 및 물품 관리법",
+        "date": "2026-10-20",
+        "effectiveAt": "2026-10-13",
+        "usable": true,
+        "articles": 121
+      }
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "source_zip": "amend-export-final.zip",
+  "source_zip_sha256": "4bda8511337dc9c304b885dcb2a0ea850b62b974e9e4fcef5763a39d54aac092",
+  "inspected_at_utc": "2026-10-20T06:38:13.134135+00:00",
+  "scope": "Follow-up check of actual final browser download after title and review-period wording fixes; original files not modified.",
+  "counts": {
+    "docx": 6,
+    "hwpx": 6,
+    "readme": 1
+  },
+  "verdict": "PASS for the tested fictional amendment scenario. Both previously reported warnings resolved; no unintended text changes found.",
+  "checks": {
+    "amendment_five_to_seven_days": true,
+    "amendment_insert_second_and_shift_old_second_to_third": true,
+    "amendment_article_three_citation": true,
+    "comparison_original_and_changed_period": true,
+    "comparison_insert_and_shift": true,
+    "comparison_both_citations": true,
+    "consolidated_seven_days": true,
+    "consolidated_new_second": true,
+    "consolidated_old_second_preserved_as_third": true,
+    "consolidated_correct_citation": true,
+    "guideline_particle": true,
+    "administrative_notice_review_label": true,
+    "administrative_notice_conditional_article_46": true,
+    "notice_dates_not_fabricated": true,
+    "reason_substantive_and_matches_changes": true,
+    "consolidated_title_appears_once": true,
+    "unsupported_three_year_default_removed": true,
+    "all_documents_only_expected_changes": true,
+    "all_docx_hwpx_pairs_equal": true
+  },
+  "comparison_to_previous": [
+    {
+      "document": "개정안",
+      "unchanged": true,
+      "only_expected_changes": true,
+      "docx_hwpx_parity": true
+    },
+    {
+      "document": "개정이유및주요내용",
+      "unchanged": true,
+      "only_expected_changes": true,
+      "docx_hwpx_parity": true
+    },
+    {
+      "document": "개정후전문(참고)",
+      "unchanged": false,
+      "only_expected_changes": true,
+      "docx_hwpx_parity": true
+    },
+    {
+      "document": "신구조문대비표",
+      "unchanged": true,
+      "only_expected_changes": true,
+      "docx_hwpx_parity": true
+    },
+    {
+      "document": "입안점검표",
+      "unchanged": false,
+      "only_expected_changes": true,
+      "docx_hwpx_parity": true
+    },
+    {
+      "document": "행정예고문(검토용)",
+      "unchanged": true,
+      "only_expected_changes": true,
+      "docx_hwpx_parity": true
+    }
+  ],
+  "files": [
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_개정안.docx",
+      "bytes": 10206,
+      "sha256": "211f79e88fe709f8b167d5549a7ea89aa5105484aa156bc3b274c2f6503fdcad",
+      "crc_ok": true,
+      "xml_errors": []
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_개정안.hwpx",
+      "bytes": 6870,
+      "sha256": "5a582cb78156ede9296e8ba8fae14df51b00909d30e3b041b0dbe98045e3c90c",
+      "crc_ok": true,
+      "xml_errors": [],
+      "mimetype_ok": true,
+      "mimetype_first_uncompressed": true,
+      "manifest_missing": [],
+      "dangling_format_refs": [],
+      "hancom_native_open": "not_tested"
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_개정이유및주요내용.docx",
+      "bytes": 10472,
+      "sha256": "ee4ac9a36087a98bc317aa3118199c726d8542eaf14c9f4c92049eab0c69c0e6",
+      "crc_ok": true,
+      "xml_errors": []
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_개정이유및주요내용.hwpx",
+      "bytes": 7357,
+      "sha256": "b39a35be5adea4ddbca6eaeb64bc4128e1bf81223314bbd55d4f34b9c60ec611",
+      "crc_ok": true,
+      "xml_errors": [],
+      "mimetype_ok": true,
+      "mimetype_first_uncompressed": true,
+      "manifest_missing": [],
+      "dangling_format_refs": [],
+      "hancom_native_open": "not_tested"
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_개정후전문(참고).docx",
+      "bytes": 10184,
+      "sha256": "281bad9cd5081ca2fe39f4c9684224a589d3c73c9696acd6b5ba2ac3ec9e4d44",
+      "crc_ok": true,
+      "xml_errors": []
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_개정후전문(참고).hwpx",
+      "bytes": 6855,
+      "sha256": "2bad2da4940dcb3b65174fa466efc59b3bbdf797b776c3108c09399997b86590",
+      "crc_ok": true,
+      "xml_errors": [],
+      "mimetype_ok": true,
+      "mimetype_first_uncompressed": true,
+      "manifest_missing": [],
+      "dangling_format_refs": [],
+      "hancom_native_open": "not_tested"
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_신구조문대비표.docx",
+      "bytes": 10672,
+      "sha256": "8cc306bf4e6752329a0b576e1131b5c3ca1767fbccf5f59d49a255914ec89ba3",
+      "crc_ok": true,
+      "xml_errors": []
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_신구조문대비표.hwpx",
+      "bytes": 7614,
+      "sha256": "aca21ec7c4b4079f8cc3c7da7169a3dddea1e5c52bc8f2408e8fc1c6b875514f",
+      "crc_ok": true,
+      "xml_errors": [],
+      "mimetype_ok": true,
+      "mimetype_first_uncompressed": true,
+      "manifest_missing": [],
+      "dangling_format_refs": [],
+      "hancom_native_open": "not_tested"
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_입안점검표.docx",
+      "bytes": 10994,
+      "sha256": "67e065b77aeea93271446253a6c9055b9183c93d63fb54203d5f52c393f43081",
+      "crc_ok": true,
+      "xml_errors": []
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_입안점검표.hwpx",
+      "bytes": 8276,
+      "sha256": "17dee506bd9f6d2d717cbd8d0a581fde7f952a94b524f587851071da7c6da0bc",
+      "crc_ok": true,
+      "xml_errors": [],
+      "mimetype_ok": true,
+      "mimetype_first_uncompressed": true,
+      "manifest_missing": [],
+      "dangling_format_refs": [],
+      "hancom_native_open": "not_tested"
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_행정예고문(검토용).docx",
+      "bytes": 10959,
+      "sha256": "49b7c784de5904b86d2edc327eb97efb222ced0f16988e544029e38dbb77ae2e",
+      "crc_ok": true,
+      "xml_errors": []
+    },
+    {
+      "file": "20261020_검증용신청서처리지침일부개정_행정예고문(검토용).hwpx",
+      "bytes": 8176,
+      "sha256": "3384749e18b0e2aa298bbc0a40c497d14dad0bc9c860e966b931b24bad3e2819",
+      "crc_ok": true,
+      "xml_errors": [],
+      "mimetype_ok": true,
+      "mimetype_first_uncompressed": true,
+      "manifest_missing": [],
+      "dangling_format_refs": [],
+      "hancom_native_open": "not_tested"
+    },
+    {
+      "file": "읽어보세요.txt",
+      "bytes": 249,
+      "sha256": "a2248ccdf8873dd550f9f49d14f72d6ec9ac5f3d6b54974d3869c7457ec231e5"
+    }
+  ],
+  "known_warnings": [],
+  "resolved_warnings": [
+    "Removed duplicate consolidated-document title.",
+    "Replaced unsupported three-year default with applicability and interval confirmation instruction."
+  ],
+  "visual_qa": {
+    "final_package_rerendered": false,
+    "reason": "Requested follow-up scope was targeted content/package comparison. Four documents are text-identical and the other two contain only the intended corrections.",
+    "prior_pages_inspected": 7,
+    "prior_result": "All 7 pages were legible with no observed clipping, overlap or table overflow, using LibreOffice and Noto Serif CJK KR fallback. Final layout not newly rendered."
+  },
+  "limits": [
+    "Final package was not re-rendered in this follow-up.",
+    "HWPX package/XML/text validation is not Hancom application compatibility testing.",
+    "This fictional scenario does not establish legal validity or correctness for every amendment operation."
+  ],
+  "application_commit": "15db21b3af62461438970ec9e56454bae3375ce3"
+}

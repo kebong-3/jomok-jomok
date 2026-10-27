@@ -1,0 +1,141 @@
+{
+  "checkedAt": "2026-10-25T08:58:39Z",
+  "commit": "0f7f54a",
+  "version": "0.4.0",
+  "lawDiagnostic": {
+    "law": {
+      "ok": true,
+      "via": "live",
+      "ms": 218
+    },
+    "hasOC": true,
+    "hasRelay": false,
+    "snapshots": [
+      {
+        "title": "공무원 여비 규정",
+        "date": "2026-10-20",
+        "effectiveAt": "2026-10-02",
+        "usable": true,
+        "articles": 34
+      },
+      {
+        "title": "지방자치법",
+        "date": "2026-10-20",
+        "effectiveAt": "2027-04-14",
+        "usable": false,
+        "articles": 8
+      },
+      {
+        "title": "행정절차법",
+        "date": "2026-10-20",
+        "effectiveAt": "2022-07-12",
+        "usable": true,
+        "articles": 5
+      },
+      {
+        "title": "공유재산 및 물품 관리법",
+        "date": "2026-10-20",
+        "effectiveAt": "2026-10-13",
+        "usable": true,
+        "articles": 121
+      }
+    ]
+  },
+  "knowledgeDiagnostic": {
+    "ok": true,
+    "version": "moleg-2026-10-24-v1",
+    "documents": 6,
+    "pages": 1997,
+    "chunks": 2283,
+    "method": "hybrid-lexical"
+  },
+  "lawFlows": [
+    {
+      "kind": "ordin",
+      "query": "각종 위원회",
+      "searchResults": 20,
+      "selected": {
+        "id": "2160874",
+        "title": "가평군 각종 위원회 설치 및 운영 조례",
+        "kind": "ordin",
+        "org": "경기도 가평군",
+        "effectiveAt": "2026-04-20"
+      },
+      "document": {
+        "id": "2160874",
+        "title": "가평군 각종 위원회 설치 및 운영 조례",
+        "kind": "ordin",
+        "effectiveAt": "2026-04-20",
+        "url": "https://www.law.go.kr/자치법규/%EA%B0%80%ED%8F%89%EA%B5%B0%20%EA%B0%81%EC%A2%85%20%EC%9C%84%EC%9B%90%ED%9A%8C%20%EC%84%A4%EC%B9%98%20%EB%B0%8F%20%EC%9A%B4%EC%98%81%20%EC%A1%B0%EB%A1%80"
+      },
+      "articles": 15,
+      "firstArticle": {
+        "label": "제1조",
+        "title": "목적",
+        "text": "이 조례는 가평군 소속 각종 위원회 설치 및 운영에 필요한 사항을 규정함으로써 위원회의 합리적인 의사결정, 지역주민들의 참여 확대 및 운영 활성화에 기여함을 목적으로 한다."
+      },
+      "meta": {
+        "via": "live",
+        "fetchedAt": "2026-10-25T08:57:06.919Z",
+        "partial": true,
+        "note": "조문 본문을 조회했습니다. 부칙·별표·별지서식은 공식 원문에서 별도로 확인해 주세요."
+      }
+    },
+    {
+      "kind": "law",
+      "query": "행정절차법",
+      "searchResults": 3,
+      "selected": {
+        "id": "001362",
+        "title": "행정절차법",
+        "kind": "law",
+        "org": "행정안전부",
+        "effectiveAt": "2023-03-24"
+      },
+      "document": {
+        "id": "001362",
+        "title": "행정절차법",
+        "kind": "law",
+        "effectiveAt": "2023-03-24",
+        "url": "https://www.law.go.kr/법령/%ED%96%89%EC%A0%95%EC%A0%88%EC%B0%A8%EB%B2%95"
+      },
+      "articles": 70,
+      "firstArticle": {
+        "label": "제1조",
+        "title": "목적",
+        "text": "이 법은 행정절차에 관한 공통적인 사항을 규정하여 국민의 행정 참여를 도모함으로써 행정의 공정성ㆍ투명성 및 신뢰성을 확보하고 국민의 권익을 보호함을 목적으로 한다."
+      },
+      "meta": {
+        "via": "live",
+        "fetchedAt": "2026-10-25T08:58:37.454Z",
+        "partial": true,
+        "note": "조문 본문을 조회했습니다. 부칙·별표·별지서식은 공식 원문에서 별도로 확인해 주세요."
+      }
+    },
+    {
+      "kind": "admrul",
+      "query": "국립농업과학원 예산집행심의회 운영규정",
+      "searchResults": 1,
+      "document": {
+        "id": "2100000259890",
+        "title": "국립농업과학원 예산집행심의회 운영규정",
+        "kind": "admrul",
+        "effectiveAt": "2025-05-01",
+        "url": "https://www.law.go.kr/행정규칙/%EA%B5%AD%EB%A6%BD%EB%86%8D%EC%97%85%EA%B3%BC%ED%95%99%EC%9B%90%20%EC%98%88%EC%82%B0%EC%A7%91%ED%96%89%EC%8B%AC%EC%9D%98%ED%9A%8C%20%EC%9A%B4%EC%98%81%EA%B7%9C%EC%A0%95"
+      },
+      "articles": 11,
+      "firstArticle": {
+        "label": "제1조",
+        "title": "목적",
+        "text": "이 규정은 「국가재정법시행령」 제49조 제1항 및 「농촌진흥청 예산편성ㆍ집행 및 성과금 심의회 운영규정」(농촌진흥청 훈령 제1001호)에 의거 국립농업과학원의 예산집행심의회의 설치ㆍ운영에 관한 사항을 정함으로써 예산집행의 사전ㆍ사후 심사제도의 강화와 예산집행의 효율적 운용을 목적으로 한다."
+      },
+      "deletionMarkerPreserved": true,
+      "meta": {
+        "via": "live",
+        "fetchedAt": "2026-10-25T08:58:38.014Z",
+        "partial": true,
+        "note": "조문 본문을 조회했습니다. 부칙·별표·별지서식은 공식 원문에서 별도로 확인해 주세요."
+      }
+    }
+  ]
+}

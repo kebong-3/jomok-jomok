@@ -1,0 +1,27 @@
+.panel { display:flex; align-items:center; gap:20px; padding:24px; margin-bottom:18px; border:1px solid #d8dff5; border-radius:18px; background:linear-gradient(125deg,#f5f6ff,#f1faf7 85%); box-shadow:0 6px 18px #24346907; }
+.body { flex:1; min-width:0; }
+.eyebrow { display:flex; align-items:center; gap:7px; color:#65539d; font-size:1.25rem; font-weight:700; letter-spacing:.03em; }
+.body h3 { margin:7px 0; font-size:1.9rem; line-height:1.5; color:#25334f; }
+.detail { margin:0 0 10px; font-size:1.4rem; line-height:1.65; overflow-wrap:anywhere; }
+.meta { display:flex; flex-wrap:wrap; gap:7px 12px; font-size:1.2rem; color:#55627a; }
+.note,.patience { margin:10px 0 0; font-size:1.25rem; line-height:1.65; color:#55627a; }
+.patience { color:#65539d; }
+.checkpoints { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin:10px 0; font-size:1.25rem; font-weight:650; color:#3e5a72; }
+.checkpoints progress { appearance:none; height:7px; border:none; border-radius:8px; overflow:hidden; width:min(190px,100%); background:#dce3f1; }
+.checkpoints progress::-webkit-progress-bar { background:#dce3f1; border-radius:8px; }
+.checkpoints progress::-webkit-progress-value { background:#6e80c8; border-radius:8px; transition:width .4s ease; }
+.checkpoints progress::-moz-progress-bar { background:#6e80c8; border-radius:8px; }
+.dot { width:7px; height:7px; border-radius:50%; background:#8b79bc; animation:breathe 2s ease-in-out infinite; }
+.art { position:relative; flex:0 0 100px; height:110px; }
+.page,.backPage { position:absolute; top:12px; left:17px; width:60px; height:77px; border:1px solid #bac7df; border-radius:6px; background:#fff; }
+.backPage { transform:rotate(-9deg); background:#dfeeea; }
+.page { transform:rotate(4deg); padding:15px 10px; box-shadow:0 4px 8px #738bad16; animation:float 3s ease-in-out infinite; }
+.page i { display:block; height:3px; border-radius:2px; background:#c5cee4; margin-bottom:7px; transform-origin:left; animation:write 3s ease-in-out infinite; }
+.page i:nth-child(2) { width:75%; animation-delay:.3s; }.page i:nth-child(3) { width:85%; animation-delay:.6s; }
+.seal { position:absolute; bottom:8px; right:9px; height:19px; width:19px; border:1px solid #9fafd5; color:#7585b1; border-radius:50%; text-align:center; font-size:10px; line-height:17px; }
+.pencil { position:absolute; right:0; top:12px; font-size:45px; color:#816aa9; transform:rotate(-20deg); animation:pencil 3s ease-in-out infinite; }
+.shadow { position:absolute; bottom:8px; left:13px; width:72px; height:10px; border-radius:50%; background:#98a7c41a; }
+.sparkOne,.sparkTwo { position:absolute; color:#b2a3d3; animation:twinkle 3s ease-in-out infinite; }.sparkOne { top:0; left:2px; font-size:18px; }.sparkTwo { bottom:18px; right:0; font-size:24px; animation-delay:1s; }
+@keyframes breathe { 50% { opacity:.5; } } @keyframes float { 50% { transform:rotate(1deg) translateY(-3px); } } @keyframes write { 0%,100% { transform:scaleX(.6); } 60% { transform:scaleX(1); } } @keyframes pencil { 50% { transform:rotate(-12deg) translate(-3px,5px); } } @keyframes twinkle { 50% { opacity:.4; } }
+@media (max-width:620px) { .panel { padding:17px; gap:12px; align-items:flex-start; flex-wrap:wrap; } .art { flex-basis:65px; transform:scale(.75); transform-origin:top left; height:82px; margin-right:6px; } .body { min-width:180px; } .body h3 { font-size:1.7rem; } .panel>button { margin-left:auto; } }
+@media (prefers-reduced-motion:reduce) { .art *,.dot { animation:none!important; } .checkpoints progress::-webkit-progress-value { transition:none; } }

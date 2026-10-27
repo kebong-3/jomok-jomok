@@ -1,0 +1,468 @@
+{
+  "checkedAt": "2026-10-25T08:35:19.297783+00:00",
+  "releaseCommit": "b40bc9024bb43a0da558db188289c9e09555d688",
+  "scope": "실제 운영 UI에서 받은 가상 지침 개정 ZIP의 파일 내용·패키지·DOCX 렌더 확인",
+  "fixture": "검증용 회의자료 작성 지침 / 한빛시(가상) / 내부 검증",
+  "archive": {
+    "path": "docs/validation/v04-amendment-live.zip",
+    "bytes": 116147,
+    "sha256": "28a04fcf81aa869b5c44032c066fb7a2f11598afa10a256ffe0191bae2cf8d99",
+    "zipCrcPassed": true,
+    "entries": 16,
+    "docxCount": 6,
+    "hwpxCount": 6,
+    "supportingFiles": [
+      "근거원문.txt",
+      "입안참고자료_검색기록.txt",
+      "작업백업.jomok.json",
+      "읽어보세요.txt"
+    ]
+  },
+  "checks": {
+    "amendmentSentence": true,
+    "effectiveDate": true,
+    "articleOnePreserved": true,
+    "articleTwoChanged": true,
+    "articleThreePreserved": true,
+    "comparisonIncludesBeforeAndAfter": true,
+    "humanCorrectedReasonInReasonDocument": true,
+    "humanCorrectedReasonInNotice": true,
+    "backupProjectHashMatches": true,
+    "allDocxHwpxBodyTextPairsMatch": true
+  },
+  "knowledge": {
+    "records": 2,
+    "roles": [
+      "amend_plan",
+      "reason"
+    ],
+    "citationCountByRecord": [
+      6,
+      6
+    ],
+    "storedInBackup": true,
+    "searchLogBytes": 31743,
+    "officialEvidenceCount": 0,
+    "officialEvidenceFileText": "이 작업에 보존한 근거 원문이 없습니다. 상위 법령과 적용 근거는 담당자가 확인하세요.\n"
+  },
+  "render": {
+    "renderer": "documents/render_docx.py + LibreOffice",
+    "runtime": "CODEX_PRIMARY_RUNTIME_PYTHON",
+    "originalDocumentsModified": false,
+    "fallbackFont": "Noto Sans CJK KR Regular",
+    "fallbackFontSource": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/Korean/NotoSansCJKkr-Regular.otf",
+    "fontSha256": "6bcb2a0703aa137e874fc2dffa85f6c21ba9a67fa329e81b8c801663af7e992a",
+    "environmentNote": "초기 환경에 한국어 글꼴이 없어 한글이 렌더링되지 않았음. 임시 fontconfig에 공식 Noto CJK를 등록한 뒤 원본 파일을 그대로 재렌더링함.",
+    "documents": [
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_개정안.docx",
+        "pages": 1,
+        "rendererExitCode": 0,
+        "allPagesVisuallyInspected": true
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_개정이유및주요내용.docx",
+        "pages": 1,
+        "rendererExitCode": 0,
+        "allPagesVisuallyInspected": true
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_개정후전문(참고).docx",
+        "pages": 1,
+        "rendererExitCode": 0,
+        "allPagesVisuallyInspected": true
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_신구조문대비표.docx",
+        "pages": 1,
+        "rendererExitCode": 0,
+        "allPagesVisuallyInspected": true
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_입안점검표.docx",
+        "pages": 2,
+        "rendererExitCode": 0,
+        "allPagesVisuallyInspected": true
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).docx",
+        "pages": 2,
+        "rendererExitCode": 0,
+        "allPagesVisuallyInspected": true
+      }
+    ],
+    "totalPagesVisuallyInspected": 8,
+    "clippedTextObserved": false,
+    "overlappingTextObserved": false,
+    "missingGlyphsAfterFontSetup": false,
+    "brokenTableObserved": false
+  },
+  "observations": [
+    {
+      "severity": "layout_minor",
+      "document": "행정예고문(검토용).docx",
+      "detail": "2쪽에 4. 그 밖의 사항 한 줄만 넘어가 최종 페이지의 여백이 큼. 누락·잘림은 없음. 문단간격 또는 빈 문단을 조정하면 개선 가능.",
+      "status": "resolved_in_production",
+      "resolution": "공통 예고문 모델의 빈 문단3개 제거 후 동일 백업을 재생성해1쪽으로 정상 렌더링 확인. 최종 배포0f7f54a에서 다시 받은 DOCX·HWPX 예고문 본문 XML이 수정본과 일치함. 초기 운영ZIP은 수정하지 않음."
+    },
+    {
+      "severity": "expected_human_completion",
+      "detail": "예고문 공고번호·공고일·의견 제출기한·부서 연락처와 이유서 참고사항은 담당자 확인용 작성란이며 제출용 확정본이 아님."
+    },
+    {
+      "severity": "evidence_scope",
+      "detail": "입안 참고자료 검색 기록은 저장됐으나 이 가상 테스트에는 현행 상위법 근거 원문이 없음. 적법성 검증 성공으로 해석하지 않음."
+    }
+  ],
+  "limitations": [
+    "HWPX는 ZIP CRC·XML 파싱·DOCX와 본문 일치만 확인했으며 한컴오피스의 실제 열기·편집·인쇄는 검증하지 않음.",
+    "DOCX는 LibreOffice와 대체 Noto CJK 글꼴 렌더 결과이며 Windows Word/기관 지정 글꼴에서 줄바꿈은 달라질 수 있음.",
+    "가상 3개 조문의 한 건 사례이며 복잡한 별표·서식·장문 규정의 완전성을 보증하지 않음."
+  ],
+  "formatPairs": [
+    {
+      "docx": "20261025_검증용회의자료작성지침일부개정_개정안.docx",
+      "hwpx": "20261025_검증용회의자료작성지침일부개정_개정안.hwpx",
+      "bodyTextIdentical": true
+    },
+    {
+      "docx": "20261025_검증용회의자료작성지침일부개정_개정이유및주요내용.docx",
+      "hwpx": "20261025_검증용회의자료작성지침일부개정_개정이유및주요내용.hwpx",
+      "bodyTextIdentical": true
+    },
+    {
+      "docx": "20261025_검증용회의자료작성지침일부개정_개정후전문(참고).docx",
+      "hwpx": "20261025_검증용회의자료작성지침일부개정_개정후전문(참고).hwpx",
+      "bodyTextIdentical": true
+    },
+    {
+      "docx": "20261025_검증용회의자료작성지침일부개정_신구조문대비표.docx",
+      "hwpx": "20261025_검증용회의자료작성지침일부개정_신구조문대비표.hwpx",
+      "bodyTextIdentical": true
+    },
+    {
+      "docx": "20261025_검증용회의자료작성지침일부개정_입안점검표.docx",
+      "hwpx": "20261025_검증용회의자료작성지침일부개정_입안점검표.hwpx",
+      "bodyTextIdentical": true
+    },
+    {
+      "docx": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).docx",
+      "hwpx": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).hwpx",
+      "bodyTextIdentical": true
+    }
+  ],
+  "files": [
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_개정안.docx",
+      "bytes": 10077,
+      "sha256": "9d84f8c22506a2bb8476fe04d9e0d042002246b0e2d237f6fc652ccef7d28728",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 17
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_개정안.hwpx",
+      "bytes": 6647,
+      "sha256": "e7af3edca9f6c3d75bbb0ba5b90ec6a42ff8eda425c562b2f879d71b08c6c413",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 7,
+      "hwpxMime": "application/hwp+zip"
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_개정이유및주요내용.docx",
+      "bytes": 10331,
+      "sha256": "170ab3e27974cacb5db976a2c9a25eced7507d3fd4c6e1715479487d73641cbe",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 17
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_개정이유및주요내용.hwpx",
+      "bytes": 7087,
+      "sha256": "0feda587250bc5aa7c8d72cf6f393202fe12b0e3d7bac10db4fb04dfa0d2dc89",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 7,
+      "hwpxMime": "application/hwp+zip"
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_개정후전문(참고).docx",
+      "bytes": 10131,
+      "sha256": "085176917ea9b872728d49bce816c7768cf3697c11297fb665e443c36b812e97",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 17
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_개정후전문(참고).hwpx",
+      "bytes": 6757,
+      "sha256": "bbd0ff2bbc61e2f50949862bbd8b2aad7ee43aecb16bb78906480816018e9c3e",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 7,
+      "hwpxMime": "application/hwp+zip"
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_신구조문대비표.docx",
+      "bytes": 10446,
+      "sha256": "b1955f7799c234713244beb110f458312688d09791e54fd82ed71ebbcc6951fc",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 17
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_신구조문대비표.hwpx",
+      "bytes": 7288,
+      "sha256": "be4b5f0fe73a616a73460eab2b4ecc1ab3270ef11691294beabf0d6b058e7d41",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 7,
+      "hwpxMime": "application/hwp+zip"
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_입안점검표.docx",
+      "bytes": 11516,
+      "sha256": "16d219e2eb885898c09b693f81cff7612dd7ea00bf5de80f30cf6339ffbd38a2",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 17
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_입안점검표.hwpx",
+      "bytes": 9060,
+      "sha256": "a6148bc842504db033d7af8cdd011b095dff4f2c3f1afe1eace55d5f0f776edf",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 7,
+      "hwpxMime": "application/hwp+zip"
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).docx",
+      "bytes": 10845,
+      "sha256": "dcdac0483d3db3b15b51346c6ff7366f3a37a6eec8ec868da253bb758c81507a",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 17
+    },
+    {
+      "file": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).hwpx",
+      "bytes": 7965,
+      "sha256": "e3d2f54db2a768f3a4ab2413b5c6cf8dff94d550c0fb38f620daffac2e0ad62a",
+      "zipCrcPassed": true,
+      "xmlPartsParsed": 7,
+      "hwpxMime": "application/hwp+zip"
+    },
+    {
+      "file": "근거원문.txt",
+      "bytes": 119,
+      "sha256": "bf9cef916856bf4b87702c84916c5afa295b0efc3a89f43d82fabb8bda8c20c0"
+    },
+    {
+      "file": "읽어보세요.txt",
+      "bytes": 847,
+      "sha256": "3db27401b7ed4c05c00aa56dd7c3503429f49d0299a238f4bc76d1d62c79284c"
+    },
+    {
+      "file": "입안참고자료_검색기록.txt",
+      "bytes": 31743,
+      "sha256": "b2a6098252b8ecd98ac64b4a6d1726d1fc8a5ef45f940f467c7fca5fc34dc4d1"
+    },
+    {
+      "file": "작업백업.jomok.json",
+      "bytes": 44634,
+      "sha256": "9d4112393653647b0384f99417d29d5242bef37225726010778608fd920f6e7a"
+    }
+  ],
+  "localLayoutFix": {
+    "checkedAt": "2026-10-25T08:39:14.136499+00:00",
+    "status": "verified_locally_and_production_xml_match",
+    "applicationFile": "src/lib/docs.ts",
+    "applicationFileSha256": "b508727c0ed7e6210fce06028b4d997dbc496d15a8be07f6b43ba1b39800790d",
+    "change": "noticeBlocks 공통 문서모델의 빈 문단3개만 제거. 모든 문구·글꼴·글자크기·행간·문단간격·A4 여백을 유지. DOCX/HWPX/붙여넣기 경로에 공통 적용.",
+    "fixtureSource": "docs/validation/v04-amendment-live.zip / 작업백업.jomok.json",
+    "originalDownloadUnmodified": true,
+    "originalNoticePages": 2,
+    "localNoticePages": 1,
+    "allLocalPagesVisuallyInspected": true,
+    "bodyTextIdenticalToOriginal": true,
+    "nonemptyParagraphXmlIdenticalToOriginal": true,
+    "hwpxBodyTextIdenticalToDocx": true,
+    "docxDocumentXmlSha256": "f9c2a29875687387cade09b952df60dff4f8fe96bfbe44f858a7706e4c2ef562",
+    "hwpxSectionXmlSha256": "8fb8b2f068a6efbb3e577597bb6dcb2eb78bda6efec65f4c0a389d392e0f3ce3",
+    "fontSizeChanged": false,
+    "bodyLineSpacingChanged": false,
+    "pageSizeChanged": false,
+    "clippingOrOverlapObserved": false,
+    "remainingSingleLinePage": false,
+    "regressionCommand": "vitest run tests/documents-regressions.test.ts",
+    "regressionTestsPassed": 14,
+    "regressionTestsFailed": 0,
+    "docxNoticeFontPt": {
+      "body": 11,
+      "title": 15,
+      "secondary": 9
+    }
+  },
+  "productionVerification": {
+    "checkedAt": "2026-10-25T08:58:04.334686+00:00",
+    "releaseCommitPrefix": "0f7f54a",
+    "status": "verified",
+    "scope": "최종 배포 후 같은 작업에서 다시 내려받은 ZIP의 실제 반영 대조",
+    "archive": {
+      "path": "docs/validation/v04-amendment-final.zip",
+      "bytes": 116117,
+      "sha256": "362db0f6adcdf4d9e30d4976ac63df55ac5cd67f24a52b112a0fdbfd99d5d4d2",
+      "zipCrcPassed": true,
+      "entries": 16
+    },
+    "checks": {
+      "allBodyTextIdenticalToInitialDownload": true,
+      "allDocxHwpxBodyTextPairsMatch": true,
+      "noticeDocxXmlMatchesLocallyRenderedFix": true,
+      "noticeHwpxXmlMatchesLocallyRenderedFix": true,
+      "backupProjectHashMatches": true,
+      "allPackagesCrcPassed": true,
+      "allXmlPartsParsed": true,
+      "noticeDocxFormattingPartsMatchLocallyRenderedFix": true,
+      "noticeHwpxHeaderMatchesLocalFix": true
+    },
+    "notice": {
+      "docx": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).docx",
+      "hwpx": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).hwpx",
+      "docxDocumentXmlSha256": "f9c2a29875687387cade09b952df60dff4f8fe96bfbe44f858a7706e4c2ef562",
+      "hwpxSectionXmlSha256": "8fb8b2f068a6efbb3e577597bb6dcb2eb78bda6efec65f4c0a389d392e0f3ce3",
+      "renderResultReuse": "최종 운영 DOCX의 본문 XML과 styles·fontTable·settings 등 서식 XML이 앞서1쪽으로 렌더·육안 검수한 수정본과 정확히 일치함. 동일 글꼴·렌더러의1쪽 검수 결과를 연결함.",
+      "verifiedPageCountInSameRenderer": 1,
+      "matchingDocxFormattingParts": [
+        "word/styles.xml",
+        "word/settings.xml",
+        "word/fontTable.xml",
+        "word/theme/theme1.xml"
+      ]
+    },
+    "files": [
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_개정안.hwpx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 6646,
+        "sha256": "fb6d04b9f533960371bd21e1dd87f1b5511057ecd9db454bbd56977e17469c9e",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 7
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_개정안.docx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 10079,
+        "sha256": "6894ee41e9305133ca3367db1bd536cb8e0536e6b1ee67b69880298a327670e6",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 17
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_신구조문대비표.hwpx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 7288,
+        "sha256": "3326385d8270a233e33462c6859ad13f3e57fb4e1d91b4746564b1428569f567",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 7
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_신구조문대비표.docx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 10447,
+        "sha256": "e311aed866966b0f0bf942f72fc65572cbc56471acd36df9cef632f1529bb129",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 17
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_개정이유및주요내용.hwpx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 7087,
+        "sha256": "a20ed0612fa0be3ad5185ae8c87e8d7a78b6d8e7c86ae6b67444b28285524a5f",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 7
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_개정이유및주요내용.docx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 10332,
+        "sha256": "f3727c9c201f48e3eacaf803f243d67d1b8039f4263c45face61923121981835",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 17
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).hwpx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 7942,
+        "sha256": "54fb8f74f6eabc8079a6b3bba9886087bbba999be6a3812462c0ea31ed4da83a",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 7
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).docx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 10833,
+        "sha256": "8dcc03a4e165fd027ff3963da76616fa5510a8f6fc627014ef0e01006b61443d",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 17
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_입안점검표.hwpx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 9059,
+        "sha256": "d9a4c2c298ea6ef900193b9a3253d7d933eeaacf7aa61aa73dea1b31dcf333ec",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 7
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_입안점검표.docx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 11517,
+        "sha256": "e63f904f0bfa2297566eaa4b103a86a789db46cc4176356758b81b3233cd847b",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 17
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_개정후전문(참고).hwpx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 6756,
+        "sha256": "281150f5a1e265890bf7644bcd49b939a4012c6e5b7d87241925cdbc3a695c8c",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 7
+      },
+      {
+        "file": "20261025_검증용회의자료작성지침일부개정_개정후전문(참고).docx",
+        "bodyTextIdenticalToInitialDownload": true,
+        "bytes": 10130,
+        "sha256": "4b5841fd16e9f7cd61ccea27743b312c64793c75b2e56c9bcf0c1f052467c86f",
+        "zipCrcPassed": true,
+        "xmlPartsParsed": 17
+      }
+    ],
+    "formatPairs": [
+      {
+        "docx": "20261025_검증용회의자료작성지침일부개정_개정안.docx",
+        "hwpx": "20261025_검증용회의자료작성지침일부개정_개정안.hwpx",
+        "bodyTextIdentical": true
+      },
+      {
+        "docx": "20261025_검증용회의자료작성지침일부개정_신구조문대비표.docx",
+        "hwpx": "20261025_검증용회의자료작성지침일부개정_신구조문대비표.hwpx",
+        "bodyTextIdentical": true
+      },
+      {
+        "docx": "20261025_검증용회의자료작성지침일부개정_개정이유및주요내용.docx",
+        "hwpx": "20261025_검증용회의자료작성지침일부개정_개정이유및주요내용.hwpx",
+        "bodyTextIdentical": true
+      },
+      {
+        "docx": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).docx",
+        "hwpx": "20261025_검증용회의자료작성지침일부개정_행정예고문(검토용).hwpx",
+        "bodyTextIdentical": true
+      },
+      {
+        "docx": "20261025_검증용회의자료작성지침일부개정_입안점검표.docx",
+        "hwpx": "20261025_검증용회의자료작성지침일부개정_입안점검표.hwpx",
+        "bodyTextIdentical": true
+      },
+      {
+        "docx": "20261025_검증용회의자료작성지침일부개정_개정후전문(참고).docx",
+        "hwpx": "20261025_검증용회의자료작성지침일부개정_개정후전문(참고).hwpx",
+        "bodyTextIdentical": true
+      }
+    ],
+    "limitations": [
+      "HWPX의 실제 한컴오피스 열기·편집·인쇄는 검증하지 않음.",
+      "DOCX는 앞서 검수한 동일 본문 XML과의 대조이며 새 운영 파일을 다시 렌더링하지 않음. Windows Word/기관 글꼴 환경의 줄바꿈은 달라질 수 있음."
+    ]
+  }
+}

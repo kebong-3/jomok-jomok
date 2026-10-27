@@ -1,0 +1,48 @@
+{
+  "recordedAtUTC": "2026-10-20T06:46:02.424387+00:00",
+  "site": "https://jomokjomok.vercel.app/",
+  "scenarioType": "Fictional, non-sensitive new inputs; not built-in cassettes",
+  "amendment": {
+    "coreRunCommit": "f9b54c607996f5cdcffc0af539a7264f38888bd9",
+    "documentReviewCommit": "6894ec065f9a43a4e96b22abc7ec764e4b81d9f6",
+    "correctedDocumentCommit": "15db21b3af62461438970ec9e56454bae3375ce3",
+    "source": "검증용 신청서 처리 지침\n제1조(목적) 이 지침은 가상 시험의 신청서 처리 절차를 정한다.\n제2조(신청 및 처리) ① 신청인은 신청서를 5일 이내에 제출하여야 한다.\n② 담당자는 접수일부터 10일 이내에 처리 결과를 통지하여야 한다.\n제3조(준용) 처리 결과의 통지는 제2조제2항에 따른다.",
+    "intent": "제2조제1항의 제출기한 5일을 7일로 늘리세요. 제2조제1항 다음에 “신청인은 전자우편으로도 신청서를 제출할 수 있다.”라는 새 제2항을 넣고 종전 제2항은 제3항으로 밀어 주세요. 다른 문장은 바꾸지 마세요.",
+    "observedProvider": "Gemma 4 31B · Google AI Studio",
+    "observedSeconds": 29.3,
+    "acceptedProposals": 2,
+    "automaticReferenceCorrection": "제3조: 제2조제2항 → 제2조제3항",
+    "reasonProvider": "Gemma 4 31B · Google AI Studio",
+    "reasonConfirmationGatePassed": true,
+    "strictComparison": "Groq authentication failure shown; no substitute provider or cassette treated as comparison success",
+    "export": "6 DOCX + 6 HWPX; see amendment-export.json"
+  },
+  "enactment": {
+    "outlineDraftCommit": "15db21b3af62461438970ec9e56454bae3375ce3",
+    "reasonCommit": "d7131572809f433c79ee41558895043365c9ab0b",
+    "title": "검증용 회의자료 제출 지침",
+    "kind": "지침",
+    "institution": "한빛시 (가상)",
+    "purpose": "가상 기관 한빛시의 내부 회의자료를 전자우편으로 제출하고 확인하는 절차를 정하려고 합니다. 목적, 제출방법, 접수 확인의 3개 조만 구성해 주세요. 제출기한은 회의 3일 전, 담당자는 접수 다음 날까지 확인하도록 합니다. 주민에게 새로운 의무나 제재를 만들지 않는 내부 시험용 지침입니다.",
+    "observedProvider": "Gemma 4 31B · Google AI Studio",
+    "outlineSeconds": 6.8,
+    "draftSeconds": 6.7,
+    "articles": [
+      "제1조(목적) 이 지침은 한빛시 내부 회의자료의 전자우편 제출 및 확인 절차를 정함을 목적으로 한다.",
+      "제2조(제출방법) 회의자료는 회의 개최 3일 전까지 전자우편으로 제출하여야 한다.",
+      "제3조(접수 확인) 담당자는 자료 접수 다음 날까지 제출 여부를 확인하여야 한다."
+    ],
+    "downloadBlockedBeforeArticleReview": true,
+    "downloadBlockedBeforeReasonReview": true,
+    "reasonProviderTooltip": "Gemma 4 31B · Google AI Studio",
+    "reason": "한빛시 내부 회의자료의 전자우편 제출 및 확인 절차를 규정하려는 것임. 이를 통해 회의자료 제출의 효율성과 체계적인 접수 확인 체계를 마련하고자 함.",
+    "manualTextEdits": false,
+    "export": "5 DOCX + 5 HWPX; see enactment-export.json"
+  },
+  "limits": [
+    "Timing values are single observed runs, not benchmarks.",
+    "Successful examples do not establish correctness for complex real regulations.",
+    "Two-provider core functionality is not validated while Groq returns HTTP 401.",
+    "Native Hancom HWPX rendering is not validated."
+  ]
+}

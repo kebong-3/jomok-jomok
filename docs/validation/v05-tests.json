@@ -1,0 +1,142 @@
+{
+  "version": "0.5.0",
+  "success": true,
+  "tests": 381,
+  "passed": 381,
+  "failed": 0,
+  "pending": 0,
+  "typecheck": "passed",
+  "productionBuild": "passed after isolating generated Turbopack cache",
+  "testFiles": [
+    {
+      "name": "ai-client.test.ts",
+      "status": "passed",
+      "assertions": 8
+    },
+    {
+      "name": "ai-stream.test.ts",
+      "status": "passed",
+      "assertions": 8
+    },
+    {
+      "name": "complex-workflow.test.ts",
+      "status": "passed",
+      "assertions": 5
+    },
+    {
+      "name": "documents-regressions.test.ts",
+      "status": "passed",
+      "assertions": 14
+    },
+    {
+      "name": "enact-batches.test.ts",
+      "status": "passed",
+      "assertions": 7
+    },
+    {
+      "name": "engine-regressions.test.ts",
+      "status": "passed",
+      "assertions": 13
+    },
+    {
+      "name": "engine.test.ts",
+      "status": "passed",
+      "assertions": 9
+    },
+    {
+      "name": "evidence-delegation.test.ts",
+      "status": "passed",
+      "assertions": 3
+    },
+    {
+      "name": "hwpx-export.test.ts",
+      "status": "passed",
+      "assertions": 5
+    },
+    {
+      "name": "impact.test.ts",
+      "status": "passed",
+      "assertions": 15
+    },
+    {
+      "name": "knowledge-answer.test.ts",
+      "status": "passed",
+      "assertions": 15
+    },
+    {
+      "name": "knowledge-assist.test.ts",
+      "status": "passed",
+      "assertions": 24
+    },
+    {
+      "name": "knowledge-independent-audit.test.ts",
+      "status": "passed",
+      "assertions": 8
+    },
+    {
+      "name": "knowledge-integrity.test.ts",
+      "status": "passed",
+      "assertions": 16
+    },
+    {
+      "name": "knowledge-search.test.ts",
+      "status": "passed",
+      "assertions": 11
+    },
+    {
+      "name": "law.test.ts",
+      "status": "passed",
+      "assertions": 23
+    },
+    {
+      "name": "llm.test.ts",
+      "status": "passed",
+      "assertions": 35
+    },
+    {
+      "name": "manual-forms.test.ts",
+      "status": "passed",
+      "assertions": 3
+    },
+    {
+      "name": "ordinance-history.test.ts",
+      "status": "passed",
+      "assertions": 31
+    },
+    {
+      "name": "pipeline.test.ts",
+      "status": "passed",
+      "assertions": 5
+    },
+    {
+      "name": "profiles.test.ts",
+      "status": "passed",
+      "assertions": 16
+    },
+    {
+      "name": "project-transfer.test.ts",
+      "status": "passed",
+      "assertions": 33
+    },
+    {
+      "name": "review-evaluation.test.ts",
+      "status": "passed",
+      "assertions": 10
+    },
+    {
+      "name": "similar-rules.test.ts",
+      "status": "passed",
+      "assertions": 26
+    },
+    {
+      "name": "source-review.test.ts",
+      "status": "passed",
+      "assertions": 26
+    },
+    {
+      "name": "v05-independent.test.ts",
+      "status": "passed",
+      "assertions": 12
+    }
+  ]
+}

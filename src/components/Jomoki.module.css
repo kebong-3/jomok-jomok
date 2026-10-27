@@ -1,0 +1,48 @@
+.character { display: inline-flex; flex: 0 0 auto; width: var(--jomoki-size, 88px); max-width: 100%; aspect-ratio: 128 / 136; vertical-align: middle; }
+.character svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.body { transform-origin: 65px 118px; transform-box: view-box; animation: hello 2.6s ease-in-out var(--jomoki-repeat, 1); }
+.leftArm { transform-origin: 28px 81px; transform-box: view-box; }
+.rightArm { transform-origin: 100px 81px; transform-box: view-box; }
+.eyes { transform-origin: 64px 56px; transform-box: view-box; animation: blink 4.6s ease-in-out var(--jomoki-repeat, 1); }
+.mouth { transform-origin: 64px 69px; transform-box: view-box; }
+.shadow { transform-origin: 66px 128px; transform-box: view-box; }
+.sparkle { transform-origin: center; transform-box: fill-box; animation: glimmer 4.6s ease-in-out var(--jomoki-repeat, 1); }
+.wave .rightArm { animation: wave 2.6s ease-in-out var(--jomoki-repeat, 1); }
+.wave .leftArm { animation: pencilHello 2.6s ease-in-out var(--jomoki-repeat, 1); }
+.smile .body, .guide .body { animation-name: breathe; animation-duration: 4.6s; }
+.laugh .body { animation-name: giggle; animation-duration: 3.8s; }
+.laugh .cheeks { animation: blush 3.8s ease-in-out var(--jomoki-repeat, 1); }
+.laugh .mouth { animation: chuckle 3.8s ease-in-out var(--jomoki-repeat, 1); }
+.thinking .body { transform: rotate(-2deg); animation-name: ponder; animation-duration: 4.6s; }
+.thinking .leftArm { transform: rotate(25deg); animation: pencilThink 4.6s ease-in-out var(--jomoki-repeat, 1); }
+.thinking .thoughts circle { animation: thought 2.4s ease-in-out var(--jomoki-repeat, 1); }
+.thinking .thoughts circle:nth-child(2) { animation-delay: .25s; }
+.thinking .thoughts circle:nth-child(3) { animation-delay: .5s; }
+.celebrate .body { animation-name: pleased; animation-duration: 3.8s; }
+.celebrate .leftArm { transform: rotate(16deg); }
+.celebrate .rightArm { animation: cheer 3.8s ease-in-out var(--jomoki-repeat, 1); }
+.celebrate .shadow { animation: ground 3.8s ease-in-out var(--jomoki-repeat, 1); }
+.confetti { animation: confetti 3.8s ease-in-out var(--jomoki-repeat, 1); }
+.care .body { transform: rotate(3deg); animation-name: listen; animation-duration: 4.6s; }
+.heart { transform-origin: 109px 21px; transform-box: view-box; animation: heart 4.6s ease-in-out var(--jomoki-repeat, 1); }
+@keyframes hello { 0%, 70%, 100% { transform: rotate(0); } 18% { transform: rotate(-3deg); } 38% { transform: rotate(2deg); } 54% { transform: rotate(-1deg); } }
+@keyframes wave { 0%, 65%, 100% { transform: rotate(0); } 15%, 43% { transform: rotate(-17deg); } 29%, 56% { transform: rotate(7deg); } }
+@keyframes pencilHello { 0%, 70%, 100% { transform: rotate(0); } 25%, 50% { transform: rotate(7deg); } 38% { transform: rotate(-3deg); } }
+@keyframes breathe { 0%, 100% { transform: translateY(0); } 45% { transform: translateY(-1.4px); } }
+@keyframes blink { 0%, 41%, 47%, 100% { transform: scaleY(1); } 44% { transform: scaleY(.12); } }
+@keyframes glimmer { 0%, 100% { opacity: .7; transform: scale(.9); } 48% { opacity: 1; transform: scale(1); } }
+@keyframes giggle { 0%, 45%, 100% { transform: translateY(0) rotate(0); } 12%, 28% { transform: translateY(-2px) rotate(-1deg); } 20%, 36% { transform: translateY(0) rotate(1deg); } }
+@keyframes blush { 0%, 100% { opacity: .8; } 28% { opacity: 1; } }
+@keyframes chuckle { 0%, 45%, 100% { transform: scaleY(1); } 12%, 28% { transform: scaleY(1.1); } 20%, 36% { transform: scaleY(.94); } }
+@keyframes ponder { 0%, 100% { transform: rotate(-2deg); } 45% { transform: rotate(-4deg) translateY(-1px); } }
+@keyframes pencilThink { 0%, 100% { transform: rotate(25deg); } 40% { transform: rotate(33deg); } }
+@keyframes thought { 0%, 100% { opacity: .45; } 45% { opacity: 1; } }
+@keyframes pleased { 0%, 48%, 100% { transform: translateY(0); } 16% { transform: translateY(-5px) rotate(-2deg); } 32% { transform: translateY(-3px) rotate(2deg); } }
+@keyframes cheer { 0%, 48%, 100% { transform: rotate(0); } 16% { transform: rotate(-15deg); } 32% { transform: rotate(5deg); } }
+@keyframes ground { 0%, 48%, 100% { transform: scaleX(1); opacity: .65; } 16% { transform: scaleX(.87); opacity: .45; } }
+@keyframes confetti { 0%, 65%, 100% { opacity: .5; transform: translateY(0); } 24% { opacity: 1; transform: translateY(-3px); } }
+@keyframes listen { 0%, 100% { transform: rotate(3deg); } 45% { transform: rotate(5deg); } }
+@keyframes heart { 0%, 100% { transform: scale(1); } 42% { transform: scale(1.09); } }
+.character[data-motion='none'] *, .character[data-motion='none'] { animation: none !important; transition: none !important; }
+@media (prefers-reduced-motion: reduce) { .character *, .character { animation: none !important; transition: none !important; } }
+@media print { .character { display: none; } }

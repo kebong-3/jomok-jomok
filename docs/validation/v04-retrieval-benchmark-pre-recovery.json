@@ -1,0 +1,1867 @@
+{
+  "version": "moleg-2026-10-24-v1",
+  "measuredAt": "2026-10-24",
+  "method": "hybrid-lexical: term BM25 + Korean character matching",
+  "querySet": "Three specialist-authored development sets; used during tokenizer/scoring calibration. Not held-out.",
+  "limit": 6,
+  "totalQuestions": 60,
+  "pdfPageQuestions": 56,
+  "formDocumentQuestions": 4,
+  "filteredHits": 60,
+  "allDocumentHitsWithKindAndMode": 58,
+  "warmAllDocumentMedianMs": 21.0,
+  "warmAllDocumentMaxMs": 49,
+  "corpusSha256": "4ec6dca4ed5c0cc2f9a2444a3a5cbaa1b9d4ec0d115239ce2cdd9f1d36a45b62",
+  "originalFilesSha256": {
+    "local-ordinance-2026": "462f645af7974344e5a3ec60f47f8c9f32b8f3c35482490c5d12d54be3214a72",
+    "legislation-2026": "5f8f02e62145f077cc45f759904ce8cd59cd6a5d40b96ebe4704927624abc4b0",
+    "administrative-rules-2025": "d7a13929a9f69c80e892c2ad15da095889eca18ac1411c9336c8cb605c7901e5",
+    "plain-language-2026": "38553647aeaf960f32906eab2129b2fa55aefbaea25ff6ee084f5f91b7572094",
+    "opinion-request": "3bb19d6fdd91c8da692794ed4270fca3220f086023dee408fec888c24a32efdf",
+    "source-guide": "fd394dcb283ac5a3ab9da0a8b3ec45a70944fcc4b1d0c84efb7a467c2560cdf4"
+  },
+  "limitations": [
+    "Retrieval hit is not legal validity, answer grounding, or competition score.",
+    "PDF questions use physical page-range hit@6. Four HWPX questions use document hit@6, not item-level localization.",
+    "This development set was used for tuning; no generalization accuracy claim.",
+    "No embedding vectors or semantic model ranking are used.",
+    "All PDF pages were processed, but image-only text, diagram semantics and table layout are not reconstructed."
+  ],
+  "cases": [
+    {
+      "q": "새 지원정책을 추진할 때 반드시 조례를 제정해야 하나요? 예산조치로 가능한 경우와 상위법을 단순 재기재하는 조례를 구분해 주세요.",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          19,
+          20
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 6,
+      "allElapsedMs": 19,
+      "filteredPages": [
+        19,
+        115,
+        239
+      ],
+      "allPages": [
+        "local-ordinance-2026:19",
+        "local-ordinance-2026:115",
+        "legislation-2026:82",
+        "local-ordinance-2026:239",
+        "legislation-2026:74"
+      ]
+    },
+    {
+      "q": "법률이 사용료를 조례로 정하라고 했는데 금액과 기준을 모두 규칙으로 재위임해도 되나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          21,
+          25
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 15,
+      "allElapsedMs": 41,
+      "filteredPages": [
+        24,
+        23,
+        243,
+        233,
+        179,
+        231
+      ],
+      "allPages": [
+        "local-ordinance-2026:24",
+        "local-ordinance-2026:23",
+        "local-ordinance-2026:243",
+        "local-ordinance-2026:233",
+        "local-ordinance-2026:179",
+        "local-ordinance-2026:231"
+      ]
+    },
+    {
+      "q": "기존 유사 조례를 개정할지 새로운 조례를 제정할지 선택하는 기준은 무엇인가요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          27,
+          28
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 7,
+      "allElapsedMs": 21,
+      "filteredPages": [
+        28
+      ],
+      "allPages": [
+        "local-ordinance-2026:28"
+      ]
+    },
+    {
+      "q": "주민에게 새로운 신고 의무를 조례로 부과하려고 합니다. 법률유보와 위임 근거를 어떻게 검토하나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          68,
+          75
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 6,
+      "allElapsedMs": 21,
+      "filteredPages": [
+        68,
+        71,
+        228,
+        73,
+        533,
+        75
+      ],
+      "allPages": [
+        "local-ordinance-2026:68",
+        "local-ordinance-2026:71",
+        "local-ordinance-2026:228",
+        "local-ordinance-2026:73",
+        "local-ordinance-2026:533",
+        "legislation-2026:231"
+      ]
+    },
+    {
+      "q": "위임조례에서 상위법에 이미 정의된 용어를 다시 정의해야 하나요? 자치조례는 다른가요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          116,
+          120
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 11,
+      "allElapsedMs": 26,
+      "filteredPages": [
+        125,
+        123,
+        555,
+        120,
+        118,
+        317
+      ],
+      "allPages": [
+        "local-ordinance-2026:125",
+        "local-ordinance-2026:123",
+        "local-ordinance-2026:555",
+        "local-ordinance-2026:120",
+        "local-ordinance-2026:118",
+        "local-ordinance-2026:317"
+      ]
+    },
+    {
+      "q": "민간단체 지원 조례에 보조금 지급 대상과 대상 사업을 어떻게 적고 운영비 지원은 무엇을 더 확인해야 하나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          146,
+          153
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 5,
+      "allElapsedMs": 17,
+      "filteredPages": [
+        150,
+        162,
+        134,
+        148,
+        153,
+        151
+      ],
+      "allPages": [
+        "local-ordinance-2026:150",
+        "local-ordinance-2026:162",
+        "legislation-2026:328",
+        "local-ordinance-2026:134",
+        "legislation-2026:325",
+        "legislation-2026:327"
+      ]
+    },
+    {
+      "q": "조례에 만드는 위원회가 자문기관인지 의결기관인지 어떻게 구별하며 상위법과 무엇을 대조해야 하나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          250,
+          255
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 9,
+      "allElapsedMs": 40,
+      "filteredPages": [
+        250,
+        267,
+        260,
+        251,
+        264,
+        255
+      ],
+      "allPages": [
+        "local-ordinance-2026:250",
+        "local-ordinance-2026:267",
+        "local-ordinance-2026:260",
+        "local-ordinance-2026:251",
+        "local-ordinance-2026:264",
+        "local-ordinance-2026:255"
+      ]
+    },
+    {
+      "q": "조례 시행일과 공포일은 어떻게 다른가요? 상위법 시행일과 맞추고 준비기간을 두려면 어떻게 쓰나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          346,
+          350
+        ],
+        [
+          360,
+          361
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 4,
+      "allElapsedMs": 18,
+      "filteredPages": [
+        349,
+        404,
+        534,
+        347,
+        346,
+        350
+      ],
+      "allPages": [
+        "local-ordinance-2026:349",
+        "local-ordinance-2026:404",
+        "local-ordinance-2026:534",
+        "local-ordinance-2026:347",
+        "local-ordinance-2026:346",
+        "local-ordinance-2026:350"
+      ]
+    },
+    {
+      "q": "적용례를 쓰면 기존 신청자에게 자동으로 종전 규정이 적용되나요? 경과조치와의 차이를 알려주세요.",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          362,
+          368
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 7,
+      "allElapsedMs": 21,
+      "filteredPages": [
+        366,
+        394,
+        372,
+        385,
+        344,
+        273
+      ],
+      "allPages": [
+        "local-ordinance-2026:366",
+        "local-ordinance-2026:394",
+        "legislation-2026:714",
+        "legislation-2026:741",
+        "local-ordinance-2026:372",
+        "legislation-2026:782"
+      ]
+    },
+    {
+      "q": "특례와 적용례와 경과조치를 어떤 기준으로 구분하나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          372,
+          376
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 8,
+      "filteredPages": [
+        372,
+        366,
+        534,
+        345,
+        362,
+        375
+      ],
+      "allPages": [
+        "local-ordinance-2026:372",
+        "legislation-2026:723",
+        "local-ordinance-2026:366",
+        "local-ordinance-2026:534",
+        "local-ordinance-2026:345",
+        "local-ordinance-2026:362"
+      ]
+    },
+    {
+      "q": "위원회 위원의 연임 제한을 신설할 때 현재 위원의 임기와 연임 횟수는 부칙에 어떻게 정하나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          383,
+          386
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 8,
+      "allElapsedMs": 35,
+      "filteredPages": [
+        273,
+        384,
+        385,
+        381,
+        300,
+        274
+      ],
+      "allPages": [
+        "local-ordinance-2026:273",
+        "local-ordinance-2026:384",
+        "local-ordinance-2026:385",
+        "local-ordinance-2026:381",
+        "legislation-2026:754",
+        "local-ordinance-2026:300"
+      ]
+    },
+    {
+      "q": "조문의 3분의 2 이상을 고치면 무조건 전부개정해야 하나요? 용어 정비인 경우와 종전 부칙도 설명해 주세요.",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          421,
+          422
+        ],
+        [
+          465,
+          465
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 9,
+      "allElapsedMs": 31,
+      "filteredPages": [
+        422,
+        465,
+        392,
+        391,
+        448,
+        345
+      ],
+      "allPages": [
+        "local-ordinance-2026:422",
+        "legislation-2026:809",
+        "local-ordinance-2026:465",
+        "local-ordinance-2026:392",
+        "local-ordinance-2026:391",
+        "local-ordinance-2026:448"
+      ]
+    },
+    {
+      "q": "일부개정문에서 각 호 외의 부분 본문과 단서를 어떻게 특정하고 개정 자구를 어느 범위까지 인용하나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          425,
+          427
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 8,
+      "allElapsedMs": 29,
+      "filteredPages": [
+        425,
+        439,
+        433,
+        432,
+        488,
+        434
+      ],
+      "allPages": [
+        "local-ordinance-2026:425",
+        "legislation-2026:812",
+        "local-ordinance-2026:439",
+        "legislation-2026:806",
+        "local-ordinance-2026:433",
+        "local-ordinance-2026:432"
+      ]
+    },
+    {
+      "q": "제3조의2와 같은 가지번호를 항에도 쓸 수 있나요? 조 번호 이동과 가지번호 신설의 차이는 무엇인가요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          435,
+          438
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 5,
+      "allElapsedMs": 21,
+      "filteredPages": [
+        440,
+        435,
+        437,
+        436,
+        456,
+        353
+      ],
+      "allPages": [
+        "local-ordinance-2026:440",
+        "legislation-2026:825",
+        "local-ordinance-2026:435",
+        "local-ordinance-2026:437",
+        "legislation-2026:840",
+        "local-ordinance-2026:436"
+      ]
+    },
+    {
+      "q": "제2조부터 제6조까지를 삭제할 때 중간의 제5조의2도 범위에 포함되는지 개정문 작성 기준을 알려주세요.",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          439,
+          440
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 6,
+      "allElapsedMs": 21,
+      "filteredPages": [
+        440,
+        444,
+        437,
+        436,
+        353,
+        354
+      ],
+      "allPages": [
+        "local-ordinance-2026:440",
+        "legislation-2026:825",
+        "plain-language-2026:82",
+        "local-ordinance-2026:444",
+        "local-ordinance-2026:437",
+        "local-ordinance-2026:436"
+      ]
+    },
+    {
+      "q": "서식의 첨부서류란에 새 제출서류를 추가해도 되나요? 별지 서식 앞쪽과 뒤쪽의 일부개정은 어떻게 표현하나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          414,
+          415
+        ],
+        [
+          450,
+          456
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 8,
+      "allElapsedMs": 21,
+      "filteredPages": [
+        415,
+        456,
+        414,
+        449,
+        450,
+        445
+      ],
+      "allPages": [
+        "local-ordinance-2026:415",
+        "local-ordinance-2026:456",
+        "legislation-2026:840",
+        "legislation-2026:165",
+        "local-ordinance-2026:414",
+        "plain-language-2026:237"
+      ]
+    },
+    {
+      "q": "종전 일부개정조례의 부칙에 있는 유효기간을 연장하려면 이번 개정문에서 무엇을 특정해야 하나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          448,
+          449
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 19,
+      "allElapsedMs": 43,
+      "filteredPages": [
+        448,
+        353,
+        403,
+        354,
+        465,
+        449
+      ],
+      "allPages": [
+        "local-ordinance-2026:448",
+        "local-ordinance-2026:353",
+        "local-ordinance-2026:403",
+        "local-ordinance-2026:354",
+        "local-ordinance-2026:465",
+        "legislation-2026:833"
+      ]
+    },
+    {
+      "q": "여러 조례와 규칙을 하나의 일괄개정조례안으로 묶을 수 있나요? 관련성과 동질성 기준을 설명해 주세요.",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          461,
+          464
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 11,
+      "allElapsedMs": 34,
+      "filteredPages": [
+        464,
+        461,
+        450,
+        422,
+        427,
+        395
+      ],
+      "allPages": [
+        "local-ordinance-2026:464",
+        "local-ordinance-2026:461",
+        "local-ordinance-2026:450",
+        "legislation-2026:853",
+        "legislation-2026:856",
+        "local-ordinance-2026:422"
+      ]
+    },
+    {
+      "q": "자치법규 입법예고 기간은 국가법령과 같은가요? 예고 후 의무를 강화하면 다시 예고해야 하는지 확인하고 싶습니다.",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          537,
+          540
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 11,
+      "allElapsedMs": 49,
+      "filteredPages": [
+        288,
+        537,
+        538,
+        290,
+        554,
+        287
+      ],
+      "allPages": [
+        "local-ordinance-2026:288",
+        "local-ordinance-2026:537",
+        "local-ordinance-2026:538",
+        "local-ordinance-2026:290",
+        "local-ordinance-2026:554",
+        "local-ordinance-2026:287"
+      ]
+    },
+    {
+      "q": "조례 입안 단계에서 법제처 자치법규 의견제시를 받는 것과 법령해석은 무엇이 다르고 의견에 구속되나요?",
+      "docId": "local-ordinance-2026",
+      "expectedPdfRanges": [
+        [
+          565,
+          568
+        ]
+      ],
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 8,
+      "allElapsedMs": 38,
+      "filteredPages": [
+        568,
+        567,
+        565,
+        569,
+        19,
+        63
+      ],
+      "allPages": [
+        "local-ordinance-2026:568",
+        "local-ordinance-2026:567",
+        "local-ordinance-2026:565",
+        "local-ordinance-2026:569",
+        "local-ordinance-2026:19",
+        "local-ordinance-2026:63"
+      ]
+    },
+    {
+      "q": "새로운 제도를 법령으로 만들 때 기존 법령 개정과 새 법령 제정은 어떻게 선택하나요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          74,
+          77
+        ]
+      ],
+      "mustDistinguish": "입법 필요성부터 검토; 기존 제도 보완과 새 분야를 구분",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 19,
+      "allElapsedMs": 25,
+      "filteredPages": [
+        77,
+        703,
+        270,
+        877,
+        115,
+        406
+      ],
+      "allPages": [
+        "legislation-2026:77",
+        "local-ordinance-2026:15",
+        "local-ordinance-2026:13",
+        "legislation-2026:703",
+        "legislation-2026:270",
+        "legislation-2026:877"
+      ]
+    },
+    {
+      "q": "조문 3분의 2를 바꾸면 반드시 전부개정해야 하나요? 용어 정리만 많아지는 경우도요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          808,
+          810
+        ]
+      ],
+      "mustDistinguish": "권고 기준과 용어·표현 정리 예외",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 9,
+      "allElapsedMs": 23,
+      "filteredPages": [
+        809,
+        209,
+        356,
+        787
+      ],
+      "allPages": [
+        "legislation-2026:809",
+        "local-ordinance-2026:422",
+        "legislation-2026:209",
+        "legislation-2026:356",
+        "legislation-2026:787"
+      ]
+    },
+    {
+      "q": "개정문에서 제3조제2항 각 호 외의 부분 본문과 단서를 어떻게 특정하나요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          811,
+          819
+        ]
+      ],
+      "mustDistinguish": "최소단위·중복 문자열·본문 단서 구별",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 9,
+      "allElapsedMs": 19,
+      "filteredPages": [
+        824,
+        819,
+        812,
+        806,
+        818,
+        731
+      ],
+      "allPages": [
+        "legislation-2026:824",
+        "legislation-2026:819",
+        "local-ordinance-2026:439",
+        "legislation-2026:812",
+        "legislation-2026:806",
+        "legislation-2026:818"
+      ]
+    },
+    {
+      "q": "항을 신설할 때 제2항의2처럼 가지번호를 붙일 수 있나요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          822,
+          823
+        ]
+      ],
+      "mustDistinguish": "조·호의 가지번호와 항 번호 이동 구별",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 8,
+      "allElapsedMs": 15,
+      "filteredPages": [
+        823,
+        822,
+        825,
+        821,
+        809,
+        699
+      ],
+      "allPages": [
+        "legislation-2026:823",
+        "legislation-2026:822",
+        "legislation-2026:825",
+        "legislation-2026:821",
+        "local-ordinance-2026:436",
+        "legislation-2026:809"
+      ]
+    },
+    {
+      "q": "제2조부터 제6조까지 삭제하면 제5조의2도 자동으로 삭제되나요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          825,
+          825
+        ]
+      ],
+      "mustDistinguish": "가지조문 별도 명시",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 12,
+      "allElapsedMs": 18,
+      "filteredPages": [
+        825,
+        822,
+        699,
+        832
+      ],
+      "allPages": [
+        "legislation-2026:825",
+        "local-ordinance-2026:440",
+        "legislation-2026:822",
+        "legislation-2026:699",
+        "local-ordinance-2026:353",
+        "legislation-2026:832"
+      ]
+    },
+    {
+      "q": "부칙에서 적용례만 쓰면 그 이전 신청에는 종전 규정이 적용되나요? 경과조치와의 차이는요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          712,
+          715
+        ]
+      ],
+      "mustDistinguish": "새 규정 적용관계와 구 규정 존속 근거",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 11,
+      "allElapsedMs": 32,
+      "filteredPages": [
+        714,
+        741,
+        782,
+        743,
+        740,
+        731
+      ],
+      "allPages": [
+        "legislation-2026:714",
+        "legislation-2026:741",
+        "legislation-2026:782",
+        "legislation-2026:743",
+        "legislation-2026:740",
+        "legislation-2026:731"
+      ]
+    },
+    {
+      "q": "위원 임기와 연임제한을 변경할 때 기존 위원에게 필요한 경과조치는 무엇인가요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          752,
+          755
+        ]
+      ],
+      "mustDistinguish": "기존 위원의 지위·임기·과거 재직기간 적용 별도 검토",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 11,
+      "allElapsedMs": 35,
+      "filteredPages": [
+        754,
+        755,
+        756,
+        753,
+        760,
+        479
+      ],
+      "allPages": [
+        "legislation-2026:754",
+        "legislation-2026:755",
+        "legislation-2026:756",
+        "local-ordinance-2026:273",
+        "local-ordinance-2026:384",
+        "local-ordinance-2026:386"
+      ]
+    },
+    {
+      "q": "전부개정할 때 종전 부칙의 적용례와 특례를 그대로 두면 되나요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          777,
+          779
+        ]
+      ],
+      "mustDistinguish": "종전 부칙 전수 검토와 필요한 경과조치 수용",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 21,
+      "allElapsedMs": 30,
+      "filteredPages": [
+        778,
+        777,
+        779,
+        834,
+        682,
+        780
+      ],
+      "allPages": [
+        "legislation-2026:778",
+        "local-ordinance-2026:345",
+        "local-ordinance-2026:393",
+        "legislation-2026:777",
+        "legislation-2026:779",
+        "local-ordinance-2026:465"
+      ]
+    },
+    {
+      "q": "이미 공포됐지만 아직 시행하지 않은 조문을 개정할 때는 어떻게 하나요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          842,
+          849
+        ]
+      ],
+      "mustDistinguish": "현재 시행 조문과 미시행 개정 조문 식별",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 15,
+      "allElapsedMs": 26,
+      "filteredPages": [
+        712,
+        850,
+        843,
+        366,
+        845,
+        609
+      ],
+      "allPages": [
+        "legislation-2026:712",
+        "legislation-2026:850",
+        "legislation-2026:843",
+        "legislation-2026:366",
+        "legislation-2026:845",
+        "legislation-2026:609"
+      ]
+    },
+    {
+      "q": "기존 일부개정법률 부칙을 개정할 때 공포번호도 적어야 하나요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          833,
+          835
+        ]
+      ],
+      "mustDistinguish": "개정 대상 종전 부칙 특정",
+      "filteredHit": true,
+      "allHit": false,
+      "filteredElapsedMs": 12,
+      "allElapsedMs": 22,
+      "filteredPages": [
+        788,
+        843,
+        810,
+        778,
+        833,
+        857
+      ],
+      "allPages": [
+        "legislation-2026:788",
+        "legislation-2026:843",
+        "local-ordinance-2026:393",
+        "local-ordinance-2026:403",
+        "legislation-2026:810",
+        "legislation-2026:778"
+      ]
+    },
+    {
+      "q": "별표 전부개정과 일부개정은 별지와 같이 한다 또는 다음과 같이 한다 중 어떻게 쓰나요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          835,
+          839
+        ]
+      ],
+      "mustDistinguish": "별표·서식의 전체/부분 개정과 위치 특정",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 15,
+      "allElapsedMs": 45,
+      "filteredPages": [
+        835,
+        834,
+        840,
+        838,
+        807,
+        839
+      ],
+      "allPages": [
+        "legislation-2026:835",
+        "legislation-2026:834",
+        "legislation-2026:840",
+        "legislation-2026:838",
+        "local-ordinance-2026:450",
+        "local-ordinance-2026:449"
+      ]
+    },
+    {
+      "q": "기존 법령을 폐지할 때 별도 폐지법률과 새 법령 부칙의 폐지규정은 어떻게 선택하나요?",
+      "docId": "legislation-2026",
+      "expectedPdfRanges": [
+        [
+          858,
+          859
+        ]
+      ],
+      "mustDistinguish": "폐지 원인·경과조치 검토",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 4,
+      "allElapsedMs": 8,
+      "filteredPages": [
+        858,
+        703,
+        704,
+        859,
+        770,
+        705
+      ],
+      "allPages": [
+        "legislation-2026:858",
+        "legislation-2026:703",
+        "legislation-2026:704",
+        "legislation-2026:859",
+        "legislation-2026:770",
+        "local-ordinance-2026:459"
+      ]
+    },
+    {
+      "q": "행정규칙은 국민에게 대외적 구속력이 전혀 없나요? 법령보충적 행정규칙은요?",
+      "docId": "administrative-rules-2025",
+      "expectedPdfRanges": [
+        [
+          7,
+          8
+        ],
+        [
+          16,
+          17
+        ]
+      ],
+      "mustDistinguish": "내부 준칙·법령 위임·위임 한계",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 17,
+      "filteredPages": [
+        7,
+        13,
+        8,
+        11,
+        16,
+        14
+      ],
+      "allPages": [
+        "administrative-rules-2025:7",
+        "administrative-rules-2025:13",
+        "administrative-rules-2025:8",
+        "administrative-rules-2025:11",
+        "legislation-2026:84",
+        "legislation-2026:92"
+      ]
+    },
+    {
+      "q": "법령의 근거 없이 행정규칙에 추가 첨부서류와 신고 의무를 정해도 되나요?",
+      "docId": "administrative-rules-2025",
+      "expectedPdfRanges": [
+        [
+          36,
+          38
+        ],
+        [
+          61,
+          70
+        ],
+        [
+          87,
+          91
+        ]
+      ],
+      "mustDistinguish": "행정편의만으로 의무 신설 금지; 실제 위임문 확인",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 1,
+      "allElapsedMs": 20,
+      "filteredPages": [
+        68,
+        38,
+        147,
+        69,
+        87,
+        92
+      ],
+      "allPages": [
+        "administrative-rules-2025:68",
+        "administrative-rules-2025:38",
+        "administrative-rules-2025:147",
+        "administrative-rules-2025:69",
+        "administrative-rules-2025:87",
+        "legislation-2026:165"
+      ]
+    },
+    {
+      "q": "내부운영 훈령도 무조건 3년 재검토기한을 넣어야 하나요? 존속기한과 차이가 뭔가요?",
+      "docId": "administrative-rules-2025",
+      "expectedPdfRanges": [
+        [
+          40,
+          43
+        ]
+      ],
+      "mustDistinguish": "중앙행정기관 대상·내부운영 제외·존속/재검토 효과 차이",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 19,
+      "filteredPages": [
+        144,
+        40,
+        42,
+        41,
+        143,
+        43
+      ],
+      "allPages": [
+        "administrative-rules-2025:144",
+        "administrative-rules-2025:40",
+        "administrative-rules-2025:42",
+        "administrative-rules-2025:41",
+        "administrative-rules-2025:143",
+        "administrative-rules-2025:43"
+      ]
+    },
+    {
+      "q": "행정규칙에서 지방자치단체 조례로 정할 사항을 직접 정하거나 위임 범위를 좁힐 수 있나요?",
+      "docId": "administrative-rules-2025",
+      "expectedPdfRanges": [
+        [
+          98,
+          99
+        ],
+        [
+          106,
+          107
+        ],
+        [
+          149,
+          149
+        ]
+      ],
+      "mustDistinguish": "자치입법권·법령 위임 우선",
+      "filteredHit": true,
+      "allHit": false,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 32,
+      "filteredPages": [
+        78,
+        24,
+        86,
+        149,
+        98,
+        41
+      ],
+      "allPages": [
+        "administrative-rules-2025:78",
+        "local-ordinance-2026:103",
+        "legislation-2026:528",
+        "legislation-2026:525",
+        "local-ordinance-2026:36",
+        "administrative-rules-2025:24"
+      ]
+    },
+    {
+      "q": "기관 명칭이 바뀌면 훈령과 고시를 한 개의 훈령으로 일괄개정해도 되나요?",
+      "docId": "administrative-rules-2025",
+      "expectedPdfRanges": [
+        [
+          52,
+          54
+        ]
+      ],
+      "mustDistinguish": "발령 형식의 동질성·공동고시 공동 개정",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 1,
+      "allElapsedMs": 16,
+      "filteredPages": [
+        53,
+        56,
+        54,
+        52,
+        6,
+        141
+      ],
+      "allPages": [
+        "administrative-rules-2025:53",
+        "administrative-rules-2025:56",
+        "administrative-rules-2025:54",
+        "administrative-rules-2025:52",
+        "administrative-rules-2025:6",
+        "administrative-rules-2025:141"
+      ]
+    },
+    {
+      "q": "상위법령이 먼저 시행됐으면 새 고시 시행일도 과거 상위법령 시행일로 맞추나요?",
+      "docId": "administrative-rules-2025",
+      "expectedPdfRanges": [
+        [
+          108,
+          110
+        ]
+      ],
+      "mustDistinguish": "발령·시행·적용의 구별; 소급 문제 별도 검토",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 1,
+      "allElapsedMs": 12,
+      "filteredPages": [
+        109,
+        108,
+        118,
+        148,
+        44,
+        51
+      ],
+      "allPages": [
+        "administrative-rules-2025:109",
+        "administrative-rules-2025:108",
+        "administrative-rules-2025:118",
+        "legislation-2026:846",
+        "local-ordinance-2026:349",
+        "legislation-2026:849"
+      ]
+    },
+    {
+      "q": "행정정보 공동이용으로 확인할 수 있는 서류를 민원인에게 다시 제출받아야 하나요?",
+      "docId": "administrative-rules-2025",
+      "expectedPdfRanges": [
+        [
+          38,
+          38
+        ],
+        [
+          92,
+          93
+        ]
+      ],
+      "mustDistinguish": "공동이용·동의 예외·공시성 정보 구분과 현행 대상 확인",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 17,
+      "filteredPages": [
+        93,
+        92,
+        38
+      ],
+      "allPages": [
+        "administrative-rules-2025:93",
+        "administrative-rules-2025:92",
+        "legislation-2026:166",
+        "administrative-rules-2025:38",
+        "legislation-2026:165",
+        "plain-language-2026:237"
+      ]
+    },
+    {
+      "q": "행정규칙으로 지정 취소 업무를 민간 협회에 위탁할 수 있나요?",
+      "docId": "administrative-rules-2025",
+      "expectedPdfRanges": [
+        [
+          93,
+          99
+        ]
+      ],
+      "mustDistinguish": "위임·위탁 근거와 국민 권리의무 직접 관련성·특별법 확인",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 1,
+      "allElapsedMs": 18,
+      "filteredPages": [
+        97,
+        94,
+        37,
+        68,
+        95,
+        98
+      ],
+      "allPages": [
+        "administrative-rules-2025:97",
+        "administrative-rules-2025:94",
+        "administrative-rules-2025:37",
+        "legislation-2026:561",
+        "administrative-rules-2025:68",
+        "administrative-rules-2025:95"
+      ]
+    },
+    {
+      "id": "L01",
+      "q": "조례의 정의 조문에서 정한 약칭이나 정책명을 쉬운 말로 모두 바꿔도 되나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          18,
+          19
+        ]
+      ],
+      "mustPreserve": "정의·약칭과 사물·정책 명칭의 정비 제외를 설명",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 8,
+      "allElapsedMs": 28,
+      "filteredPages": [
+        19,
+        112,
+        55,
+        54,
+        57,
+        113
+      ],
+      "allPages": [
+        "plain-language-2026:19",
+        "plain-language-2026:112",
+        "plain-language-2026:55",
+        "plain-language-2026:54",
+        "plain-language-2026:57",
+        "plain-language-2026:113"
+      ]
+    },
+    {
+      "id": "L02",
+      "q": "위원회에서 호선과 개의를 선출과 시작으로 바꾸어도 법적 의미가 같나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          42,
+          43
+        ]
+      ],
+      "mustPreserve": "선출 주체·절차·의사정족수의 의미가 사라질 수 있어 원어 보존",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 8,
+      "allElapsedMs": 25,
+      "filteredPages": [
+        43,
+        226,
+        296,
+        214
+      ],
+      "allPages": [
+        "plain-language-2026:43",
+        "plain-language-2026:226",
+        "plain-language-2026:296",
+        "plain-language-2026:214"
+      ]
+    },
+    {
+      "id": "L03",
+      "q": "양도하다를 넘겨주다로 바꾸고 멸실을 없어짐으로 고치면 되나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          42,
+          43
+        ]
+      ],
+      "mustPreserve": "법적 의미를 충분히 전달하지 못하는 순화 거절",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 3,
+      "allElapsedMs": 12,
+      "filteredPages": [
+        334,
+        43,
+        42,
+        216,
+        217
+      ],
+      "allPages": [
+        "plain-language-2026:334",
+        "plain-language-2026:43",
+        "local-ordinance-2026:473",
+        "plain-language-2026:42",
+        "plain-language-2026:216",
+        "plain-language-2026:217"
+      ]
+    },
+    {
+      "id": "L04",
+      "q": "처분을 경감하다와 기간을 경감하다는 같은 방식으로 줄이다로 고치나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          29,
+          30
+        ]
+      ],
+      "mustPreserve": "기간·금액과 처분의 문맥 구분",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 3,
+      "allElapsedMs": 11,
+      "filteredPages": [
+        29,
+        298,
+        291,
+        30,
+        295
+      ],
+      "allPages": [
+        "plain-language-2026:29",
+        "plain-language-2026:298",
+        "plain-language-2026:291",
+        "plain-language-2026:30",
+        "local-ordinance-2026:470",
+        "plain-language-2026:295"
+      ]
+    },
+    {
+      "id": "L05",
+      "q": "법인도 신청할 수 있는 조례에서 신청한 자를 신청한 사람으로 고쳐주세요.",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          85,
+          86
+        ]
+      ],
+      "mustPreserve": "법인·단체 포함 가능성이 있으면 자 유지",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 11,
+      "filteredPages": [
+        219,
+        82,
+        168,
+        223,
+        85,
+        20
+      ],
+      "allPages": [
+        "plain-language-2026:219",
+        "plain-language-2026:82",
+        "plain-language-2026:168",
+        "plain-language-2026:223",
+        "plain-language-2026:85",
+        "plain-language-2026:20"
+      ]
+    },
+    {
+      "id": "L06",
+      "q": "제5조 내지 제11조라는 인용 범위에 제9조의2가 있으면 어떻게 정비하나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          82,
+          83
+        ]
+      ],
+      "mustPreserve": "가지번호를 확인하고 포함 범위 보존, 임의로 생략 금지",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 6,
+      "allElapsedMs": 24,
+      "filteredPages": [
+        82,
+        170,
+        83,
+        114,
+        41
+      ],
+      "allPages": [
+        "plain-language-2026:82",
+        "legislation-2026:825",
+        "local-ordinance-2026:440",
+        "plain-language-2026:170",
+        "plain-language-2026:83",
+        "legislation-2026:822"
+      ]
+    },
+    {
+      "id": "L07",
+      "q": "기타 위원회 운영에 필요한 사항은 그 밖의와 그 밖에 중 무엇이 맞나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          83,
+          85
+        ]
+      ],
+      "mustPreserve": "수식 범위에 따라 그 밖에를 설명",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 4,
+      "allElapsedMs": 21,
+      "filteredPages": [
+        84,
+        85,
+        305,
+        215,
+        83,
+        231
+      ],
+      "allPages": [
+        "plain-language-2026:84",
+        "plain-language-2026:85",
+        "plain-language-2026:305",
+        "plain-language-2026:215",
+        "plain-language-2026:83",
+        "plain-language-2026:231"
+      ]
+    },
+    {
+      "id": "L08",
+      "q": "제10조의 규정에 의하여와 라 함은을 간결하게 정비해 주세요.",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          86,
+          87
+        ]
+      ],
+      "mustPreserve": "조문 참조·정의 내용은 유지하고 표현만 변경",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 4,
+      "allElapsedMs": 12,
+      "filteredPages": [
+        87,
+        188,
+        70,
+        155,
+        292,
+        23
+      ],
+      "allPages": [
+        "plain-language-2026:87",
+        "plain-language-2026:188",
+        "plain-language-2026:70",
+        "plain-language-2026:155",
+        "plain-language-2026:292",
+        "plain-language-2026:23"
+      ]
+    },
+    {
+      "id": "L09",
+      "q": "응급조치를 한 때부터 24시간 이내의 한 때도 할 때로 바꾸나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          88,
+          88
+        ]
+      ],
+      "mustPreserve": "시점이 중요할 때 한 때를 유지하는 예외",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 3,
+      "allElapsedMs": 13,
+      "filteredPages": [
+        88
+      ],
+      "allPages": [
+        "plain-language-2026:88"
+      ]
+    },
+    {
+      "id": "L10",
+      "q": "집수정 같은 전문용어를 물저장고로 무조건 바꾸는 대신 설명을 붙일 수 있나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          54,
+          60
+        ]
+      ],
+      "mustPreserve": "기존어+설명 등 단계별 방식과 최초 병기 원칙",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 3,
+      "allElapsedMs": 15,
+      "filteredPages": [
+        57,
+        18,
+        110,
+        294,
+        54,
+        14
+      ],
+      "allPages": [
+        "plain-language-2026:57",
+        "plain-language-2026:18",
+        "plain-language-2026:110",
+        "local-ordinance-2026:480",
+        "plain-language-2026:294",
+        "plain-language-2026:54"
+      ]
+    },
+    {
+      "id": "L11",
+      "q": "홈페이지 및 신문을 홈페이지 또는 신문으로 바꾸면 단순 문체 정비인가요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          160,
+          162
+        ]
+      ],
+      "mustPreserve": "둘 다에서 하나로 요건이 달라지는 실질 변경",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 11,
+      "filteredPages": [
+        161,
+        43,
+        232,
+        42,
+        185,
+        162
+      ],
+      "allPages": [
+        "plain-language-2026:161",
+        "plain-language-2026:43",
+        "plain-language-2026:232",
+        "plain-language-2026:42",
+        "plain-language-2026:185",
+        "plain-language-2026:162"
+      ]
+    },
+    {
+      "id": "L12",
+      "q": "서면조사 또는 방문조사를 및으로 바꿔도 의미가 같나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          161,
+          162
+        ]
+      ],
+      "mustPreserve": "선택에서 누적 요건으로 바뀌므로 의미 동일로 표시 금지",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 3,
+      "allElapsedMs": 19,
+      "filteredPages": [
+        162,
+        88
+      ],
+      "allPages": [
+        "plain-language-2026:162",
+        "plain-language-2026:88"
+      ]
+    },
+    {
+      "id": "L13",
+      "q": "과반수 이상은 어떻게 정비하고 반수 이상으로 고쳐도 되는지 알려주세요.",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          156,
+          157
+        ]
+      ],
+      "mustPreserve": "과반수 이상→과반수, 반수 이상으로 의미 변경 금지",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 11,
+      "filteredPages": [
+        157,
+        231,
+        43,
+        215
+      ],
+      "allPages": [
+        "plain-language-2026:157",
+        "plain-language-2026:231",
+        "plain-language-2026:43",
+        "plain-language-2026:215",
+        "local-ordinance-2026:280",
+        "legislation-2026:487"
+      ]
+    },
+    {
+      "id": "L14",
+      "q": "법령 문장은 언제나 능동문으로 고쳐야 하나요? 소멸시효가 완성한 때는요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          174,
+          177
+        ]
+      ],
+      "mustPreserve": "무생물 주어는 피동문이 자연스러운 예외",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 12,
+      "filteredPages": [
+        176,
+        174,
+        128,
+        186,
+        201
+      ],
+      "allPages": [
+        "plain-language-2026:176",
+        "plain-language-2026:174",
+        "plain-language-2026:128",
+        "plain-language-2026:186",
+        "plain-language-2026:201"
+      ]
+    },
+    {
+      "id": "L15",
+      "q": "부록 정비 권고 용어의 순화어는 모든 조문에 그대로 적용해야 하나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          294,
+          294
+        ]
+      ],
+      "mustPreserve": "문맥상 적절한 다른 표현 또는 기존어 유지 허용; PDF294·부록4 쪽 표기",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 3,
+      "allElapsedMs": 19,
+      "filteredPages": [
+        294,
+        19,
+        288,
+        290,
+        53,
+        65
+      ],
+      "allPages": [
+        "plain-language-2026:294",
+        "plain-language-2026:19",
+        "plain-language-2026:288",
+        "plain-language-2026:290",
+        "plain-language-2026:53",
+        "plain-language-2026:65"
+      ]
+    },
+    {
+      "id": "L16",
+      "q": "호스팅과 호퍼를 쉽게 설명할 수 있는 정비 용어가 있나요?",
+      "docId": "plain-language-2026",
+      "expectedPdfRanges": [
+        [
+          390,
+          390
+        ]
+      ],
+      "mustPreserve": "PDF390은 부록100, 인쇄382로 오표기 금지; 사전 뜻풀이를 문맥에 맞게 선택",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 2,
+      "allElapsedMs": 11,
+      "filteredPages": [
+        390,
+        63,
+        10,
+        11,
+        14,
+        20
+      ],
+      "allPages": [
+        "plain-language-2026:390",
+        "plain-language-2026:63",
+        "plain-language-2026:10",
+        "plain-language-2026:11",
+        "plain-language-2026:14",
+        "plain-language-2026:20"
+      ]
+    },
+    {
+      "id": "O01",
+      "q": "보건소장이나 지방의원 개인 명의로 자치법규 의견제시를 요청할 수 있나요?",
+      "docId": "opinion-request",
+      "expectedSections": [
+        "자치법규 의견제시 요청요건 체크 사항 / 1. 요청권한자"
+      ],
+      "mustPreserve": "서식상 허용 명의 설명, 임의로 요청권한 있다고 확정 금지",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 0,
+      "allElapsedMs": 23,
+      "filteredPages": [
+        null,
+        null
+      ],
+      "allPages": [
+        "opinion-request:null",
+        "opinion-request:null"
+      ]
+    },
+    {
+      "id": "O02",
+      "q": "조례안 전체가 상위법에 위반되는지 질의서를 쓰고 싶은데 어떤 질문으로 좁혀야 하나요?",
+      "docId": "opinion-request",
+      "expectedSections": [
+        "요청요건 4. 요청사항 특정",
+        "2. 질의요지",
+        "3. 의견제시 대상 자치법규 조문 및 관련 법령"
+      ],
+      "mustPreserve": "구체 조항·쟁점을 질문하고 모호한 전체 검토는 반려 가능 설명",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 0,
+      "allElapsedMs": 24,
+      "filteredPages": [
+        null
+      ],
+      "allPages": [
+        "opinion-request:null",
+        "plain-language-2026:137"
+      ]
+    },
+    {
+      "id": "O03",
+      "q": "의견제시 요청서에는 대립되는 갑설과 을설을 반드시 만들어 넣어야 하나요?",
+      "docId": "opinion-request",
+      "expectedSections": [
+        "4. 대립되는 의견"
+      ],
+      "mustPreserve": "대립 의견 없으면 생략 가능, 기관 의견·판례 발명 금지",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 0,
+      "allElapsedMs": 18,
+      "filteredPages": [
+        null,
+        null
+      ],
+      "allPages": [
+        "opinion-request:null",
+        "opinion-request:null"
+      ]
+    },
+    {
+      "id": "O04",
+      "q": "이미 공포된 자치법규의 상위법 위반 여부와 구체적 처분의 위법성을 의견제시로 물어도 되나요?",
+      "docId": "opinion-request",
+      "expectedSections": [
+        "요청요건 3. 입법단계",
+        "요청요건 5. 일반적 해석"
+      ],
+      "mustPreserve": "서식상 반려될 수 있는 범위를 설명, 최신 접수요건은 공식 안내 추가 확인",
+      "filteredHit": true,
+      "allHit": true,
+      "filteredElapsedMs": 0,
+      "allElapsedMs": 40,
+      "filteredPages": [
+        null,
+        null
+      ],
+      "allPages": [
+        "opinion-request:null",
+        "opinion-request:null"
+      ]
+    }
+  ],
+  "recoveryNote": "Restored pre-recovery final result from preserved /tmp case output. Corpus hash and observations describe the original corpus; remeasure after ingestion recovery before claiming current equality.",
+  "independentCounterexampleReview": {
+    "status": "Eight queries authored independently; two were used for subsequent tuning. This is now a development counterexample set, not a held-out generalization score.",
+    "initialFailures": [
+      {
+        "question": "제3조부터 제5조까지라고 쓰면 사이에 새로 넣은 제4조의2까지 포함되나요?",
+        "initial": "local-ordinance-2026:440 not in top 6; literal article-number matches dominated.",
+        "after": "local-ordinance-2026:440 rank 1; legislation-2026:825 rank 2.",
+        "change": "Remove sample article IDs from term scoring; normalize branch article notation to 가지조문/가지번호 concepts."
+      },
+      {
+        "question": "법률에서 조례에 맡긴 사항을 다시 구청장 고시로 정하도록 해도 되는지 검토하고 싶어요.",
+        "initial": "local-ordinance-2026:319 rank 1 concerned administrative task delegation.",
+        "after": "local-ordinance-2026:24 rank 1 and :23 rank 4; task-delegation page :319 outside top 6.",
+        "change": "Identify normative delegation intent; expand delegated legislative form terms and de-prioritize administrative-task contexts only for that intent."
+      }
+    ],
+    "otherObservations": [
+      "Household cleaning question returned no results.",
+      "Existing committee member term question retrieved local-ordinance-2026:385,384,383 among top 6.",
+      "Half-versus-majority plain-language question retrieved plain-language-2026:157 rank 1.",
+      "Public corporation review-deadline question retrieved administrative-rules-2025:144 and explanatory exceptions at :41,:40,:42.",
+      "Question about an unavailable internal rule still retrieves general manual references; retrieval cannot judge that rule without its text.",
+      "Future latest-law question still retrieves drafting references; manual retrieval cannot verify a future/latest promulgation number."
+    ],
+    "additionalNegativeQuery": {
+      "question": "오늘 저녁 피자 맛집 추천",
+      "initial": "Incidental everyday word overlap produced references.",
+      "after": "No results; assist API test confirms no model call.",
+      "change": "Require stronger query coverage for a lone incidental term while preserving explicit legal concept aliases; no restaurant keyword blacklist."
+    }
+  }
+}

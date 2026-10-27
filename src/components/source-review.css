@@ -1,0 +1,27 @@
+.source-review { margin-top: 18px; padding: 18px; border: 1px solid var(--line, #d9dedb); border-radius: 12px; background: var(--surface, #fff); }
+.source-review-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.source-review h3 { margin: 0; font-size: 15px; }
+.source-review-counts { margin: 5px 0 0; color: var(--muted, #616b65); font-size: 13px; line-height: 1.6; }
+.source-review-status { flex-shrink: 0; padding: 4px 8px; border-radius: 6px; background: #eaf4ee; color: #285b3d; font-size: 12px; font-weight: 600; }
+.source-review-status.needs-review { color: #805109; background: #fff2d9; }
+.source-review-intro { margin-bottom: 14px; }
+.source-review-issues { border: 1px solid #ebcf95; background: #fffaf0; border-radius: 8px; padding: 12px 14px; }
+.source-review-issues h4 { margin: 0 0 10px; font-size: 14px; }
+.source-review-issues ul { list-style: none; margin: 0; padding: 0; }
+.source-review-issues li + li { border-top: 1px solid #efdfbd; margin-top: 12px; padding-top: 12px; }
+.source-issue-location { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 12px; color: #785511; overflow-wrap: anywhere; }
+.source-review-issues p { margin: 6px 0; font-size: 13px; line-height: 1.65; }
+.source-review-issues blockquote { margin: 7px 0 0; padding: 7px 10px; border-left: 3px solid #ddc38c; background: #fff; font-size: 12px; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; color: #514c42; }
+.source-review-structure { margin-top: 14px; }
+.source-review summary { cursor: pointer; line-height: 1.6; font-size: 13px; }
+.source-review summary:focus-visible { outline: 2px solid var(--accent, #25634d); outline-offset: 4px; border-radius: 3px; }
+.source-review-article { border-top: 1px solid var(--line, #e0e5e1); padding: 9px 0; }
+.source-review-article summary span { display: inline; margin-left: 9px; font-size: 12px; color: var(--muted, #616b65); overflow-wrap: anywhere; }
+.source-review-paragraph { margin: 10px 0 0 12px; }
+.source-review-paragraph > b { font-size: 12px; color: var(--muted, #616b65); }
+.source-review pre { margin: 5px 0 8px; font-family: inherit; font-size: 13px; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.8; }
+.source-review-confirm { display: flex; align-items: flex-start; gap: 9px; margin-top: 16px; font-size: 13px; line-height: 1.7; cursor: pointer; }
+.source-review-confirm input { flex-shrink: 0; width: 17px; height: 17px; margin-top: 3px; accent-color: var(--accent, #25634d); }
+.source-review-confirm-help { margin: 5px 0 0 26px; }
+.source-review-blocked { margin: 14px 0 0; font-size: 13px; color: #9a3427; }
+@media (max-width: 560px) { .source-review { padding: 14px; } .source-review-heading { flex-direction: column; gap: 8px; } .source-review-article summary span { display: block; margin-left: 15px; } }

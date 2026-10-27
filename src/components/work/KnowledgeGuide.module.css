@@ -1,0 +1,6 @@
+.heading { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.heading span { color: #526174; font-size: 1.2rem; }
+.heading h3 { color: #2e354f; font-size: 1.85rem; margin: 3px 0 0; }
+.intro { color: #344359; font-size: 1.5rem; line-height: 1.7; margin: 8px 0 16px; word-break: keep-all; }
+.sourceTitle { border-top: 1px solid #cdded9; padding-top: 18px; margin: 20px 0 8px; font-size: 1.5rem; color: #35495b; }
+@media print { .heading, .intro { display: none; } }
